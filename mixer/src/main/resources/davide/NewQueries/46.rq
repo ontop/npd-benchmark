@@ -1,0 +1,23 @@
+PREFIX ex:	<http://example.org/ex#>
+PREFIX dc:	<http://purl.org/dc/elements/1.1/>
+PREFIX void:	<http://rdfs.org/ns/void#>
+PREFIX isc:	<http://resource.geosciml.org/classifier/ics/ischart/>
+PREFIX diskos:	<http://sws.ifi.uio.no/data/diskos/>
+PREFIX nlx:	<http://sws.ifi.uio.no/data/norlex/>
+PREFIX npd:	<http://sws.ifi.uio.no/data/npd-v2/>
+PREFIX diskosv:	<http://sws.ifi.uio.no/vocab/diskos#>
+PREFIX nlxv:	<http://sws.ifi.uio.no/vocab/norlex#>
+PREFIX npdv:	<http://sws.ifi.uio.no/vocab/npd-v2#>
+PREFIX ptl:	<http://sws.ifi.uio.no/vocab/npd-v2-ptl#>
+PREFIX sql:	<http://sws.ifi.uio.no/vocab/sql#>
+PREFIX geos:	<http://www.opengis.net/ont/geosparql#>
+PREFIX rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:	<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:	<http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:	<http://www.w3.org/2002/07/owl#>
+SELECT ?wellbore ?field ?company
+WHERE { 
+  ?wellbore npdv:developmentWellboreForField ?field ;
+	    npdv:isDiscoveryWellbore "true"^^xsd:boolean ;
+            npdv:drillingOperatorCompany ?company .
+  ?field npdv:currentFieldOperator ?company . }

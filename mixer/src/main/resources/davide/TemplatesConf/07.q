@@ -1,0 +1,3 @@
+field_production_totalt_NCS_year prfYear
+field_production_totalt_NCS_month prfMonth
+field_production_totalt_NCS_month prfMonth
