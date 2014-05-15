@@ -21,8 +21,8 @@ The obda, owl and query files have been adapted for OBDA benchmarking purposes.
 Contacts
 ----------
 
-* [Davide Lanti]()
+* Davide Lanti
 * [Martin Rezk](http://www.inf.unibz.it/~mrezk/) 
-* [Mindaugas Slusnys]()
+* Mindaugas Slusnys
 * [Diego Calvanese](http://www.inf.unibz.it/~calvanese/)
 * [Guohui Xiao](http://www.ghxiao.org)
