@@ -12,7 +12,7 @@ JdbcConnector jdbc:mysql
 DbUrlOriginal 10.7.20.39:3306/npd
 DbUsernameOriginal user
 DbPasswordOriginal pwd
-DbUrlToPump 10.7.20.39:3306/npdPumped
+DbUrlToPump 10.7.20.39:3306/npdToPump
 DbUsernameToPump user
 DbPasswordToPump pwd
 randomGen false
