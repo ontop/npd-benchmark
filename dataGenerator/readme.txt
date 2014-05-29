@@ -3,3 +3,23 @@ Change the connection parameters in configuration file and resources/npd-v2-ql_a
 Usage: java -jar Generator.jar -f size
 
 Size - Number of times to increase original data (float number, 2 means double the data)
+
+%%% Guide to configuration file %%%%
+
+The configuration file looks like the following:
+
+JdbcConnector jdbc:mysql
+DbUrlOriginal 10.7.20.39:3306/npd
+DbUsernameOriginal user
+DbPasswordOriginal pwd
+DbUrlToPump 10.7.20.39:3306/npdPumped
+DbUsernameToPump user
+DbPasswordToPump pwd
+randomGen false
+obdaFile resources/npd-v2-ql_a.obda
+pumperType DB
+
+Description of important fields:
+
+- DbUrlOriginal: it contains the url of the initial database.
+- DbUrlToPump: it contains the url of a copy of the initial database. This copy is the one that will be "pumped" by the generator.
