@@ -9,6 +9,9 @@ mixer - query execution tool
 
 resources - contains ontology, mappings and queries for the NPD Benchmark
 
+For more info refer to the wiki
+
+https://github.com/ontop/npd-benchmark/wiki
 
 Credits
 --------
