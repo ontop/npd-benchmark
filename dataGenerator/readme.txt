@@ -9,10 +9,10 @@ Size - Number of times to increase original data (float number, 2 means double t
 The configuration file looks like the following:
 
 JdbcConnector jdbc:mysql
-DbUrlOriginal 10.7.20.39:3306/npd
+DbUrlOriginal url:port/dbName
 DbUsernameOriginal user
 DbPasswordOriginal pwd
-DbUrlToPump 10.7.20.39:3306/npdToPump
+DbUrlToPump url:port/dbToBePumpedName
 DbUsernameToPump user
 DbPasswordToPump pwd
 randomGen false
