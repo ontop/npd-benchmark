@@ -1,3 +1,11 @@
+The source code can be found at 
+
+https://github.com/ontop/vig
+
+and it is released under Apache Licence v2.5.
+
+Usage:
+
 Change the connection parameters in configuration file and resources/npd-v2-ql_a.obda file.
 
 Usage: java -jar Generator.jar -f size
