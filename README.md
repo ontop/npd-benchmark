@@ -22,6 +22,13 @@ NPD does not provide any warranty nor takes any responsibility on this work nor 
 
 The obda, owl and query files have been adapted for OBDA benchmarking purposes.
 
+Publications
+---------
+
+* A Scalable Benchmark for OBDA Systems: Preliminary Report Calvanese, D.; Lanti, D.; Rezk, M.; Slusnys, M.; and Xiao, G. In In Proc. of the 3rd Int. Workshop on OWL Reasoner Evaluation (ORE 2014), 2014. (http://www.ghxiao.org/publications/2014-ore-npd.pdf)
+
+* The NPD Benchmark for OBDA Systems Lanti, D.; Rezk, M.; Slusnys, M.; Xiao, G.; and Calvanese, D. In Proc. of the 10th International Workshop on Scalable Semantic Web Knowledge Base Systems (SSWS 2014), 2014. (http://www.ghxiao.org/publications/2014-ssws-npd.pdf) 
+
 Contacts
 ----------
 
