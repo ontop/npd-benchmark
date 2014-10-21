@@ -25,5 +25,5 @@ WHERE {
        npdv:licenceLicensee [ npdv:name ?company ] ;
        npdv:dateLicenseeValidFrom ?licenseeFrom .
  	
-   FILTER(?licenseeFrom > '1979-12-31T00:00:00')
+   FILTER(?licenseeFrom > "1979-12-31T00:00:00"^^xsd:dateTime)
 } ORDER BY ?licence ASC(?licenseeFrom)

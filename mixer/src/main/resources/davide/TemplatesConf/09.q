@@ -1,1 +1,0 @@
-wellbore_mud wlbMudDateMeasured

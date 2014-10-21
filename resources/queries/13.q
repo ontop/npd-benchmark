@@ -16,9 +16,9 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX diskosv: <http://sws.ifi.uio.no/vocab/diskos#>
 SELECT DISTINCT *
 WHERE {
-      ?x a npdv:SeismicSurvey .   
-     OPTIONAL {?x npdv:lengthCdpTotalKm ?cdpKM .}     
-     OPTIONAL {?x npdv:lengthBoatTotalKm ?boatKM .} 
+?x a npdv:SeismicSurvey .
+OPTIONAL {?x npdv:lengthCdpTotalKm ?cdpKM .}
+OPTIONAL {?x npdv:lengthBoatTotalKm ?boatKM .}
 FILTER (?cdpKM > 3660)
 }
 

@@ -23,7 +23,7 @@ WHERE {
       npdv:name ?facility ;
       npdv:registeredInCountry ?country;
       npdv:idNPD ?id . 
-FILTER (?id > 400000)
+FILTER (?id > "400000"^^xsd:integer)
 }
 ORDER BY ?facility
 

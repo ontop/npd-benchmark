@@ -28,7 +28,7 @@ WHERE {
   { ?wc npdv:coresTotalLength ?length ;
         npdv:coreIntervalUOM "[m   ]"^^xsd:string .
   } 
-  FILTER(?year >= "2008"^^xsd:integer &&
+  FILTER(?year >= 2008 &&
          ?length > 50 
          # && regex(?company, "^STATOIL", "i")
   )
