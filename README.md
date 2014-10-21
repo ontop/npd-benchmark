@@ -3,15 +3,15 @@ npd-benchmark (v1.1)
 
 Components of the NPD Benchmark (v1.1)
 
-* Vig: Generates custom datasets for NPD (https://github.com/ontop/vig)
+* **Vig**: Generates custom datasets for NPD (https://github.com/ontop/vig)
 
-* Mixer: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWLapi
+* **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWLapi
 
-* OWL 2 QL NPD ontology (containing information about petroleum activities on the Norwegian continental shelf)
+* **OWL 2 QL NPD ontology** (containing information about petroleum activities on the Norwegian continental shelf)
 
-* R2RML and OBDA mappings for PostgreSQL and MySQL
+* **R2RML and OBDA mappings** for PostgreSQL and MySQL
 
-* 21 Real World Queries:
+* **21 Real World Queries**:
 
   * 7 Queries classically optimizable (that is, "easy" SQL translations can be obtained by using only information  in mappings, ontology, and database dependencies)
 
