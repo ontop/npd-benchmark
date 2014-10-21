@@ -1,0 +1,2 @@
+wellbore_development_all wlbCompletionYear
+wellbore_core wlbTotalCoreLength
