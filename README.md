@@ -5,7 +5,7 @@ Components of the NPD Benchmark (v1.1)
 
 * **Vig**: Generates custom datasets for NPD (https://github.com/ontop/vig)
 
-* **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWLapi
+* **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWL API interface
 
 * **OWL 2 QL NPD ontology** (containing information about petroleum activities on the Norwegian continental shelf)
 
