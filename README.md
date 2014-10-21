@@ -31,7 +31,7 @@ no/project/npd-v2/)
 NPD does not provide any warranty nor takes any responsibility on this work nor on a
 ny of the provided files.
 
-The obda, owl and query files have been adapted for OBDA benchmarking purposes.
+The mappings, ontology, and query files have been adapted for OBDA benchmarking purposes.
 
 Publications [for v1.0]
 ---------
