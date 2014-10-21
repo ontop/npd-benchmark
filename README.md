@@ -51,5 +51,5 @@ Contacts
 
 * [Davide Lanti](http://www.inf.unibz.it/~dlanti/)
 * [Martin Rezk](http://www.inf.unibz.it/~mrezk/) 
-* [Diego Calvanese](http://www.inf.unibz.it/~calvanese/)
 * [Guohui Xiao](http://www.ghxiao.org)
+* [Diego Calvanese](http://www.inf.unibz.it/~calvanese/)
