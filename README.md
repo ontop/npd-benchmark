@@ -13,9 +13,9 @@ Components of the NPD Benchmark (v1.1)
 
 * **21 Real World Queries**:
 
-  * **7 Classically Optimizable Queries**  (that is, translations into efficient SQL can be obtained by using only information  in mappings, ontology, and database dependencies)
+  * **7 Classically Optimizable Queries**  (that is, translations into efficient SQL can be obtained by using only information in mappings, ontology, and database dependencies)
 
-  * **14 Non-classically Optimizable Queries** (that is, they need information coming from the data [e.g., dependencies not specified in the schema] in order the be translated into efficient SQL queries)
+  * **14 Non-classically Optimizable Queries** (that is, they need information coming from the data [e.g., dependencies not specified in the database schema] in order the be translated into efficient SQL queries)
 
 
 For more info refer to the wiki
