@@ -13,8 +13,8 @@ R2RML and OBDA mappings for PostgreSQL and MySQL
 
 21 Real World Queries:
 
--- 7 Queries classically optimizable (that is, by using information in mappings, ontology, and database dependencies)
--- 14 Queries non-classically optimizable (that is, they need information coming from the data [e.g., dependencies not specified in the schema] in order to be optimized)
+-- 7 Queries classically optimizable (that is, "easy" SQL translations can be obtained by using information ONLY in mappings, ontology, and database dependencies)
+-- 14 Queries non-classically optimizable (that is, they need information coming from the data [e.g., dependencies not specified in the schema] in order the be translated into "easy" SQL queries)
 
 
 For more info refer to the wiki
