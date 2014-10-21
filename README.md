@@ -3,7 +3,9 @@ npd-benchmark (v1.1)
 
 Components of the NPD Benchmark (v1.1)
 
-* **Vig**: Generates custom datasets for NPD (https://github.com/ontop/vig)
+* **NPD Dataset** (mysql and postgresql dump files)
+
+* **Vig**: Generates custom datasets starting from the NPD Dataset (https://github.com/ontop/vig)
 
 * **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWL API interface
 
