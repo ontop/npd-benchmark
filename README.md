@@ -1,17 +1,21 @@
-npd-benchmark
+npd-benchmark (v1.1)
 =============
 
 Components of the NPD Benchmark (v1.1)
 
-Data Generator - Generates custom datasets for NPD ()
+Vig: Generates custom datasets for NPD (https://github.com/ontop/vig)
 
-mixer - query execution tool ()
+Mixer: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWLapi
 
 OWL 2 QL ontology
 
 R2RML and OBDA mappings for PostgreSQL and MySQL
 
-21 Queries 
+21 Queries:
+
+-- 7 Queries classically optimizable (that is, by using information in mappings, ontology, and database dependencies)
+-- 14 Queries non-classically optimizable (that is, they need information coming from the data [e.g., dependencies not specified in the schema] in order to be optimized)
+
 
 For more info refer to the wiki
 
@@ -28,7 +32,7 @@ ny of the provided files.
 
 The obda, owl and query files have been adapted for OBDA benchmarking purposes.
 
-Publications
+Publications [for v1.0]
 ---------
 
 * A Scalable Benchmark for OBDA Systems: Preliminary Report Calvanese, D.; Lanti, D.
@@ -46,7 +50,5 @@ Contacts
 
 * [Davide Lanti](http://www.inf.unibz.it/~dlanti/)
 * [Martin Rezk](http://www.inf.unibz.it/~mrezk/) 
-* Mindaugas Slusnys
 * [Diego Calvanese](http://www.inf.unibz.it/~calvanese/)
 * [Guohui Xiao](http://www.ghxiao.org)
-
