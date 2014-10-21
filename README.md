@@ -7,11 +7,11 @@ Vig: Generates custom datasets for NPD (https://github.com/ontop/vig)
 
 Mixer: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWLapi
 
-OWL 2 QL ontology
+OWL 2 QL NPD ontology (containing information about petroleum activities on the Norwegian continental shelf)
 
 R2RML and OBDA mappings for PostgreSQL and MySQL
 
-21 Queries:
+21 Real World Queries:
 
 -- 7 Queries classically optimizable (that is, by using information in mappings, ontology, and database dependencies)
 -- 14 Queries non-classically optimizable (that is, they need information coming from the data [e.g., dependencies not specified in the schema] in order to be optimized)
