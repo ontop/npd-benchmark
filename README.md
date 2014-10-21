@@ -38,13 +38,11 @@ Publications [for v1.0]
 
 * A Scalable Benchmark for OBDA Systems: Preliminary Report Calvanese, D.; Lanti, D.
 ; Rezk, M.; Slusnys, M.; and Xiao, G. In In Proc. of the 3rd Int. Workshop on OWL Re
-asoner Evaluation (ORE 2014), 2014. (http://www.ghxiao.org/publications/2014-ore-npd
-.pdf)
+asoner Evaluation (ORE 2014), 2014. (http://www.ghxiao.org/publications/2014-ore-npd.pdf)
 
 * The NPD Benchmark for OBDA Systems Lanti, D.; Rezk, M.; Slusnys, M.; Xiao, G.; and
  Calvanese, D. In Proc. of the 10th International Workshop on Scalable Semantic Web 
-Knowledge Base Systems (SSWS 2014), 2014. (http://www.ghxiao.org/publications/2014-s
-sws-npd.pdf) 
+Knowledge Base Systems (SSWS 2014), 2014. (http://www.ghxiao.org/publications/2014-ssws-npd.pdf) 
 
 Contacts
 ----------
