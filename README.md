@@ -1,5 +1,5 @@
 npd-benchmark
-=============
+==============
 
 Components of the NPD Benchmark (v1.1)
 
