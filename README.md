@@ -3,9 +3,9 @@ npd-benchmark (v1.1)
 
 Components of the NPD Benchmark (v1.1)
 
-* **Vig**: Generates custom datasets for NPD (https://github.com/ontop/vig)
+* **NPD Dataset** (mysql and postgresql dump files)
 
-* **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWL API interface
+* **Vig**: Generates custom datasets starting from the NPD Dataset (https://github.com/ontop/vig)
 
 * **OWL 2 QL NPD ontology** (containing information about petroleum activities on the Norwegian continental shelf)
 
@@ -13,10 +13,11 @@ Components of the NPD Benchmark (v1.1)
 
 * **21 Real World Queries**:
 
-  * **7 Classically Optimizable Queries**  (that is, translations into efficient SQL can be obtained by using only information in mappings, ontology, and database dependencies)
+  * **7 Classically Optimizable Queries**  (that is, queries that can be translated into efficient SQL by using only information in mappings, ontology, and database dependencies)
 
-  * **14 Non-classically Optimizable Queries** (that is, they need information coming from the data [e.g., dependencies not specified in the database schema] in order the be translated into efficient SQL queries)
+  * **14 Non-classically Optimizable Queries** (that is, queries that require information from the data [e.g., dependencies not specified in the database schema] in order the be translated into efficient SQL queries)
 
+* **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWL API interface
 
 For more info refer to the wiki
 
