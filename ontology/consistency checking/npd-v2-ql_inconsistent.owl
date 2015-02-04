@@ -6424,6 +6424,18 @@
         <rdfs:subClassOf rdf:resource="&npdv;Area"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;npdPageURL"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;blockLocation"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;blockId"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -6432,12 +6444,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&geos;asWKT"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;npdPageURL"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -6452,12 +6458,6 @@
                 <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;blockLocation"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <sql:columns>apaAreaNetGeometryWKT,apaAreaType,blkId,blkLabel,blkName,prvName,qdrName,urlNPD (table: apaAreaNet)</sql:columns>
         <sql:label>APA (Awards in predefined areas) net areas. (table: apaAreaNet)</sql:label>
         <sql:table>apaAreaNet</sql:table>
@@ -6469,12 +6469,6 @@
 
     <owl:Class rdf:about="&npdv;BAA">
         <rdfs:subClassOf rdf:resource="&npdv;Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateBaaValidFrom"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;name"/>
@@ -6495,13 +6489,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateApproved"/>
+                <owl:onProperty rdf:resource="&npdv;dateBaaValidFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:onProperty rdf:resource="&npdv;dateApproved"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6509,6 +6503,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;factPageURL"/>
                 <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:table>bsns_arr_area_operator</sql:table>
@@ -6529,7 +6529,7 @@
         <rdfs:subClassOf rdf:resource="&npdv;Area"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;isActive"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6541,7 +6541,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&geos;asWKT"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
+                <owl:someValuesFrom rdf:resource="&npdv;BAA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;polygonNo"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6559,25 +6571,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
-                <owl:someValuesFrom rdf:resource="&npdv;BAA"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isActive"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;polygonNo"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;areaSize"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&geos;asWKT"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6597,18 +6597,6 @@
         <rdfs:subClassOf rdf:resource="&npdv;Licensee"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;licenseeInterest"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;baaLicensee"/>
                 <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
@@ -6621,7 +6609,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;licenseeInterest"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateBaaLicenseeValidFrom"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6638,20 +6638,14 @@
         <rdfs:subClassOf rdf:resource="&npdv;Transfer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;baaTransferCompany"/>
                 <owl:someValuesFrom rdf:resource="&npdv;Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;transferredBAA"/>
-                <owl:someValuesFrom rdf:resource="&npdv;BAA"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;transferDirection"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -6662,13 +6656,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateTransferValidFrom"/>
+                <owl:onProperty rdf:resource="&npdv;transferDirection"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;transferredBAA"/>
+                <owl:someValuesFrom rdf:resource="&npdv;BAA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateTransferValidFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6686,6 +6686,12 @@
         <rdfs:subClassOf rdf:resource="&npdv;Area"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;quadrantLocation"/>
                 <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
@@ -6694,12 +6700,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;containsWellbore"/>
                 <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:table>wellbore_shallow_all (ex)</sql:table>
@@ -6752,13 +6752,31 @@
         <rdfs:subClassOf rdf:resource="&npdv;Agent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isFormerLicenceLicensee"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isCurrentLicenceOperator"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isFormerLicenceOperator"/>
+                <owl:onProperty rdf:resource="&npdv;shortName"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isCurrentLicenceLicensee"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6776,30 +6794,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isCurrentLicenceLicensee"/>
+                <owl:onProperty rdf:resource="&npdv;isFormerLicenceOperator"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isFormerLicenceLicensee"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isCurrentLicenceOperator"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;shortName"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <sql:label>Company (table: company)</sql:label>
         <rdfs:isDefinedBy>http://sws.ifi.uio.no/vocab/version/20130919/npd-org</rdfs:isDefinedBy>
+        <sql:label>Company (table: company)</sql:label>
         <sql:columns>cmpGroup,cmpLicenceLicenseeCurrent,cmpLicenceLicenseeFormer,cmpLicenceOperCurrent,cmpLicenceOperFormer,cmpLongName,cmpNpdidCompany,cmpOrgNumberBrReg,cmpShortName,dateSyncNPD (table: company)</sql:columns>
         <sql:comment>Companies on the Norwegian continental shelf, with complete history for each company. (table: company)</sql:comment>
         <sql:table>company</sql:table>
@@ -6811,30 +6811,6 @@
 
     <owl:Class rdf:about="&npdv;CompanyReserve">
         <rdfs:subClassOf rdf:resource="&npdv;Reserve"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;remainingCondensate"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;remainingNGL"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;recoverableGas"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;remainingGas"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;reservesForField"/>
@@ -6849,25 +6825,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;reservesForCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;recoverableOil"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;remainingOilEquivalents"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;recoverableOilEquivalents"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6879,7 +6837,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;recoverableCondensate"/>
+                <owl:onProperty rdf:resource="&npdv;remainingNGL"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateResourceEstimate"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;remainingOilEquivalents"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6891,13 +6861,43 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;reservesForCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;recoverableCondensate"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateResourceEstimate"/>
+                <owl:onProperty rdf:resource="&npdv;remainingGas"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;remainingCondensate"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;recoverableGas"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;recoverableOilEquivalents"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7005,85 +7005,7 @@
         <rdfs:subClassOf rdf:resource="&npdv;Wellbore"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;secondsEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart3"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;belongsToWell"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isDiscoveryWellbore"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;reclassedFromWellbore"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;mainAreaLocation"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;minutesEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreType"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;wellboreLicensingActivity"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;minutesNS"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart2"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;utmZone"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7095,14 +7017,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;developmentWellboreForField"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;utmEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;wellOperator"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7113,7 +7029,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;name"/>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart2"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7131,13 +7047,25 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreKellyBushElevation"/>
+                <owl:onProperty rdf:resource="&npdv;factMapURL"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;drillingOperatorCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isMultilateral"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateUpdatedMax"/>
+                <owl:onProperty rdf:resource="&npdv;wellboreEntryYear"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7149,97 +7077,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isMultilateral"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;codeNS"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellOperator"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;developmentWellboreForLicence"/>
-                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart1"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;drillingOperatorCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreEntryYear"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart4"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellborePlotSymbol"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreTotalDepth"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreCompletionYear"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;reclassedFromWellbore"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;factMapURL"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;decimalDegreesEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;utmNS"/>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart3"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7251,7 +7089,169 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;belongsToWell"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateUpdatedMax"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;degreesNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart4"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;codeNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreKellyBushElevation"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;name"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;utmEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;utmZone"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;decimalDegreesEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;mainAreaLocation"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isDiscoveryWellbore"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;minutesEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart1"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;developmentWellboreForLicence"/>
+                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;reclassedFromWellbore"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreTotalDepth"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;developmentWellboreForField"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;utmNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellborePlotSymbol"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;secondsEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;reclassedFromWellbore"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;minutesNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreCompletionYear"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreType"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7269,18 +7269,6 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;factMapURL"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;discoveryYear"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -7293,14 +7281,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;status"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;includedInField"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;includedInField"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
+                <owl:onProperty rdf:resource="&npdv;factMapURL"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7311,7 +7305,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:onProperty rdf:resource="&npdv;status"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7319,6 +7313,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;discoveryWellbore"/>
                 <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:comment>Discoveries on the Norwegian continental shelf. (table: discovery)</sql:comment>
@@ -7337,12 +7337,6 @@
         <rdfs:subClassOf rdf:resource="&npdv;Area"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;resourcesIncludedInDiscovery"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&geos;asWKT"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -7350,6 +7344,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;resourcesIncludedInDiscovery"/>
                 <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7366,19 +7366,13 @@
         <rdfs:subClassOf rdf:resource="&npdv;Reserve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;reservesForDiscovery"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;recoverableNGL"/>
+                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
+                <owl:onProperty rdf:resource="&npdv;recoverableCondensate"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7396,7 +7390,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;dateResourceEstimate"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7408,8 +7402,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateResourceEstimate"/>
+                <owl:onProperty rdf:resource="&npdv;recoverableNGL"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;reservesForDiscovery"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7418,15 +7424,9 @@
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;recoverableCondensate"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <sql:table>discovery_reserves</sql:table>
         <sql:label>Discovery: Reserves (table: discovery_reserves)</sql:label>
         <sql:columns>dateSyncNPD,dscDateOffResEstDisplay,dscName,dscNpdidDiscovery,dscRecoverableCondensate,dscRecoverableGas,dscRecoverableNGL,dscRecoverableOil,dscReservesDateUpdated,dscReservesRC (table: discovery_reserves)</sql:columns>
+        <sql:table>discovery_reserves</sql:table>
     </owl:Class>
     
 
@@ -7491,157 +7491,13 @@
         <rdfs:subClassOf rdf:resource="&npdv;Wellbore"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;minutesEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;drillPermit"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;utmNS"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreType"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;wellboreLicensingActivity"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;explorationWellboreForLicence"/>
-                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;reclassedFromWellbore"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreCompletionYear"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreEntryYear"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;reclassedFromWellbore"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart2"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellborePlotSymbol"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateUpdatedMax"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;utmEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;minutesNS"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;factMapURL"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellOperator"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellborePurpose"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreForDiscovery"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;decimalDegreesNS"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;codeEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellborePlannedPurpose"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreDrillingDays"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isMultilateral"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7659,103 +7515,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;name"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;belongsToWell"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;explorationWellboreForField"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isDiscoveryWellbore"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreKellyBushElevation"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;mainAreaLocation"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreTotalDepth"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;factPageURL"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;drillingFacility"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;degreesEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart1"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;secondsNS"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;drillingOperatorCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreWaterDepth"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;utmZone"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;codeNS"/>
+                <owl:onProperty rdf:resource="&npdv;utmNS"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7767,14 +7533,248 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;reclassedFromWellbore"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;explorationWellboreForLicence"/>
+                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart2"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;factMapURL"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;drillingOperatorCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isMultilateral"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;wellboreNamePart4"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;codeEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;factPageURL"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;minutesNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;minutesEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;belongsToWell"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;mainAreaLocation"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;utmEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isDiscoveryWellbore"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;name"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;degreesEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;drillingFacility"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreDrillingDays"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreEntryYear"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellborePlannedPurpose"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreCompletionYear"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreWaterDepth"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;codeNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;drillPermit"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;reclassedFromWellbore"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellborePlotSymbol"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;explorationWellboreForField"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;degreesNS"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;decimalDegreesNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreKellyBushElevation"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart1"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreType"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellborePurpose"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;utmZone"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreTotalDepth"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellOperator"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreForDiscovery"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:table>wellbore_exploration_all</sql:table>
@@ -7816,12 +7816,6 @@
         <rdfs:subClassOf rdf:resource="&npdv;Point"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
-                <owl:someValuesFrom rdf:resource="&npdv;FixedFacility"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&geos;asWKT"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -7830,6 +7824,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;belongsToFacility"/>
                 <owl:someValuesFrom rdf:resource="&ptl;TUFacility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
+                <owl:someValuesFrom rdf:resource="&npdv;FixedFacility"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:table>fclPoint</sql:table>
@@ -7853,31 +7853,13 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;discoveryWellbore"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;currentFieldOwner"/>
-                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;name"/>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;factPageURL"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:onProperty rdf:resource="&npdv;name"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7889,8 +7871,26 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;factPageURL"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;currentFieldOperator"/>
                 <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;discoveryWellbore"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7901,8 +7901,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;currentFieldOwner"/>
+                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>http://sws.ifi.uio.no/vocab/version/20130919/npd-prod</rdfs:isDefinedBy>
@@ -7921,8 +7921,8 @@
         <rdfs:subClassOf rdf:resource="&npdv;Area"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;resourcesIncludedInDiscovery"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
+                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7933,14 +7933,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
+                <owl:onProperty rdf:resource="&npdv;resourcesIncludedInDiscovery"/>
                 <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Discovery"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>dscCurrentActivityStatus,dscFactUrl,dscHcType,dscIncludedInFld,dscName,dscNpdidDiscovery,dscNpdidResInclInDiscovery,dscResInclInDiscoveryName,fldCurrentActivityStatus,fldFactUrl,fldHcType,fldName,fldNpdidField,flddscAreaGeometryWKT_ED50,flddscLabel (table: fldArea)</sql:columns>
@@ -7956,8 +7956,8 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;investmentForField"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7968,14 +7968,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;productionYear"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;productionYear"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;investmentForField"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:table>field_investment_yearly</sql:table>
@@ -7991,13 +7991,7 @@
         <rdfs:subClassOf rdf:resource="&npdv;Licensee"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;companyShare"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;dateFieldOwnerFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8009,8 +8003,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateFieldOwnerFrom"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;fieldLicensee"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8021,8 +8021,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;fieldLicensee"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+                <owl:onProperty rdf:resource="&npdv;companyShare"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>cmpLongName,cmpNpdidCompany,dateSyncNPD,fldCompanyShare,fldLicenseeDateUpdated,fldLicenseeFrom,fldLicenseeTo,fldName,fldNpdidField,fldOwnerFrom,fldOwnerKind,fldOwnerName,fldOwnerTo,fldSdfiShare (table: field_licensee_hst)</sql:columns>
@@ -8038,6 +8038,18 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;producedOil"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;producedOilEquivalents"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;producedNGL"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -8050,19 +8062,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedOil"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;productionMonth"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedWater"/>
+                <owl:onProperty rdf:resource="&npdv;productionYear"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8074,13 +8074,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;productionYear"/>
+                <owl:onProperty rdf:resource="&npdv;producedWater"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedOilEquivalents"/>
+                <owl:onProperty rdf:resource="&npdv;productionMonth"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8097,14 +8097,8 @@
         <rdfs:subClassOf rdf:resource="&npdv;Operator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;operatorForField"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;fieldOperator"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8115,8 +8109,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;fieldOperator"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;operatorForField"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:label>Field: Operators (table: field_operator_hst)</sql:label>
@@ -8138,14 +8138,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;ownerForField"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
+                <owl:onProperty rdf:resource="&npdv;dateFieldOwnerFrom"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateFieldOwnerFrom"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;ownerForField"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>dateSyncNPD,fldName,fldNpdidField,fldNpdidOwner,fldOwnerDateUpdated,fldOwnerKind,fldOwnerName,fldOwnershipFromDate,fldOwnershipToDate (table: field_owner_hst)</sql:columns>
@@ -8167,43 +8167,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;remainingNGL"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;remainingOil"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;recoverableOilEquivalents"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;recoverableNGL"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;reservesForField"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;remainingOilEquivalents"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;recoverableCondensate"/>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8215,13 +8179,31 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateResourceEstimate"/>
+                <owl:onProperty rdf:resource="&npdv;remainingOil"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;recoverableOil"/>
+                <owl:onProperty rdf:resource="&npdv;remainingNGL"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;recoverableNGL"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;recoverableCondensate"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;recoverableOilEquivalents"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8233,13 +8215,31 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:onProperty rdf:resource="&npdv;dateResourceEstimate"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;remainingOilEquivalents"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;reservesForField"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Field"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;recoverableOil"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8256,6 +8256,12 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;status"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -8263,12 +8269,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateStatusFrom"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;status"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8291,6 +8291,12 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;producedGas"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;producedOil"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -8303,13 +8309,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedOilEquivalents"/>
+                <owl:onProperty rdf:resource="&npdv;producedNGL"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedGas"/>
+                <owl:onProperty rdf:resource="&npdv;producedCondensate"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8321,13 +8327,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedNGL"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedCondensate"/>
+                <owl:onProperty rdf:resource="&npdv;producedOilEquivalents"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8344,19 +8344,7 @@
         <rdfs:subClassOf rdf:resource="&npdv;Facility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;status"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isSurfaceFacility"/>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8374,19 +8362,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;factMapURL"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;facilityType"/>
+                <owl:onProperty rdf:resource="&npdv;status"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;waterDepth"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8398,7 +8380,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:onProperty rdf:resource="&npdv;isSurfaceFacility"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;waterDepth"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;facilityType"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8406,6 +8400,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;codeEW"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;factMapURL"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <definition>A facility or installation permanently located on the field during the lifetime of the field. Production ships are covered by this definition if they are intended to be permanently placed on the field.  Source: http://www.npd.no/en/About-us/Information-services/Dictionary/</definition>
@@ -8624,7 +8624,25 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Site"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;stratigraphicLevel"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;geochronologicEra"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8636,26 +8654,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;idNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;geochronologicEra"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:label>Wellbore: Lithostratigraphy (extra table: wellbore_formation_top)</sql:label>
@@ -8733,31 +8733,13 @@
         <rdfs:subClassOf rdf:resource="&npdv;Facility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;currentResponsibleCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;facilityType"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;name"/>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8771,6 +8753,24 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;factPageURL"/>
                 <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;name"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;currentResponsibleCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>dateSyncNPD,fclCurrentRespCompanyName,fclDateUpdated,fclFactPageUrl,fclFunctions,fclKind,fclName,fclNationName,fclNpdidCurrentRespCompany,fclNpdidFacility (table: facility_moveable)</sql:columns>
@@ -8851,25 +8851,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedOil"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedGas"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;productionMonth"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;productionYear"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8881,13 +8863,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedNGL"/>
+                <owl:onProperty rdf:resource="&npdv;producedCondensate"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedCondensate"/>
+                <owl:onProperty rdf:resource="&npdv;producedOil"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;producedNGL"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8897,9 +8885,21 @@
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;producedGas"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;productionYear"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <sql:columns>prfMonth,prfPrdCondensateNetMillSm3,prfPrdGasNetBillSm3,prfPrdNGLNetMillSm3,prfPrdOeNetMillSm3,prfPrdOilNetMillSm3,prfPrdProducedWaterInFieldMillSm3,prfYear (table: field_production_totalt_NCS_month)</sql:columns>
-        <sql:label>Field: Production, monthly total (table: field_production_totalt_NCS_month)</sql:label>
         <sql:table>field_production_totalt_NCS_month</sql:table>
+        <sql:label>Field: Production, monthly total (table: field_production_totalt_NCS_month)</sql:label>
     </owl:Class>
     
 
@@ -8910,31 +8910,19 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;producedNGL"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;producedOil"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;productionYear"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedOilEquivalents"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;producedGas"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;producedNGL"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8947,6 +8935,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;producedCondensate"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;productionYear"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;producedOilEquivalents"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9107,7 +9107,19 @@
         <rdfs:subClassOf rdf:resource="&npdv;Facility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;currentStatus"/>
+                <owl:onProperty rdf:resource="&geos;asWKT"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;pipelineToFacility"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;pipelineMedium"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9119,19 +9131,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&geos;asWKT"/>
+                <owl:onProperty rdf:resource="&npdv;currentStatus"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;pipelineFromFacility"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;name"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;pipelineMainGrouping"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9149,19 +9161,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;pipelineToFacility"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;pipelineFromFacility"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;pipelineMedium"/>
+                <owl:onProperty rdf:resource="&npdv;pipelineMainGrouping"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9225,19 +9225,7 @@
         <rdfs:subClassOf rdf:resource="&npdv;Agent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateLicenceValidTo"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateLicenceGranted"/>
+                <owl:onProperty rdf:resource="&npdv;licensingActivityName"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9249,13 +9237,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;name"/>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;originalAreaSize"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;name"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9267,13 +9261,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;originalAreaSize"/>
+                <owl:onProperty rdf:resource="&npdv;dateLicenceGranted"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;licensingActivityName"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateLicenceValidTo"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9293,32 +9293,8 @@
         <rdfs:subClassOf rdf:resource="&npdv;Area"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;lastOperatorCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateLicenceAreaValidFrom"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&geos;asWKT"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
-                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;factPageURL"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9329,8 +9305,32 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateLicenceAreaValidFrom"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;lastOperatorCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
+                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;ZValueFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;factPageURL"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9352,37 +9352,7 @@
         <rdfs:subClassOf rdf:resource="&npdv;Area"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;areaSize"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;ZValueTo"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;blockLocation"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateLicenceAreaValidFrom"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;polygonNo"/>
+                <owl:onProperty rdf:resource="&npdv;ZValueFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9394,7 +9364,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&geos;asWKT"/>
+                <owl:onProperty rdf:resource="&npdv;dateLicenceAreaValidFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9406,19 +9376,49 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;areaSize"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
                 <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;ZValueFrom"/>
+                <owl:onProperty rdf:resource="&geos;asWKT"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;isStratigraphical"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;blockLocation"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;polygonNo"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;ZValueTo"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9444,8 +9444,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;licenceLicensee"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+                <owl:onProperty rdf:resource="&npdv;licenseeForLicence"/>
+                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9456,14 +9456,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;licenseeForLicence"/>
-                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
+                <owl:onProperty rdf:resource="&npdv;dateLicenseeValidFrom"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateLicenseeValidFrom"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;licenceLicensee"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:table>licence_licensee_hst</sql:table>
@@ -9479,7 +9479,7 @@
         <rdfs:subClassOf rdf:resource="&npdv;Operator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateOperatorValidFrom"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9491,7 +9491,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;dateOperatorValidFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9514,7 +9514,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateInitialStatusTo"/>
+                <owl:onProperty rdf:resource="&npdv;status"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9526,7 +9526,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;status"/>
+                <owl:onProperty rdf:resource="&npdv;dateLicenceValidTo"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9538,7 +9538,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateLicenceValidTo"/>
+                <owl:onProperty rdf:resource="&npdv;dateInitialStatusTo"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9556,14 +9556,20 @@
         <rdfs:subClassOf rdf:resource="&npdv;Transfer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;transferDirection"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateTransferValidFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;transferredLicence"/>
-                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
+                <owl:onProperty rdf:resource="&npdv;licenceTransferCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9580,14 +9586,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;transferDirection"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;licenceTransferCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+                <owl:onProperty rdf:resource="&npdv;transferredLicence"/>
+                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>http://sws.ifi.uio.no/vocab/version/20130919/npd-org</rdfs:isDefinedBy>
@@ -9604,19 +9604,25 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Occurrent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;taskType"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;taskForLicence"/>
-                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
+                <owl:onProperty rdf:resource="&npdv;dateTaskExpiry"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;status"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;taskType"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9634,25 +9640,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;taskID"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateTaskExpiry"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;taskForLicence"/>
+                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <sql:columns>cmpLongName,cmpNpdidCompany,dateSyncNPD,prlDateValidTo,prlLicensingActivityName,prlName,prlNpdidLicence,prlTaskDateUpdated,prlTaskExpiryDate,prlTaskID,prlTaskName,prlTaskRefID,prlTaskStatusEn,prlTaskStatusNo,prlTaskTypeEn,prlTaskTypeNo,wlbName (table: licence_task)</sql:columns>
         <sql:label>Production Licence: Work obligations (table: licence_task)</sql:label>
         <sql:table>licence_task</sql:table>
+        <sql:columns>cmpLongName,cmpNpdidCompany,dateSyncNPD,prlDateValidTo,prlLicensingActivityName,prlName,prlNpdidLicence,prlTaskDateUpdated,prlTaskExpiryDate,prlTaskID,prlTaskName,prlTaskRefID,prlTaskStatusEn,prlTaskStatusNo,prlTaskTypeEn,prlTaskTypeNo,wlbName (table: licence_task)</sql:columns>
         <rdfs:isDefinedBy>http://sws.ifi.uio.no/vocab/version/20130919/npd-org</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -9853,8 +9853,14 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;mainAreaLocation"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:onProperty rdf:resource="&npdv;name"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;reportingCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9866,24 +9872,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;currentStatus"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSurveyPlannedCompleted"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;name"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9901,8 +9889,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;reportingCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+                <owl:onProperty rdf:resource="&npdv;dateSurveyPlannedCompleted"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;mainAreaLocation"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:label>Seismic Surveys (table: seis_acquisition)</sql:label>
@@ -9926,14 +9926,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;degreesNS"/>
+                <owl:onProperty rdf:resource="&npdv;polygonPointNo"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;polygonPointNo"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;coordinateForSurvey"/>
+                <owl:someValuesFrom rdf:resource="&npdv;SeismicSurvey"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9950,7 +9950,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;degreesEW"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9962,14 +9962,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;degreesNS"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;coordinateForSurvey"/>
-                <owl:someValuesFrom rdf:resource="&npdv;SeismicSurvey"/>
+                <owl:onProperty rdf:resource="&npdv;degreesEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:label>Seismic Surveys: Coordinates (table: seis_acquisition_coordinates_inc_turnarea)</sql:label>
@@ -10034,67 +10034,7 @@
         <rdfs:subClassOf rdf:resource="&npdv;Wellbore"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;utmEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;idNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreTotalDepth"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;secondsEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;utmNS"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;name"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateUpdatedMax"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart2"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart3"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreWaterDepth"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10106,55 +10046,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;secondsNS"/>
+                <owl:onProperty rdf:resource="&npdv;dateUpdated"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;degreesEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;shallowWellboreForLicence"/>
-                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;minutesEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;minutesNS"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreEntryYear"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;degreesNS"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart4"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreNamePart1"/>
+                <owl:onProperty rdf:resource="&npdv;name"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10166,13 +10064,49 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreCompletionYear"/>
+                <owl:onProperty rdf:resource="&npdv;utmNS"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;decimalDegreesEW"/>
+                <owl:onProperty rdf:resource="&npdv;wellboreWaterDepth"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreTotalDepth"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;secondsNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;degreesNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;shallowWellboreForLicence"/>
+                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateUpdatedMax"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;decimalDegreesNS"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10184,21 +10118,87 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;secondsEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart1"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;decimalDegreesEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;mainAreaLocation"/>
                 <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;decimalDegreesNS"/>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart2"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <sql:label>Wellbore: Shallow (table: wellbore_shallow_all)</sql:label>
-        <definition>Hole drilled in order to acquire information on the rock characteristics and/or carry out geotechnical examinations for the location of installationsand which are not drilled to discover or delimit a petroleum deposit or to produce or inject petroleum, water or other medium.  Source: http://www.npd.no/en/About-us/Information-services/Dictionary/ </definition>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreCompletionYear"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart4"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;minutesNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;degreesEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;minutesEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;utmEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreNamePart3"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;wellboreEntryYear"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <sql:columns>dateSyncNPD,wlbCompletionDate,wlbCompletionYear,wlbDateUpdated,wlbDateUpdatedMax,wlbDrillPermit,wlbDrillingFacility,wlbDrillingOperator,wlbEntryDate,wlbEntryYear,wlbEwCode,wlbEwDeg,wlbEwDesDeg,wlbEwMin,wlbEwSec,wlbEwUtm,wlbGeodeticDatum,wlbMainArea,wlbNamePart1,wlbNamePart2,wlbNamePart3,wlbNamePart4,wlbNamePart5,wlbNamePart6,wlbNpdidWellbore,wlbNsCode,wlbNsDecDeg,wlbNsDeg,wlbNsMin,wlbNsSec,wlbNsUtm,wlbProductionLicence,wlbSeismicLocation,wlbTotalDepth,wlbUtmZone,wlbWaterDepth,wlbWell,wlbWellboreName (table: wellbore_shallow_all)</sql:columns>
         <sql:table>wellbore_shallow_all</sql:table>
         <rdfs:isDefinedBy>http://sws.ifi.uio.no/vocab/version/20130919/npd-well</rdfs:isDefinedBy>
+        <sql:label>Wellbore: Shallow (table: wellbore_shallow_all)</sql:label>
+        <definition>Hole drilled in order to acquire information on the rock characteristics and/or carry out geotechnical examinations for the location of installationsand which are not drilled to discover or delimit a petroleum deposit or to produce or inject petroleum, water or other medium.  Source: http://www.npd.no/en/About-us/Information-services/Dictionary/ </definition>
     </owl:Class>
     
 
@@ -10278,6 +10278,12 @@
         <rdfs:subClassOf rdf:resource="&npdv;Area"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isMarketAvailable"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
                 <owl:someValuesFrom rdf:resource="&npdv;SeismicSurvey"/>
             </owl:Restriction>
@@ -10291,12 +10297,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&geos;asWKT"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isMarketAvailable"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10319,30 +10319,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;sensorNumbers"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
-                <owl:someValuesFrom rdf:resource="&npdv;SeismicSurvey"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;sensorLength"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&geos;asWKT"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;lengthPlannedBoatKm"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -10355,7 +10331,31 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;sensorNumbers"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
+                <owl:someValuesFrom rdf:resource="&npdv;SeismicSurvey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&geos;asWKT"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;sourceType"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;sensorLength"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10388,18 +10388,6 @@
         <rdfs:subClassOf rdf:resource="&npdv;Operator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;TUFOperatorForLicence"/>
-                <owl:someValuesFrom rdf:resource="&ptl;TUFacility"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;TUFOperatorCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -10408,6 +10396,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateTUFOperatorValidFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ptl;TUFOperatorForLicence"/>
+                <owl:someValuesFrom rdf:resource="&ptl;TUFacility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ptl;TUFOperatorCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:label>Transportation and Utilization Facilities: Operators (table: tuf_operator_hst)</sql:label>
@@ -10423,12 +10423,6 @@
         <rdfs:subClassOf rdf:resource="&npdv;Owner"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;TUFOwnerForLicence"/>
-                <owl:someValuesFrom rdf:resource="&ptl;TUFacility"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ptl;TUFOwnerCompany"/>
                 <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
@@ -10437,6 +10431,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;TUFOwnerShare"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ptl;TUFOwnerForLicence"/>
+                <owl:someValuesFrom rdf:resource="&ptl;TUFacility"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10464,13 +10464,13 @@
         <rdfs:subClassOf rdf:resource="&npdv;Facility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10660,13 +10660,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;idNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;idNPD"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10685,13 +10685,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;LOTForWellbore"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;LOTMudDensity"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10703,13 +10697,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;LOTMudDensity"/>
+                <owl:onProperty rdf:resource="&npdv;wellboreHoleDepth"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreHoleDepth"/>
+                <owl:onProperty rdf:resource="&npdv;LOTForWellbore"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10726,37 +10726,19 @@
         <rdfs:subClassOf rdf:resource="&npdv;Point"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;utmNS"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;minutesEW"/>
+                <owl:onProperty rdf:resource="&npdv;secondsNS"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;coordinateForWellbore"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;mainAreaLocation"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;decimalDegreesEW"/>
+                <owl:onProperty rdf:resource="&npdv;utmZone"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10774,13 +10756,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;secondsEW"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;secondsNS"/>
+                <owl:onProperty rdf:resource="&npdv;minutesEW"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10792,7 +10768,25 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;utmZone"/>
+                <owl:onProperty rdf:resource="&npdv;degreesNS"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;decimalDegreesEW"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;secondsEW"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10804,8 +10798,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;degreesNS"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;mainAreaLocation"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;coordinateForWellbore"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:table>wellbore_coordinates</sql:table>
@@ -10827,7 +10827,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;coreNo"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10839,7 +10839,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;coreNo"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10856,14 +10856,8 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;corePhotoURL"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;coreNo"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;corePhotoForWellbore"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10874,8 +10868,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;corePhotoForWellbore"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
+                <owl:onProperty rdf:resource="&npdv;corePhotoURL"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;coreNo"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>wlbCoreNumber,wlbCorePhotoDateUpdated,wlbCorePhotoImgUrl,wlbCorePhotoTitle,wlbName,wlbNpdidWellbore (table: wellbore_core_photo)</sql:columns>
@@ -10931,19 +10931,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;documentName"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;documentFormat"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;documentType"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;documentName"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10955,7 +10955,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;documentType"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10972,7 +10972,25 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;DSTOilProducedRate"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;DSTFinalFlowPressure"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;DSTChokeSize"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;DSTDepthTo"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10990,49 +11008,25 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;DSTDepthFrom"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;DSTOilDensity"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;DSTGasDensity"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;DSTDepthTo"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;DSTBottomHolePressure"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;DSTChokeSize"/>
+                <owl:onProperty rdf:resource="&npdv;DSTOilProducedRate"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;DSTFinalFlowPressure"/>
+                <owl:onProperty rdf:resource="&npdv;DSTDepthFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;DSTTestNo"/>
+                <owl:onProperty rdf:resource="&npdv;DSTGasOilRelation"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11044,13 +11038,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;DSTGasOilRelation"/>
+                <owl:onProperty rdf:resource="&npdv;DSTGasDensity"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;DSTTestNo"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;DSTOilDensity"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11073,7 +11073,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;mudTestForWellbore"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;mudYieldPoint"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11085,19 +11091,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;mudViscosity"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;mudTestForWellbore"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;mudYieldPoint"/>
+                <owl:onProperty rdf:resource="&npdv;mudViscosity"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11114,13 +11114,13 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;oilSampleTopDepth"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;oilSampleTopDepth"/>
+                <owl:onProperty rdf:resource="&npdv;oilSampleBottomDepth"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11132,7 +11132,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;oilSampleBottomDepth"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11149,14 +11149,14 @@
         <rdfs:subClassOf rdf:resource="&npdv;Point"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&geos;asWKT"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;isGeometryOfFeature"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
+                <owl:onProperty rdf:resource="&geos;asWKT"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:label>Wellbores - exploration, development and shallow wellbores. (table: wlbPoint)</sql:label>
@@ -11172,26 +11172,26 @@
         <rdfs:subClassOf rdf:resource="&npdv;WellboreCoreSet"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;coreForWellbore"/>
                 <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;inLithostratigraphicUnit"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:onProperty rdf:resource="&npdv;coresTotalLength"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;coresTotalLength"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;inLithostratigraphicUnit"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>dateSyncNPD,lsuCoreLenght,lsuLevel,lsuName,lsuNpdidLithoStrat,wlbCompletionDate,wlbName,wlbNpdidWellbore (table: strat_litho_wellbore_core)</sql:columns>
@@ -11208,7 +11208,13 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;wellboreStratumTopDepth"/>
+                <owl:onProperty rdf:resource="&npdv;stratumForWellbore"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11220,7 +11226,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&npdv;wellboreStratumTopDepth"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11228,12 +11234,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;inLithostratigraphicUnit"/>
                 <owl:someValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;stratumForWellbore"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Wellbore"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>dateSyncNPD,lsuBottomDepth,lsuLevel,lsuName,lsuNameParent,lsuNpdidLithoStrat,lsuNpdidLithoStratParent,lsuTopDepth,lsuWellboreUpdatedDate,wlbName,wlbNpdidWellbore (table: wellbore_formation_top)</sql:columns>
@@ -11321,25 +11321,7 @@
         <rdfs:subClassOf rdf:resource="&npdv;Agent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;dateAwarded"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ptl;dateLicenceValidTo"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;dateLicenceValidFrom"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11351,13 +11333,31 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&ptl;dateUpdatedMax"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ptl;licenceOperatorCompany"/>
                 <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;dateUpdatedMax"/>
+                <owl:onProperty rdf:resource="&ptl;dateLicenceValidFrom"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ptl;dateAwarded"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11378,13 +11378,13 @@
         <rdfs:subClassOf rdf:resource="&npdv;Licensee"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;licenseeInterest"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&ptl;licenceLicenceeCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&ptl;licenseeInterest"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11396,8 +11396,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;licenceLicenceeCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>cmpLongName,cmpNpdidCompany,dateSyncNPD,prlNpdidLicence,ptlLicenseeDateUpdated,ptlLicenseeInterest,ptlName (table: licence_petreg_licence_licencee)</sql:columns>
@@ -11413,12 +11413,6 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;messageForLicence"/>
-                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
@@ -11431,14 +11425,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&ptl;dateMessageRegistered"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ptl;messageNo"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;dateMessageRegistered"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+                <owl:onProperty rdf:resource="&npdv;messageForLicence"/>
+                <owl:someValuesFrom rdf:resource="&npdv;ProductionLicence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>dateSyncNPD,prlName,prlNpdidLicence,ptlMessage,ptlMessageDateUpdated,ptlMessageDocumentNo,ptlMessageKindDesc,ptlMessageRegisteredDate (table: licence_petreg_message)</sql:columns>
@@ -11455,14 +11455,8 @@
         <rdfs:subClassOf rdf:resource="&npdv;Licensee"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;licenseeInterest"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;TUFLicenceeForTUF"/>
-                <owl:someValuesFrom rdf:resource="&ptl;TUFacility"/>
+                <owl:onProperty rdf:resource="&ptl;TUFLicenceeCompany"/>
+                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11473,8 +11467,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;TUFLicenceeCompany"/>
-                <owl:someValuesFrom rdf:resource="&npdv;Company"/>
+                <owl:onProperty rdf:resource="&ptl;licenseeInterest"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ptl;TUFLicenceeForTUF"/>
+                <owl:someValuesFrom rdf:resource="&ptl;TUFacility"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <sql:columns>cmpLongName,cmpNpdidCompany,dateSyncNPD,ptlLicenseeDateUpdated,ptlLicenseeInterest,ptlName,tufName,tufNpdidTuf (table: tuf_petreg_licence_licencee)</sql:columns>
@@ -11490,13 +11490,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;messageForTUF"/>
-                <owl:someValuesFrom rdf:resource="&ptl;TUFacility"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;dateMessageRegistered"/>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11508,7 +11502,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:onProperty rdf:resource="&ptl;messageForTUF"/>
+                <owl:someValuesFrom rdf:resource="&ptl;TUFacility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ptl;dateMessageRegistered"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11538,13 +11538,25 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&ptl;dateLicenceValidFrom"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;name"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;dateLicenceValidFrom"/>
+                <owl:onProperty rdf:resource="&ptl;dateUpdatedMax"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11557,18 +11569,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&npdv;idNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&npdv;dateSyncNPD"/>
-                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ptl;dateUpdatedMax"/>
                 <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -12076,7 +12076,7 @@
 
     <owl:Class rdf:about="&geos;Feature">
         <rdfs:label xml:lang="en">Feature</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&geos;SpatialObject"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
         <owl:disjointWith rdf:resource="&geos;Geometry"/>
         <dc:creator>OGC GeoSPARQL 1.0 Standard Working Group</dc:creator>
         <dc:description xml:lang="en">
