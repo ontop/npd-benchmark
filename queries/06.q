@@ -31,5 +31,3 @@ WHERE {
          ?length > 50 
   )
 } ORDER BY ?wellbore
-
-# This query has 2 tree witnesses.
