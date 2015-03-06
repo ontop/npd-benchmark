@@ -33,5 +33,3 @@ WHERE {
          # && regex(?company, "^STATOIL", "i")
   )
 } ORDER BY ?wellbore
-
-# This query has 2 tree witnesses.
