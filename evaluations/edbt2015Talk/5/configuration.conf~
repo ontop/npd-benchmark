@@ -1,0 +1,7 @@
+db-url 10.7.20.39/npd_5
+db-username postgres
+db-pwd postgres
+mappings-file src/main/resources/npd-v2-ql_a_postgres.obda
+owl-file src/main/resources/npd-v2-ql_a.owl
+queries-dir src/main/resources
+log-path src/main/resources
