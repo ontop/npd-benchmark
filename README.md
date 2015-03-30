@@ -26,8 +26,7 @@ https://github.com/ontop/npd-benchmark/wiki
 Credits & Disclaimer
 --------
 
-This benchmark is based on the [Norwegian Petroleum Directorate](http://sws.ifi.uio.
-no/project/npd-v2/)
+This benchmark is based on the [Norwegian Petroleum Directorate](http://sws.ifi.uio.no/project/npd-v2/)
 (March 2014). 
 NPD does not provide any warranty nor takes any responsibility on this work nor on a
 ny of the provided files.
