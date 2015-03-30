@@ -1,0 +1,1 @@
+wellbore_core wlbTotalCoreLength

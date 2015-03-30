@@ -27,7 +27,7 @@ WHERE {
     [ rdf:type npdv:Field ;
       npdv:name ?field ;
       npdv:currentFieldOperator
-      [ npdv:shortName "STATOIL PETROLEUM AS"^^xsd:string ] ] ]
+      [ npdv:shortName "00000000000000000001"^^xsd:string ] ] ]
   FILTER(?m >= 1 &&
          ?m <= 6)
 } GROUP BY ?field ORDER BY ?field

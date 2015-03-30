@@ -26,7 +26,7 @@ WHERE {
           npdv:drillingOperatorCompany  [ npdv:name ?company ] 
         ] .
   { ?wc npdv:coresTotalLength ?length ;
-        npdv:coreIntervalUOM "[m   ]"^^xsd:string .
+        npdv:coreIntervalUOM "000002"^^xsd:string .
   } 
   FILTER(?year >= $ &&
          ?length > $ 
