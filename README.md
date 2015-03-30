@@ -1,9 +1,9 @@
-npd-benchmark (v1.1)
+npd-benchmark (v1.7)
 ====================
 
-Components of the NPD Benchmark (v1.1)
+Components of the NPD Benchmark (v1.7)
 
-* **NPD Dataset** (mysql and postgresql dump files)
+* **NPD Dataset** (mysql dump of the original dataset, postgres and mysql schemas)
 
 * **Vig**: Generates custom datasets starting from the NPD Dataset (https://github.com/ontop/vig)
 
@@ -11,11 +11,11 @@ Components of the NPD Benchmark (v1.1)
 
 * **R2RML and OBDA mappings** for PostgreSQL and MySQL
 
-* **21 Real World Queries**:
+* **30 between Real World and Technical Queries**:
 
-  * **7 Classically Optimizable Queries**  (that is, queries that can be translated into efficient SQL by using only information in mappings, ontology, and database dependencies)
+  * **9 Classically Optimizable Queries**  (that is, queries that can be translated into efficient SQL by using only information in mappings, ontology, and database dependencies)
 
-  * **14 Non-classically Optimizable Queries** (that is, queries that require information from the data [e.g., dependencies not specified in the database schema] in order the be translated into efficient SQL queries)
+  * **21 Non-classically Optimizable Queries** (that is, queries that require information from the data [e.g., dependencies not specified in the database schema] in order the be translated into efficient SQL queries)
 
 * **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWL API interface
 
@@ -34,7 +34,7 @@ ny of the provided files.
 
 The mappings, ontology, and query files have been adapted for OBDA benchmarking purposes.
 
-Publications [for v1.0]
+Publications 
 ---------
 
 * A Scalable Benchmark for OBDA Systems: Preliminary Report Calvanese, D.; Lanti, D.
