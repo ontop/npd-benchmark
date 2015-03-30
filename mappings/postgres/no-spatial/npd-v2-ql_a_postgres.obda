@@ -5897,8 +5897,8 @@ source		SELECT "prlArea_id" , "prlNpdidLicence" , "prlAreaPolyDateValidFrom" , "
 
 
 mappingId	Mapping:NPD:Manual9:3
-target		npd:licence/{prlNpdidLicence} npdv:currentAreaSize {prlCurrentArea}^^xsd:decimal . 
-source		SELECT "prlNpdidLicence" , "prlCurrentArea" FROM  "licence" 
+target		npd:licence/{prlNpdidLicence} npdv:currentAreaSize {prlOriginalArea}^^xsd:decimal . 
+source		SELECT "prlNpdidLicence" , "prlOriginalArea" FROM  "licence" 
 
 
 mappingId	Mapping:NPD:Manual10:1
