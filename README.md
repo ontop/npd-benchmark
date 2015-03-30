@@ -47,6 +47,11 @@ asoner Evaluation (ORE 2014), 2014. (http://www.ghxiao.org/publications/2014-ore
  Calvanese, D. In Proc. of the 10th International Workshop on Scalable Semantic Web 
 Knowledge Base Systems (SSWS 2014), 2014. (http://www.ghxiao.org/publications/2014-ssws-npd.pdf) 
 
+Presentations and Results
+----------
+
+[EDBT 2015](https://github.com/ontop/npd-benchmark/tree/master/evaluations/edbt2015Talk)
+
 Contacts
 ----------
 
