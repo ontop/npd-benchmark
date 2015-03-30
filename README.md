@@ -37,6 +37,8 @@ The mappings, ontology, and query files have been adapted for OBDA benchmarking 
 Publications 
 ---------
 
+* Davide Lanti, Martin Rezk, Guohui Xiao, and Diego Calvanese. The NPD benchmark: Reality check for OBDA systems. In Proc. of the 18th Int. Conf. on Extending Database Technology (EDBT 2015). ACM Press, 2015. (http://openproceedings.org/2015/conf/edbt/paper-350.pdf)
+
 * A Scalable Benchmark for OBDA Systems: Preliminary Report Calvanese, D.; Lanti, D.
 ; Rezk, M.; Slusnys, M.; and Xiao, G. In In Proc. of the 3rd Int. Workshop on OWL Re
 asoner Evaluation (ORE 2014), 2014. (http://www.ghxiao.org/publications/2014-ore-npd.pdf)
