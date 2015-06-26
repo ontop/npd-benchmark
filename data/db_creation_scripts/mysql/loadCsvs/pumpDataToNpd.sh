@@ -8,20 +8,21 @@ pump () {
     TABLE_NAME=${TABLE_NAME_EXT%.csv}                                                              
     echo [script] Pumping table '"'$TABLE_NAME'"'                              
 
-    ./loadCsvToTable.sh $DATA_FILE $DB_NAME $TABLE_NAME $USER mysql 
+    ./loadCsvToTable.sh $DATA_FILE $DB_NAME $TABLE_NAME $USER $PWD mysql 
 }
 
-: ${1?"Usage: $0 DB_NAME DB USER CSVS_DIR"}
-: ${2?"Usage: $0 DB_NAME DB_USER CSVS_DIR"}
-: ${3?"Usage: $0 DB_NAME DB_USER CSVS_DIR"}
+: ${4?"Usage: $0 DB_NAME DB_USER DB_PWD CSVS_DIR"}
+
 DB_NAME=$1
 USER=$2
-CSVS_DIR=$3
+PWD=$3
+CSVS_DIR=$4
 
-FILES=${3}/*                 
+
+FILES=${CSVS_DIR}/*                 
 
 for F in $FILES 
 do
     #echo $F
-    pump $F $DB_NAME $USER 
+    pump $F $DB_NAME $USER $PWD
 done
