@@ -2463,7 +2463,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalBottom FROM wellbore_core WHERE wlbCoreIntervalUom='[m   ]'"
+                           rr:sqlQuery  "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalBottom FROM wellbore_core WHERE wlbCoreIntervalUom='000001'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -6155,7 +6155,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalBottom * 0.3048 AS wlbCoreIntervalBottomFT FROM wellbore_core WHERE wlbCoreIntervalUom='[ft  ]'"
+                           rr:sqlQuery  "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalBottom * 0.3048 AS wlbCoreIntervalBottomFT FROM wellbore_core WHERE wlbCoreIntervalUom='000002'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -14584,7 +14584,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalTop FROM wellbore_core WHERE wlbCoreIntervalUom='[m   ]'"
+                           rr:sqlQuery  "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalTop FROM wellbore_core WHERE wlbCoreIntervalUom='000001'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -18320,7 +18320,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalTop * 0.3048 AS wlbCoreIntervalTopFT FROM wellbore_core WHERE wlbCoreIntervalUom='[ft  ]'"
+                           rr:sqlQuery  "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalTop * 0.3048 AS wlbCoreIntervalTopFT FROM wellbore_core WHERE wlbCoreIntervalUom='000002'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;

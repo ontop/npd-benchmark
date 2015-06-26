@@ -34592,7 +34592,7 @@ _:node19hlfrabux6537 rr:predicateObjectMap _:node19hlfrabux6540 .
 
 _:node19hlfrabux6540 a rr:PredicateObjectMap .
 
-_:node19hlfrabux6535 rr:sqlQuery "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalBottom FROM wellbore_core WHERE wlbCoreIntervalUom='[m   ]'" .
+_:node19hlfrabux6535 rr:sqlQuery "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalBottom FROM wellbore_core WHERE wlbCoreIntervalUom='000001'" .
 
 _:node19hlfrabux6537 rr:logicalTable _:node19hlfrabux6535 .
 
@@ -34640,7 +34640,7 @@ _:node19hlfrabux6545 rr:termType rr:Literal ;
 _:node19hlfrabux6542 a rr:TermMap ;
 	rr:termType rr:IRI .
 
-_:node19hlfrabux6541 rr:sqlQuery "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalBottom * 0.3048 AS wlbCoreIntervalBottomFT FROM wellbore_core WHERE wlbCoreIntervalUom='[ft  ]'" .
+_:node19hlfrabux6541 rr:sqlQuery "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalBottom * 0.3048 AS wlbCoreIntervalBottomFT FROM wellbore_core WHERE wlbCoreIntervalUom='000002'" .
 
 _:node19hlfrabux6543 rr:logicalTable _:node19hlfrabux6541 .
 
@@ -34675,7 +34675,7 @@ _:node19hlfrabux6548 a rr:TermMap .
 _:node19hlfrabux6552 rr:predicate <http://sws.ifi.uio.no/vocab/npd-v2#coreIntervalTop> .
 
 _:node19hlfrabux6547 a rr:R2RMLView ;
-	rr:sqlQuery "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalTop FROM wellbore_core WHERE wlbCoreIntervalUom='[m   ]'" .
+	rr:sqlQuery "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalTop FROM wellbore_core WHERE wlbCoreIntervalUom='000001'" .
 
 _:node19hlfrabux6549 rr:subjectMap _:node19hlfrabux6548 .
 
@@ -34708,7 +34708,7 @@ _:node19hlfrabux6555 rr:subjectMap _:node19hlfrabux6554 .
 
 _:node19hlfrabux6554 rr:template "http://sws.ifi.uio.no/data/npd-v2/wellbore/{wlbNpdidWellbore}/core/{wlbCoreNumber}" .
 
-_:node19hlfrabux6553 rr:sqlQuery "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalTop * 0.3048 AS wlbCoreIntervalTopFT FROM wellbore_core WHERE wlbCoreIntervalUom='[ft  ]'" .
+_:node19hlfrabux6553 rr:sqlQuery "SELECT wellbore_core_id,wlbNpdidWellbore,wlbCoreNumber,wlbCoreIntervalTop * 0.3048 AS wlbCoreIntervalTopFT FROM wellbore_core WHERE wlbCoreIntervalUom='000002'" .
 
 _:node19hlfrabux6558 a rr:PredicateObjectMap ;
 	rr:objectMap _:node19hlfrabux6557 .
