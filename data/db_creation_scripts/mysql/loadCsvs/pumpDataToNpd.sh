@@ -8,7 +8,7 @@ pump () {
     TABLE_NAME=${TABLE_NAME_EXT%.csv}                                                              
     echo [script] Pumping table '"'$TABLE_NAME'"'                              
 
-    ./loadCsvToTable.sh $DATA_FILE $DB_NAME $TABLE_NAME $USER postgres 
+    ./loadCsvToTable.sh $DATA_FILE $DB_NAME $TABLE_NAME $USER mysql 
 }
 
 : ${1?"Usage: $0 DB_NAME DB USER CSVS_DIR"}
