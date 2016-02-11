@@ -29,17 +29,17 @@ cd loadCsvs
 **4) Add the indexes**
 
 ~~~
-./executeSql.sh npd_benchmark/.../postgresindexes.sql npd_vig_scale1 user password postgres
+./executeSql.sh ${NPD}/data/db_creation_scripts/postgres/postgresindexes.sql npd_vig_scale1 user password postgres
 ~~~
 
 **5) Add the foreign keys**
 
 ~~~
-./executeSql.sh npd_benchmark/.../postgresfkeys.sql npd_vig_scale1 postgres postgres
+./executeSql.sh ${NPD}/data/db_creation_scripts/postgres/postgresfkeys.sql npd_vig_scale1 postgres postgres postgres
 ~~~
 
 **6) Create statistics**
 
 ~~~
-./executeSql.sh npd_benchmark/.../vacuum.sql npd_vig_scale1 postgres postgres
+./executeSql.sh ${NPD}/data/db_creation_scripts/postgres/vacuum.sql npd_vig_scale1 postgres postgres
 ~~~
