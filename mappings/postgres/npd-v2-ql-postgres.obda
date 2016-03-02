@@ -5925,11 +5925,9 @@ mappingId	Mapping:NPD:Manual12
 target		npd:wellbore/{wlbNpdidWellbore}/cores npdv:member npd:wellbore/{wlbNpdidWellbore}/core/{wlbCoreNumber} . 
 source		SELECT "wlbNpdidWellbore" , "wlbCoreNumber" FROM  "wellbore_core" 
 
-
 mappingId	Mapping:NPD:Manual13
-target		npd:licence/task/{prlTaskID} npdv:dependsOnTask npd:licence/task/{prlTaskRefID} . 
-source		SELECT "prlTaskID" ,  "prlTaskRefID" FROM "licence_task" WHERE "prlTaskRefID" IS NOT NULL 
-
+target		npd:licence/{A.prlNpdidLicence}/task/{A.prlTaskID} npdv:dependsOnTask npd:licence/{B.prlNpdidLicence}/task/{B.prlTaskRefID} . 
+source 		SELECT A."prlNpdidLicence", A."prlTaskID", B."prlNpdidLicence", B."prlTaskRefID" FROM licence_task AS A, licence_task AS B WHERE A."prlTaskID"=B."prlTaskRefID"
 
 mappingId	Mapping:NPD:ManualDavide2
 target		npd:wellbore/{wlbNpdidWellbore}/core/{wlbCoreNumber} npdv:coresTotalLength {wlbTotalCoreLength}^^xsd:decimal . 
