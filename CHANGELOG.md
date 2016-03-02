@@ -12,7 +12,7 @@ NPD Benchmark v1.7
 - 8 Queries with Tree-witnesses
 - New data generator with initial support to ontology-based statistics
 - Fixed inconsistencies in database dependencies (foreign keys) and ontology
-- SQL Scripts for adding-removing indexes/keys
+- SQL Scripts for adding-removing indexes/keys (PostgreSQL and MySQL)
 - Generated data adaptable to any RDBMS (CSV files)
 
 ==================
