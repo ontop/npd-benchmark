@@ -20,9 +20,9 @@ diskosv:		http://sws.ifi.uio.no/vocab/diskos#
 
 [SourceDeclaration]
 sourceUri	x
-connectionUrl	jdbc:postgresql://10.7.20.39/npd_10
-username	postgres
-password	postgres
+connectionUrl	jdbc:postgresql://db_addr/db_name
+username	user
+password	pwd
 driverClass	org.postgresql.Driver
 
 [MappingDeclaration] @collection [[
