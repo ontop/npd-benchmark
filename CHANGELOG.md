@@ -1,3 +1,9 @@
+===================
+NPD Benchmark v1.8.0
+
+- Support for Fixed-domain columns. That is, literals used in the mappings are re-used if already present in the original data instance.
+
+
 ====================
 NPD Benchmark v1.7.1
 ====================
