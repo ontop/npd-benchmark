@@ -21,8 +21,8 @@ diskosv:		http://sws.ifi.uio.no/vocab/diskos#
 [SourceDeclaration]
 sourceUri	x
 connectionUrl	jdbc:mysql://localhost/npd_clean_no_spatial
-username	test
-password	ontop2014
+username	user
+password	pwd
 driverClass	com.mysql.jdbc.Driver
 
 [MappingDeclaration] @collection [[
@@ -2637,10 +2637,6 @@ source		SELECT prfYear,prfMonth,prfPrdOeNetMillSm3 FROM field_production_totalt_
 mappingId	Mapping:00654:Literal:field_production_totalt_NCS_year:prfPrdProducedWaterInFieldMillSm3
 target		npd:ncs/production/{prfYear} npdv:producedWater {prfPrdProducedWaterInFieldMillSm3}^^xsd:decimal . 
 source		SELECT prfYear,prfPrdProducedWaterInFieldMillSm3 FROM field_production_totalt_NCS_year
-
-mappingId	Mapping:00655:Literal:apaAreaNet:qdrName
-target		npd:quadrant/{qdrName}/block/{blkName}/award/{prvName}/area/{apaAreaNet_id} npdv:quadrantLocation npd:quadrant/{qdrName} . 
-source		SELECT apaAreaNet_id,qdrName,blkName,prvName,blkId FROM apaAreaNet
 
 mappingId	Mapping:00656:Literal:pipLine:pipLineGeometryWKT
 target		npd:pipeline/{pipNpdidPipe} geos:asWKT {pipLineGeometryWKT} . 
