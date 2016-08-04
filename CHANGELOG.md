@@ -1,5 +1,6 @@
 ==================
 NPD Benchmark v1.9.0
+==================
 
 - Updated ontology
 - Various fixes in the mappings files
@@ -9,6 +10,7 @@ NPD Benchmark v1.9.0
 
 ===================
 NPD Benchmark v1.8.0
+===================
 
 - Support for Fixed-domain columns. That is, literals used in the mappings are re-used if already present in the original data instance.
 
