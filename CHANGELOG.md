@@ -3,7 +3,9 @@ NPD Benchmark v1.9.0
 
 - Updated ontology
 - Various fixes in the mappings files
-- VIG version 1.8.0
+- Updated queries
+- VIG version 1.8.0 (https://github.com/ontop/vig)
+- OBDA-Mixer version 1.1.0 (https://github.com/ontop/obda-mixer)
 
 ===================
 NPD Benchmark v1.8.0

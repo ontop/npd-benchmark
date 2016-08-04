@@ -1,7 +1,7 @@
-npd-benchmark (v1.9.0)
+npd-benchmark (v1.10.0)
 ====================
 
-Components of the NPD Benchmark (v1.9.0)
+Components of the NPD Benchmark (v1.10.0)
 
 * **NPD Dataset** (mysql dump of the original dataset, postgres and mysql schemas)
 
@@ -45,6 +45,9 @@ asoner Evaluation (ORE 2014), 2014. (http://www.ghxiao.org/publications/2014-ore
 * **The NPD Benchmark for OBDA Systems**. Lanti, D.; Rezk, M.; Slusnys, M.; Xiao, G.; and
  Calvanese, D. In Proc. of the 10th International Workshop on Scalable Semantic Web 
 Knowledge Base Systems (SSWS 2014), 2014. (http://www.ghxiao.org/publications/2014-ssws-npd.pdf) 
+
+* **Data Scaling in OBDA Benchmarks: The VIG Approach**. Davide Lanti, Guohui Xiao, Diego Calvanese. 2016 
+   Available at https://arxiv.org/abs/1607.06343.
 
 Presentations and Results
 ----------
