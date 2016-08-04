@@ -26,12 +26,9 @@ WHERE {
           npdv:drillingOperatorCompany  [ npdv:name ?company ] 
         ] .
   { ?wc npdv:coresTotalLength ?length ;
-        npdv:coreIntervalUOM "000002"^^xsd:string .
+        npdv:coreIntervalUOM "[m   ]"^^xsd:string .
   } 
-  FILTER(?year >= $ &&
-         ?length > $ 
-         # && regex(?company, "^STATOIL", "i")
+  FILTER(?year >= ${1:wellbore_development_all.wlbCompletionYear} &&
+         ?length > ${1:wellbore_core.wlbTotalCoreLength} 
   )
 } ORDER BY ?wellbore
-
-# This query has 2 tree witnesses.

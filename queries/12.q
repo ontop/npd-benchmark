@@ -33,10 +33,9 @@ WHERE {
   UNION
   { ?wc npdv:coresTotalLength ?l ;
         npdv:coreIntervalUOM "[ft   ]"^^xsd:string .
-    BIND((?l) AS ?length) # Originally (?l * 0.3048) 
+    BIND((?l * 0.3048) AS ?length) 
   }
   FILTER(?year >= "2008"^^xsd:integer &&
          ?length > 50 
-         # && regex(?company, "^STATOIL", "i")
   )
 } ORDER BY ?wellbore

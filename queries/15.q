@@ -24,6 +24,6 @@ PREFIX : <http://sws.ifi.uio.no/vocab/npd-v2#>
 			        	npdv:dateLicenseeValidFrom ?date ;   
 			       	npdv:licenseeInterest ?interest ;   
 			       	npdv:licenseeForLicence ?licenceURI . 
-				FILTER(?date > "1979-12-31T00:00:00"^^xsd:dateTime)  
+				FILTER(?date > "1979-12-31"^^xsd:date)  
 			  }   
 			 GROUP BY ?licenceURI  

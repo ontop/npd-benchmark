@@ -21,7 +21,6 @@ SELECT *
 WHERE {
 
    [ ] a npdv:FieldMonthlyProduction ;
-       #npdv:productionForField [ npdv:name ?field ] ;
        npdv:productionYear         ?year;
        npdv:productionMonth        ?month;
        npdv:producedCondensate     ?con ;

@@ -14,11 +14,12 @@ PREFIX sql: <http://sws.ifi.uio.no/vocab/sql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX diskosv: <http://sws.ifi.uio.no/vocab/diskos#>
+
 SELECT DISTINCT *
-WHERE {
-?x a npdv:SeismicSurvey .
-OPTIONAL {?x npdv:lengthCdpTotalKm ?cdpKM .}
-OPTIONAL {?x npdv:lengthBoatTotalKm ?boatKM .}
-FILTER (?cdpKM > 3660)
-}
+       WHERE {
+       	     ?x a npdv:SeismicSurvey .
+	     OPTIONAL {?x npdv:lengthCdpTotalKm ?cdpKM .}
+	     OPTIONAL {?x npdv:lengthBoatTotalKm ?boatKM .}
+	     FILTER (?cdpKM > 3660)
+	}
 

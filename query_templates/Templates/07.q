@@ -21,7 +21,6 @@ SELECT *
 WHERE {
 
    [ ] a npdv:FieldMonthlyProduction ;
-       #npdv:productionForField [ npdv:name ?field ] ;
        npdv:productionYear         ?year;
        npdv:productionMonth        ?month;
        npdv:producedCondensate     ?con ;
@@ -30,5 +29,5 @@ WHERE {
        npdv:producedOil            ?oil ;
        npdv:producedOilEquivalents ?maxOE  .
 
-   FILTER(?gas < $)
+   FILTER(?gas < ${1:field_production_totalt_NCS_year.prfPrdGasNetBillSm})
 } 

@@ -1,1 +1,0 @@
-licence_oper_hst prlOperDateValidFrom

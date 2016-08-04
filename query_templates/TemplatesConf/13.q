@@ -1,1 +1,0 @@
-seis_acquisition seaCdpTotalKm

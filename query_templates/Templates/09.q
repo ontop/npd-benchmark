@@ -23,7 +23,7 @@ WHERE {
       npdv:name ?facility ;
       npdv:registeredInCountry ?country;
       npdv:idNPD ?id . 
-FILTER (?id > "$"^^xsd:integer)
+FILTER (?id > "${1:wellbore_exploration_all.wlbNpdidWellbore}"^^xsd:integer)
 }
 ORDER BY ?facility
 

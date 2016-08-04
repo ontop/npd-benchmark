@@ -19,6 +19,6 @@ WHERE {
 ?x a npdv:SeismicSurvey .
 OPTIONAL {?x npdv:lengthCdpTotalKm ?cdpKM .}
 OPTIONAL {?x npdv:lengthBoatTotalKm ?boatKM .}
-FILTER (?cdpKM > $)
+FILTER (?cdpKM > ${1:seis_acquisition.seaCdpTotalKm})
 }
 

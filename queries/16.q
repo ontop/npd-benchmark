@@ -22,5 +22,5 @@ PREFIX : <http://sws.ifi.uio.no/vocab/npd-v2#>
 			 		    [ ] a npdv:ProductionLicence ;  
 			 		      	npdv:name ?licence ;  
 			 		      	npdv:dateLicenceGranted ?dateGranted ;  
-			 FILTER(?dateGranted > "1999-12-31T00:00:00"^^xsd:dateTime)  
+			 FILTER(?dateGranted > "1999-12-31"^^xsd:date)  
 			 		} 

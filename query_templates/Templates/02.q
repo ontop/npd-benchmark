@@ -26,6 +26,6 @@ WHERE {
       	npdv:licenceOperatorCompany [ npdv:name ?company ] ;
       	npdv:operatorForLicence ?licenceURI .
 
-	FILTER(?date > "$"^^xsd:dateTime)
+	FILTER(?date > "${1:licence_oper_hst.prlOperDateValidFrom}"^^xsd:date)
     
 } ORDER BY ?licenceURI

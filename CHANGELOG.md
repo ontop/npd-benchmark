@@ -1,3 +1,10 @@
+==================
+NPD Benchmark v1.9.0
+
+- Updated ontology
+- Various fixes in the mappings files
+- VIG version 1.8.0
+
 ===================
 NPD Benchmark v1.8.0
 

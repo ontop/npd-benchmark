@@ -20,7 +20,6 @@ PREFIX diskosv: <http://sws.ifi.uio.no/vocab/diskos#>
 SELECT  ?fr ?OE ?oil ?gas ?NGL ?con  
 WHERE {
    ?fr a npdv:FieldReserve ;
-       #npdv:name ?field ;
        npdv:remainingCondensate     ?con ;
        npdv:remainingGas            ?gas ;
        npdv:remainingNGL            ?NGL ;

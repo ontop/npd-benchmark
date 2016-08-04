@@ -1,1 +1,0 @@
-wellbore_exploration_all wlbNpdidWellbore

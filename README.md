@@ -1,7 +1,7 @@
-npd-benchmark (v1.8.0)
+npd-benchmark (v1.9.0)
 ====================
 
-Components of the NPD Benchmark (v1.8.0)
+Components of the NPD Benchmark (v1.9.0)
 
 * **NPD Dataset** (mysql dump of the original dataset, postgres and mysql schemas)
 

@@ -25,5 +25,5 @@ OPTIONAL {
 npdv:mudMeasuredDepth ?d .
 }
 }
- FILTER (?date > "$"^^xsd:dateTime)
+ FILTER (?date > "${1:wellbore_mud.wlbMudDateMeasured}"^^xsd:date)
 }

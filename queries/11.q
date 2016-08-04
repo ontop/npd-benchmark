@@ -30,6 +30,5 @@ WHERE {
   } 
   FILTER(?year >= 2008 &&
          ?length > 50 
-         # && regex(?company, "^STATOIL", "i")
   )
 } ORDER BY ?wellbore

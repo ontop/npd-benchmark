@@ -80,7 +80,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_coordinates\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_coordinates\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -144,7 +144,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldOperatorFrom\" , \"fldOperatorTo\" FROM \"field_operator_hst\" WHERE \"fldOperatorFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldOperatorFrom\" , \"fldOperatorTo\" FROM \"field_operator_hst\" WHERE \"fldOperatorFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -209,7 +209,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" FROM \"field_licensee_hst\" WHERE \"fldLicenseeFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" FROM \"field_licensee_hst\" WHERE \"fldLicenseeFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -289,7 +289,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_core_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"wlbCoreDateUpdated\" FROM \"wellbore_core\" WHERE \"wlbCoreDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_core_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"wlbCoreDateUpdated\" FROM \"wellbore_core\" WHERE \"wlbCoreDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -412,7 +412,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_oil_sample_id\" , \"wlbNpdidWellbore\" , \"wlbOilSampleTestDate\" FROM \"wellbore_oil_sample\" WHERE \"wlbOilSampleTestDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_oil_sample_id\" , \"wlbNpdidWellbore\" , \"wlbOilSampleTestDate\" FROM \"wellbore_oil_sample\" WHERE \"wlbOilSampleTestDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -657,7 +657,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"seaSurveyName\" , \"seaPolygonPointNumber\" , \"dateSyncNPD\" FROM \"seis_acquisition_coordinates_inc_turnarea\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"seaSurveyName\" , \"seaPolygonPointNumber\" , \"dateSyncNPD\" FROM \"seis_acquisition_coordinates_inc_turnarea\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -727,7 +727,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_casing_and_lot_id\" , \"wlbNpdidWellbore\" , \"wlbCasingDateUpdated\" FROM \"wellbore_casing_and_lot\" WHERE \"wlbCasingDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_casing_and_lot_id\" , \"wlbNpdidWellbore\" , \"wlbCasingDateUpdated\" FROM \"wellbore_casing_and_lot\" WHERE \"wlbCasingDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -763,7 +763,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdatedMax\" FROM \"wellbore_development_all\" WHERE \"wlbDateUpdatedMax\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdatedMax\" FROM \"wellbore_development_all\" WHERE \"wlbDateUpdatedMax\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -812,7 +812,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"cmpNpdidCompany\" , \"baaLicenseeDateValidFrom\" , \"baaLicenseeDateValidTo\" , \"dateSyncNPD\" FROM \"bsns_arr_area_licensee_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"cmpNpdidCompany\" , \"baaLicenseeDateValidFrom\" , \"baaLicenseeDateValidTo\" , \"dateSyncNPD\" FROM \"bsns_arr_area_licensee_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -877,7 +877,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" , \"fldLicenseeDateUpdated\" FROM \"field_licensee_hst\" WHERE \"fldLicenseeDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" , \"fldLicenseeDateUpdated\" FROM \"field_licensee_hst\" WHERE \"fldLicenseeDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -1012,7 +1012,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_shallow_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_shallow_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -1048,7 +1048,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscDateUpdated\" FROM \"discovery\" WHERE \"dscDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscDateUpdated\" FROM \"discovery\" WHERE \"dscDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -1066,7 +1066,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbCompletionDate\" FROM \"wellbore_exploration_all\" WHERE \"wlbCompletionDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbCompletionDate\" FROM \"wellbore_exploration_all\" WHERE \"wlbCompletionDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -1170,7 +1170,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscDateUpdatedMax\" FROM \"discovery\" WHERE \"dscDateUpdatedMax\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscDateUpdatedMax\" FROM \"discovery\" WHERE \"dscDateUpdatedMax\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -1202,7 +1202,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTransferDirection\" , \"cmpNpdidCompany\" , \"prlTransferDateValidFrom\" , \"dateSyncNPD\" FROM \"licence_transfer_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTransferDirection\" , \"cmpNpdidCompany\" , \"prlTransferDateValidFrom\" , \"dateSyncNPD\" FROM \"licence_transfer_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -1220,7 +1220,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"seaName\" , \"seaDateFinalized\" FROM \"seis_acquisition\" WHERE \"seaDateFinalized\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"seaName\" , \"seaDateFinalized\" FROM \"seis_acquisition\" WHERE \"seaDateFinalized\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -1400,7 +1400,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"dateSyncNPD\" FROM \"tuf_owner_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"dateSyncNPD\" FROM \"tuf_owner_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -1553,7 +1553,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"dateSyncNPD\" FROM \"tuf_operator_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"dateSyncNPD\" FROM \"tuf_operator_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -1582,7 +1582,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"blcName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"prlAreaSplitByBlock\" WHERE \"prlAreaPolyDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"blcName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"prlAreaSplitByBlock\" WHERE \"prlAreaPolyDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -1727,7 +1727,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"cmpNpdidCompany\" , \"dateSyncNPD\" FROM \"company\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"cmpNpdidCompany\" , \"dateSyncNPD\" FROM \"company\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -1745,7 +1745,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateValidFrom\" FROM \"bsns_arr_area\" WHERE \"baaDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateValidFrom\" FROM \"bsns_arr_area\" WHERE \"baaDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -1797,7 +1797,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOperDateValidFrom\" , \"tufOperDateValidTo\" FROM \"tuf_operator_hst\" WHERE \"tufOperDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOperDateValidFrom\" , \"tufOperDateValidTo\" FROM \"tuf_operator_hst\" WHERE \"tufOperDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -1878,7 +1878,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"dateSyncNPD\" FROM \"facility_moveable\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"dateSyncNPD\" FROM \"facility_moveable\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -2106,7 +2106,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscReservesRC\" , \"dateSyncNPD\" FROM \"discovery_reserves\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscReservesRC\" , \"dateSyncNPD\" FROM \"discovery_reserves\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -2158,7 +2158,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdated\" FROM \"wellbore_shallow_all\" WHERE \"wlbDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdated\" FROM \"wellbore_shallow_all\" WHERE \"wlbDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -2258,7 +2258,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlDateUpdated\" FROM \"licence\" WHERE \"prlDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlDateUpdated\" FROM \"licence\" WHERE \"prlDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -2293,7 +2293,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"seis_acquisition_progress_id\" , \"seaProgressText2\" , \"seaProgressDate\" FROM \"seis_acquisition_progress\" WHERE \"seaProgressDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"seis_acquisition_progress_id\" , \"seaProgressText2\" , \"seaProgressDate\" FROM \"seis_acquisition_progress\" WHERE \"seaProgressDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -2408,7 +2408,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_core_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"dateSyncNPD\" FROM \"wellbore_core\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_core_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"dateSyncNPD\" FROM \"wellbore_core\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -2454,7 +2454,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlDateGranted\" FROM \"licence\" WHERE \"prlDateGranted\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlDateGranted\" FROM \"licence\" WHERE \"prlDateGranted\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -2597,7 +2597,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaAreaPolyBlockName\" , \"baaAreaPolyNo\" , \"baaAreaPolyDateValidFrom\" , \"baaAreaPolyDateValidTo\" , \"baaAreaPolyDateUpdated\" FROM \"bsns_arr_area_area_poly_hst\" WHERE \"baaAreaPolyDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaAreaPolyBlockName\" , \"baaAreaPolyNo\" , \"baaAreaPolyDateValidFrom\" , \"baaAreaPolyDateValidTo\" , \"baaAreaPolyDateUpdated\" FROM \"bsns_arr_area_area_poly_hst\" WHERE \"baaAreaPolyDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -2660,7 +2660,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_oil_sample_id\" , \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_oil_sample\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_oil_sample_id\" , \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_oil_sample\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -2730,7 +2730,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDstTestNumber\" , \"dateSyncNPD\" FROM \"wellbore_dst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDstTestNumber\" , \"dateSyncNPD\" FROM \"wellbore_dst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -2810,7 +2810,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"lsuNpdidLithoStrat\" , \"lsuTopDepth\" , \"lsuBottomDepth\" , \"dateSyncNPD\" FROM \"wellbore_formation_top\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"lsuNpdidLithoStrat\" , \"lsuTopDepth\" , \"lsuBottomDepth\" , \"dateSyncNPD\" FROM \"wellbore_formation_top\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -2839,7 +2839,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOperDateValidFrom\" , \"tufOperDateValidTo\" , \"dateSyncNPD\" FROM \"tuf_operator_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOperDateValidFrom\" , \"tufOperDateValidTo\" , \"dateSyncNPD\" FROM \"tuf_operator_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -3070,7 +3070,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" , \"dateSyncNPD\" FROM \"field_licensee_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" , \"dateSyncNPD\" FROM \"field_licensee_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -3088,7 +3088,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_mud_id\" , \"wlbNpdidWellbore\" , \"wlbMudDateUpdated\" FROM \"wellbore_mud\" WHERE \"wlbMudDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_mud_id\" , \"wlbNpdidWellbore\" , \"wlbMudDateUpdated\" FROM \"wellbore_mud\" WHERE \"wlbMudDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -3134,7 +3134,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prfNpdidInformationCarrier\" , \"prfYear\" , \"dateSyncNPD\" FROM \"field_investment_yearly\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prfNpdidInformationCarrier\" , \"prfYear\" , \"dateSyncNPD\" FROM \"field_investment_yearly\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -3152,7 +3152,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"cmpNpdidCompany\" , \"fldNpdidField\" , \"cmpDateOffResEstDisplay\" FROM \"company_reserves\" WHERE \"cmpDateOffResEstDisplay\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"cmpNpdidCompany\" , \"fldNpdidField\" , \"cmpDateOffResEstDisplay\" FROM \"company_reserves\" WHERE \"cmpDateOffResEstDisplay\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -3343,7 +3343,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"dateSyncNPD\" FROM \"tuf_petreg_licence_licencee\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"dateSyncNPD\" FROM \"tuf_petreg_licence_licencee\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -3361,7 +3361,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" , \"prlOperDateValidTo\" FROM \"licence_licensee_hst\" WHERE \"prlOperDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" , \"prlOperDateValidTo\" FROM \"licence_licensee_hst\" WHERE \"prlOperDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -3430,7 +3430,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlDateValidTo\" FROM \"licence\" WHERE \"prlDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlDateValidTo\" FROM \"licence\" WHERE \"prlDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -3545,7 +3545,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" , \"prlPhaseDateUpdated\" FROM \"licence_phase_hst\" WHERE \"prlPhaseDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" , \"prlPhaseDateUpdated\" FROM \"licence_phase_hst\" WHERE \"prlPhaseDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -3557,23 +3557,6 @@
                          ] ;
   rr:subjectMap          [ a            rr:TermMap , rr:SubjectMap ;
                            rr:template  "http://sws.ifi.uio.no/data/npd-v2/licence/{prlNpdidLicence}/phase/{prlPhase}/history/{prlDatePhaseValidFrom}/{prlDatePhaseValidTo}" ;
-                           rr:termType  rr:IRI
-                         ]
-] .
-
-[ a                      rr:TriplesMap ;
-  rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prfNpdidInformationCarrier\" , \"prfYear\" , \"prfMonth\" FROM \"field_production_monthly\" WHERE \"prfNpdidInformationCarrier\" = '44576'"
-                         ] ;
-  rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
-                           rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/discovery/{prfNpdidInformationCarrier}" ;
-                                           rr:termType  rr:IRI
-                                         ] ;
-                           rr:predicate  <http://sws.ifi.uio.no/vocab/npd-v2#productionForDiscovery>
-                         ] ;
-  rr:subjectMap          [ a            rr:SubjectMap , rr:TermMap ;
-                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/field/{prfNpdidInformationCarrier}/production/{prfYear}/{prfMonth}" ;
                            rr:termType  rr:IRI
                          ]
 ] .
@@ -3902,7 +3885,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"dateSyncNPD\" FROM \"field_reserves\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"dateSyncNPD\" FROM \"field_reserves\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -4012,7 +3995,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldNpdidOwner\" , \"fldOwnershipFromDate\" , \"fldOwnershipToDate\" FROM \"field_owner_hst\" WHERE \"fldOwnershipFromDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldNpdidOwner\" , \"fldOwnershipFromDate\" , \"fldOwnershipToDate\" FROM \"field_owner_hst\" WHERE \"fldOwnershipFromDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -4076,7 +4059,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"dateSyncNPD\" FROM \"tuf_petreg_licence_oper\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"dateSyncNPD\" FROM \"tuf_petreg_licence_oper\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -4180,7 +4163,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"fclStartupDate\" FROM \"facility_fixed\" WHERE \"fclStartupDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"fclStartupDate\" FROM \"facility_fixed\" WHERE \"fclStartupDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -4334,7 +4317,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbWell\" , \"dateSyncNPD\" FROM \"wellbore_npdid_overview\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbWell\" , \"dateSyncNPD\" FROM \"wellbore_npdid_overview\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -4439,7 +4422,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_core_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"wlbCoreIntervalTop\" * 0.3048 AS wlbCoreIntervalTopFT FROM \"wellbore_core\" WHERE \"wlbCoreIntervalUom\" = '[ft   ]'"
+                           rr:sqlQuery  "SELECT \"wellbore_core_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"wlbCoreIntervalTop\" * 0.3048 AS wlbCoreIntervalTopFT FROM \"wellbore_core\" WHERE \"wlbCoreIntervalUom\" = '[ft  ]'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -4635,7 +4618,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlAreaPolyBlockName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" , \"prlAreaDateUpdated\" FROM \"licence_area_poly_hst\" WHERE \"prlAreaDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlAreaPolyBlockName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" , \"prlAreaDateUpdated\" FROM \"licence_area_poly_hst\" WHERE \"prlAreaDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -4716,7 +4699,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOwnerDateValidFrom\" , \"tufOwnerDateValidTo\" FROM \"tuf_owner_hst\" WHERE \"tufOwnerDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOwnerDateValidFrom\" , \"tufOwnerDateValidTo\" FROM \"tuf_owner_hst\" WHERE \"tufOwnerDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -4888,7 +4871,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldNpdidOwner\" , \"fldOwnershipFromDate\" , \"fldOwnershipToDate\" , \"fldOwnerDateUpdated\" FROM \"field_owner_hst\" WHERE \"fldOwnerDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldNpdidOwner\" , \"fldOwnershipFromDate\" , \"fldOwnershipToDate\" , \"fldOwnerDateUpdated\" FROM \"field_owner_hst\" WHERE \"fldOwnerDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -4940,7 +4923,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldStatus\" , \"fldStatusFromDate\" , \"fldStatusToDate\" , \"dateSyncNPD\" FROM \"field_activity_status_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldStatus\" , \"fldStatusFromDate\" , \"fldStatusToDate\" , \"dateSyncNPD\" FROM \"field_activity_status_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -5007,7 +4990,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"dateSyncNPD\" FROM \"licence_petreg_licence_licencee\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"dateSyncNPD\" FROM \"licence_petreg_licence_licencee\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -5025,7 +5008,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" , \"prlLicenseeDateUpdated\" FROM \"licence_licensee_hst\" WHERE \"prlLicenseeDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" , \"prlLicenseeDateUpdated\" FROM \"licence_licensee_hst\" WHERE \"prlLicenseeDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -5129,7 +5112,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"dateSyncNPD\" FROM \"wellbore_shallow_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"dateSyncNPD\" FROM \"wellbore_shallow_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -5164,7 +5147,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"dateSyncNPD\" FROM \"licence_petreg_licence\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"dateSyncNPD\" FROM \"licence_petreg_licence\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -5230,7 +5213,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" FROM \"licence_licensee_hst\" WHERE \"prlLicenseeDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" FROM \"licence_licensee_hst\" WHERE \"prlLicenseeDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -5248,7 +5231,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlMessageDocumentNo\" , \"ptlMessageRegisteredDate\" FROM \"tuf_petreg_message\" WHERE \"ptlMessageRegisteredDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlMessageDocumentNo\" , \"ptlMessageRegisteredDate\" FROM \"tuf_petreg_message\" WHERE \"ptlMessageRegisteredDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -5407,7 +5390,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdatedMax\" FROM \"wellbore_shallow_all\" WHERE \"wlbDateUpdatedMax\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdatedMax\" FROM \"wellbore_shallow_all\" WHERE \"wlbDateUpdatedMax\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -5425,7 +5408,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTaskID\" , \"prlTaskExpiryDate\" FROM \"licence_task\" WHERE \"prlTaskExpiryDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTaskID\" , \"prlTaskExpiryDate\" FROM \"licence_task\" WHERE \"prlTaskExpiryDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -5576,7 +5559,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlAreaPolyBlockName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"licence_area_poly_hst\" WHERE \"prlAreaPolyDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlAreaPolyBlockName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"licence_area_poly_hst\" WHERE \"prlAreaPolyDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -5702,7 +5685,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlDateValidFrom\" FROM \"tuf_petreg_licence\" WHERE \"ptlDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlDateValidFrom\" FROM \"tuf_petreg_licence\" WHERE \"ptlDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -5767,23 +5750,6 @@
                          ] ;
   rr:subjectMap          [ a            rr:SubjectMap , rr:TermMap ;
                            rr:template  "http://sws.ifi.uio.no/data/npd-v2/wellbore/{wlbNpdidWellbore}" ;
-                           rr:termType  rr:IRI
-                         ]
-] .
-
-[ a                      rr:TriplesMap ;
-  rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prfNpdidInformationCarrier\" , \"prfYear\" FROM \"field_production_yearly\" WHERE \"prfNpdidInformationCarrier\"  <>  '44576'"
-                         ] ;
-  rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
-                           rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/field/{prfNpdidInformationCarrier}" ;
-                                           rr:termType  rr:IRI
-                                         ] ;
-                           rr:predicate  <http://sws.ifi.uio.no/vocab/npd-v2#productionForField>
-                         ] ;
-  rr:subjectMap          [ a            rr:TermMap , rr:SubjectMap ;
-                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/field/{prfNpdidInformationCarrier}/production/{prfYear}" ;
                            rr:termType  rr:IRI
                          ]
 ] .
@@ -5899,7 +5865,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" FROM \"licence_licensee_hst\" WHERE \"prlLicenseeDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" FROM \"licence_licensee_hst\" WHERE \"prlLicenseeDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -6051,7 +6017,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"cmpNpdidCompany\" , \"fldNpdidField\" , \"dateSyncNPD\" FROM \"company_reserves\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"cmpNpdidCompany\" , \"fldNpdidField\" , \"dateSyncNPD\" FROM \"company_reserves\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -6155,7 +6121,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"dateSyncNPD\" FROM \"bsns_arr_area_operator\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"dateSyncNPD\" FROM \"bsns_arr_area_operator\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -6190,7 +6156,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaOperatorDateUpdated\" FROM \"bsns_arr_area_operator\" WHERE \"baaOperatorDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaOperatorDateUpdated\" FROM \"bsns_arr_area_operator\" WHERE \"baaOperatorDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -6208,7 +6174,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaAreaPolyBlockName\" , \"baaAreaPolyNo\" , \"baaAreaPolyDateValidFrom\" , \"baaAreaPolyDateValidTo\" FROM \"bsns_arr_area_area_poly_hst\" WHERE \"baaAreaPolyDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaAreaPolyBlockName\" , \"baaAreaPolyNo\" , \"baaAreaPolyDateValidFrom\" , \"baaAreaPolyDateValidTo\" FROM \"bsns_arr_area_area_poly_hst\" WHERE \"baaAreaPolyDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -6261,7 +6227,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"wlbNamePart2\" , \"dateSyncNPD\" FROM \"wellbore_exploration_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"wlbNamePart2\" , \"dateSyncNPD\" FROM \"wellbore_exploration_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -6297,7 +6263,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlDateUpdatedMax\" FROM \"tuf_petreg_licence\" WHERE \"ptlDateUpdatedMax\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlDateUpdatedMax\" FROM \"tuf_petreg_licence\" WHERE \"ptlDateUpdatedMax\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -6403,7 +6369,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldOperatorFrom\" , \"fldOperatorTo\" , \"fldOperatorDateUpdated\" FROM \"field_operator_hst\" WHERE \"fldOperatorDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldOperatorFrom\" , \"fldOperatorTo\" , \"fldOperatorDateUpdated\" FROM \"field_operator_hst\" WHERE \"fldOperatorDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -6492,7 +6458,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"wlbNamePart2\" , \"dateSyncNPD\" FROM \"wellbore_development_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"wlbNamePart2\" , \"dateSyncNPD\" FROM \"wellbore_development_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -6629,7 +6595,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbEntryDate\" FROM \"wellbore_development_all\" WHERE \"wlbEntryDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbEntryDate\" FROM \"wellbore_development_all\" WHERE \"wlbEntryDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -6681,7 +6647,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"blcName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"prlAreaSplitByBlock\" WHERE \"prlAreaPolyDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"blcName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"prlAreaSplitByBlock\" WHERE \"prlAreaPolyDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -6699,7 +6665,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscReservesRC\" , \"dscReservesDateUpdated\" FROM \"discovery_reserves\" WHERE \"dscReservesDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscReservesRC\" , \"dscReservesDateUpdated\" FROM \"discovery_reserves\" WHERE \"dscReservesDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -6752,7 +6718,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"dateSyncNPD\" FROM \"licence_petreg_licence_oper\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"dateSyncNPD\" FROM \"licence_petreg_licence_oper\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -6986,7 +6952,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dateSyncNPD\" FROM \"discovery\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dateSyncNPD\" FROM \"discovery\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -7026,7 +6992,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlDateUpdated\" FROM \"tuf_petreg_licence\" WHERE \"ptlDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlDateUpdated\" FROM \"tuf_petreg_licence\" WHERE \"ptlDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -7192,23 +7158,6 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"apaAreaNet_id\" , \"qdrName\" , \"blkName\" , \"prvName\" , \"blkId\" FROM  \"apaAreaNet\""
-                         ] ;
-  rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
-                           rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/quadrant/{qdrName}" ;
-                                           rr:termType  rr:IRI
-                                         ] ;
-                           rr:predicate  <http://sws.ifi.uio.no/vocab/npd-v2#quadrantLocation>
-                         ] ;
-  rr:subjectMap          [ a            rr:SubjectMap , rr:TermMap ;
-                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/quadrant/{qdrName}/block/{blkName}/award/{prvName}/area/{apaAreaNet_id}" ;
-                           rr:termType  rr:IRI
-                         ]
-] .
-
-[ a                      rr:TriplesMap ;
-  rr:logicalTable        [ a            rr:R2RMLView ;
                            rr:sqlQuery  "SELECT \"seaArea_id\" , \"seaSurveyName\" FROM \"seaArea\" WHERE \"seaMarketAvailable\" = 'Ja'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
@@ -7240,7 +7189,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_core_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"wlbCoreIntervalBottom\" * 0.3048 AS wlbCoreIntervalBottomFT FROM \"wellbore_core\" WHERE \"wlbCoreIntervalUom\" = '[ft   ]'"
+                           rr:sqlQuery  "SELECT \"wellbore_core_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"wlbCoreIntervalBottom\" * 0.3048 AS wlbCoreIntervalBottomFT FROM \"wellbore_core\" WHERE \"wlbCoreIntervalUom\" = '[ft  ]'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -7275,7 +7224,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"dateSyncNPD\" FROM \"bsns_arr_area\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"dateSyncNPD\" FROM \"bsns_arr_area\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -7342,7 +7291,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlMessageDocumentNo\" , \"ptlMessageRegisteredDate\" FROM \"licence_petreg_message\" WHERE \"ptlMessageRegisteredDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlMessageDocumentNo\" , \"ptlMessageRegisteredDate\" FROM \"licence_petreg_message\" WHERE \"ptlMessageRegisteredDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -7360,7 +7309,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbCompletionDate\" FROM \"wellbore_shallow_all\" WHERE \"wlbCompletionDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbCompletionDate\" FROM \"wellbore_shallow_all\" WHERE \"wlbCompletionDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -7445,7 +7394,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlDateValidTo\" FROM \"tuf_petreg_licence\" WHERE \"ptlDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlDateValidTo\" FROM \"tuf_petreg_licence\" WHERE \"ptlDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -7520,7 +7469,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_development_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_development_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -7570,7 +7519,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"cmpNpdidCompany\" , \"baaLicenseeDateValidFrom\" , \"baaLicenseeDateValidTo\" FROM \"bsns_arr_area_licensee_hst\" WHERE \"baaLicenseeDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"cmpNpdidCompany\" , \"baaLicenseeDateValidFrom\" , \"baaLicenseeDateValidTo\" FROM \"bsns_arr_area_licensee_hst\" WHERE \"baaLicenseeDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -7850,7 +7799,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscDateFromInclInField\" FROM \"discovery\" WHERE \"dscDateFromInclInField\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscDateFromInclInField\" FROM \"discovery\" WHERE \"dscDateFromInclInField\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -7916,7 +7865,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"fclDateUpdated\" FROM \"facility_fixed\" WHERE \"fclDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"fclDateUpdated\" FROM \"facility_fixed\" WHERE \"fclDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -8049,7 +7998,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlDateUpdatedMax\" FROM \"licence\" WHERE \"prlDateUpdatedMax\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlDateUpdatedMax\" FROM \"licence\" WHERE \"prlDateUpdatedMax\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -8096,7 +8045,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTaskID\" , \"prlTaskDateUpdated\" FROM \"licence_task\" WHERE \"prlTaskDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTaskID\" , \"prlTaskDateUpdated\" FROM \"licence_task\" WHERE \"prlTaskDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -8125,7 +8074,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlAreaPolyBlockName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" , \"dateSyncNPD\" FROM \"licence_area_poly_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlAreaPolyBlockName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" , \"dateSyncNPD\" FROM \"licence_area_poly_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -8195,7 +8144,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_oil_sample_id\" , \"wlbNpdidWellbore\" , \"wlbOilSampleDateUpdated\" FROM \"wellbore_oil_sample\" WHERE \"wlbOilSampleDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_oil_sample_id\" , \"wlbNpdidWellbore\" , \"wlbOilSampleDateUpdated\" FROM \"wellbore_oil_sample\" WHERE \"wlbOilSampleDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -8262,7 +8211,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaTransferDirection\" , \"cmpNpdidCompany\" , \"baaTransferDateValidFrom\" FROM \"bsns_arr_area_transfer_hst\" WHERE \"baaTransferDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaTransferDirection\" , \"cmpNpdidCompany\" , \"baaTransferDateValidFrom\" FROM \"bsns_arr_area_transfer_hst\" WHERE \"baaTransferDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -8280,7 +8229,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" , \"dateSyncNPD\" FROM \"licence_licensee_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" , \"dateSyncNPD\" FROM \"licence_licensee_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -8385,7 +8334,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlOperDateValidFrom\" , \"prlOperDateValidTo\" , \"prlOperDateUpdated\" FROM \"licence_oper_hst\" WHERE \"prlOperDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlOperDateValidFrom\" , \"prlOperDateValidTo\" , \"prlOperDateUpdated\" FROM \"licence_oper_hst\" WHERE \"prlOperDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -8414,7 +8363,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" FROM \"field_licensee_hst\" WHERE \"fldLicenseeTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" FROM \"field_licensee_hst\" WHERE \"fldLicenseeTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -8443,7 +8392,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"ptlLicenseeDateUpdated\" FROM \"tuf_petreg_licence_licencee\" WHERE \"ptlLicenseeDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"ptlLicenseeDateUpdated\" FROM \"tuf_petreg_licence_licencee\" WHERE \"ptlLicenseeDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -8584,7 +8533,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"lsuNpdidLithoStrat\" , \"lsuWellboreUpdatedDate\" FROM \"wellbore_formation_top\" WHERE \"lsuWellboreUpdatedDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"lsuNpdidLithoStrat\" , \"lsuWellboreUpdatedDate\" FROM \"wellbore_formation_top\" WHERE \"lsuWellboreUpdatedDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -8717,7 +8666,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlArea_id\" , \"prlNpdidLicence\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"prlArea\" WHERE \"prlAreaPolyDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlArea_id\" , \"prlNpdidLicence\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"prlArea\" WHERE \"prlAreaPolyDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -8752,7 +8701,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaAreaPolyBlockName\" , \"baaAreaPolyNo\" , \"baaAreaPolyDateValidFrom\" , \"baaAreaPolyDateValidTo\" , \"dateSyncNPD\" FROM \"bsns_arr_area_area_poly_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaAreaPolyBlockName\" , \"baaAreaPolyNo\" , \"baaAreaPolyDateValidFrom\" , \"baaAreaPolyDateValidTo\" , \"dateSyncNPD\" FROM \"bsns_arr_area_area_poly_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -8852,7 +8801,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateValidFrom\" FROM \"licence_petreg_licence\" WHERE \"ptlDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateValidFrom\" FROM \"licence_petreg_licence\" WHERE \"ptlDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -8870,7 +8819,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" , \"dateSyncNPD\" FROM \"licence_phase_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" , \"dateSyncNPD\" FROM \"licence_phase_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -8941,7 +8890,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscReservesRC\" , \"dscDateOffResEstDisplay\" FROM \"discovery_reserves\" WHERE \"dscDateOffResEstDisplay\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"dscNpdidDiscovery\" , \"dscReservesRC\" , \"dscDateOffResEstDisplay\" FROM \"discovery_reserves\" WHERE \"dscDateOffResEstDisplay\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -8959,24 +8908,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prfNpdidInformationCarrier\" , \"prfYear\" FROM \"field_production_yearly\" WHERE \"prfNpdidInformationCarrier\" = '44576'"
-                         ] ;
-  rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
-                           rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/discovery/{prfNpdidInformationCarrier}" ;
-                                           rr:termType  rr:IRI
-                                         ] ;
-                           rr:predicate  <http://sws.ifi.uio.no/vocab/npd-v2#productionForDiscovery>
-                         ] ;
-  rr:subjectMap          [ a            rr:SubjectMap , rr:TermMap ;
-                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/field/{prfNpdidInformationCarrier}/production/{prfYear}" ;
-                           rr:termType  rr:IRI
-                         ]
-] .
-
-[ a                      rr:TriplesMap ;
-  rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldDateUpdatedMax\" FROM \"field\" WHERE \"fldDateUpdatedMax\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldDateUpdatedMax\" FROM \"field\" WHERE \"fldDateUpdatedMax\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -9053,7 +8985,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOperDateValidFrom\" , \"tufOperDateValidTo\" FROM \"tuf_operator_hst\" WHERE \"tufOperDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOperDateValidFrom\" , \"tufOperDateValidTo\" FROM \"tuf_operator_hst\" WHERE \"tufOperDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -9221,7 +9153,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"ptlLicenseeDateUpdated\" FROM \"licence_petreg_licence_licencee\" WHERE \"ptlLicenseeDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"ptlLicenseeDateUpdated\" FROM \"licence_petreg_licence_licencee\" WHERE \"ptlLicenseeDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -9370,7 +9302,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"dateSyncNPD\" FROM \"facility_fixed\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"dateSyncNPD\" FROM \"facility_fixed\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -9739,7 +9671,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_mud_id\" , \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_mud\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_mud_id\" , \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_mud\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -9863,7 +9795,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" , \"prlDateValidTo\" FROM \"licence_phase_hst\" WHERE \"prlDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" , \"prlDateValidTo\" FROM \"licence_phase_hst\" WHERE \"prlDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -10009,7 +9941,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlMessageDocumentNo\" , \"ptlMessageDateUpdated\" FROM \"licence_petreg_message\" WHERE \"ptlMessageDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlMessageDocumentNo\" , \"ptlMessageDateUpdated\" FROM \"licence_petreg_message\" WHERE \"ptlMessageDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -10058,7 +9990,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldNpdidOwner\" , \"fldOwnershipFromDate\" , \"fldOwnershipToDate\" , \"dateSyncNPD\" FROM \"field_owner_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldNpdidOwner\" , \"fldOwnershipFromDate\" , \"fldOwnershipToDate\" , \"dateSyncNPD\" FROM \"field_owner_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -10158,7 +10090,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdatedMax\" FROM \"wellbore_exploration_all\" WHERE \"wlbDateUpdatedMax\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdatedMax\" FROM \"wellbore_exploration_all\" WHERE \"wlbDateUpdatedMax\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -10176,7 +10108,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateUpdated\" FROM \"licence_petreg_licence\" WHERE \"ptlDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateUpdated\" FROM \"licence_petreg_licence\" WHERE \"ptlDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -10277,7 +10209,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_core_photo_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"wlbCorePhotoTitle\" , \"wlbCorePhotoDateUpdated\" FROM \"wellbore_core_photo\" WHERE \"wlbCorePhotoDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_core_photo_id\" , \"wlbNpdidWellbore\" , \"wlbCoreNumber\" , \"wlbCorePhotoTitle\" , \"wlbCorePhotoDateUpdated\" FROM \"wellbore_core_photo\" WHERE \"wlbCorePhotoDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -10675,7 +10607,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDstTestNumber\" , \"wlbDstDateUpdated\" FROM \"wellbore_dst\" WHERE \"wlbDstDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDstTestNumber\" , \"wlbDstDateUpdated\" FROM \"wellbore_dst\" WHERE \"wlbDstDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -10922,7 +10854,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaNpdidBsnsArrAreaPoly\" , \"baaAreaPolyDateValidFrom\" FROM \"baaArea\" WHERE \"baaAreaPolyDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaNpdidBsnsArrAreaPoly\" , \"baaAreaPolyDateValidFrom\" FROM \"baaArea\" WHERE \"baaAreaPolyDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -11263,7 +11195,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_casing_and_lot_id\" , \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_casing_and_lot\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_casing_and_lot_id\" , \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_casing_and_lot\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -11341,7 +11273,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbWdssQcdate\" FROM \"wellbore_development_all\" WHERE \"wlbWdssQcdate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbWdssQcdate\" FROM \"wellbore_development_all\" WHERE \"wlbWdssQcdate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -11423,7 +11355,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaNpdidBsnsArrAreaPoly\" , \"baaAreaPolyDateValidTo\" FROM \"baaArea\" WHERE \"baaAreaPolyDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaNpdidBsnsArrAreaPoly\" , \"baaAreaPolyDateValidTo\" FROM \"baaArea\" WHERE \"baaAreaPolyDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -11441,7 +11373,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldDateUpdated\" FROM \"field\" WHERE \"fldDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldDateUpdated\" FROM \"field\" WHERE \"fldDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -11494,7 +11426,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"dateSyncNPD\" FROM \"wellbore_exploration_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"dateSyncNPD\" FROM \"wellbore_exploration_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -11526,7 +11458,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdated\" FROM \"wellbore_exploration_all\" WHERE \"wlbDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdated\" FROM \"wellbore_exploration_all\" WHERE \"wlbDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -11579,7 +11511,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_oil_sample_id\" , \"wlbNpdidWellbore\" , \"wlbOilSampledateReceivedDate\" FROM \"wellbore_oil_sample\" WHERE \"wlbOilSampledateReceivedDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_oil_sample_id\" , \"wlbNpdidWellbore\" , \"wlbOilSampledateReceivedDate\" FROM \"wellbore_oil_sample\" WHERE \"wlbOilSampledateReceivedDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -11718,7 +11650,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"dateSyncNPD\" FROM \"field\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"dateSyncNPD\" FROM \"field\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -11799,7 +11731,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"lsuNpdidLithoStrat\" , \"lsuTopDepth\" , \"lsuBottomDepth\" , \"dateSyncNPD\" FROM \"strat_litho_wellbore\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"lsuNpdidLithoStrat\" , \"lsuTopDepth\" , \"lsuBottomDepth\" , \"dateSyncNPD\" FROM \"strat_litho_wellbore\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -11873,7 +11805,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlArea_id\" , \"prlNpdidLicence\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"prlArea\" WHERE \"prlAreaPolyDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlArea_id\" , \"prlNpdidLicence\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"prlArea\" WHERE \"prlAreaPolyDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -12108,7 +12040,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" , \"prlDateInitialPeriodExpires\" FROM \"licence_phase_hst\" WHERE \"prlDateInitialPeriodExpires\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" , \"prlDateInitialPeriodExpires\" FROM \"licence_phase_hst\" WHERE \"prlDateInitialPeriodExpires\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -12466,7 +12398,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"fclDateUpdated\" FROM \"facility_moveable\" WHERE \"fclDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fclNpdidFacility\" , \"fclDateUpdated\" FROM \"facility_moveable\" WHERE \"fclDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -12582,7 +12514,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldStatus\" , \"fldStatusFromDate\" , \"fldStatusToDate\" , \"fldStatusDateUpdated\" FROM \"field_activity_status_hst\" WHERE \"fldStatusDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldStatus\" , \"fldStatusFromDate\" , \"fldStatusToDate\" , \"fldStatusDateUpdated\" FROM \"field_activity_status_hst\" WHERE \"fldStatusDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -12830,7 +12762,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_document_id\" , \"wlbNpdidWellbore\" , \"wlbDocumentName\" , \"wlbDocumentDateUpdated\" FROM \"wellbore_document\" WHERE \"wlbDocumentDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_document_id\" , \"wlbNpdidWellbore\" , \"wlbDocumentName\" , \"wlbDocumentDateUpdated\" FROM \"wellbore_document\" WHERE \"wlbDocumentDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -12953,7 +12885,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateValidTo\" FROM \"licence_petreg_licence\" WHERE \"ptlDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateValidTo\" FROM \"licence_petreg_licence\" WHERE \"ptlDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -12971,7 +12903,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOwnerDateValidFrom\" , \"tufOwnerDateValidTo\" FROM \"tuf_owner_hst\" WHERE \"tufOwnerDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOwnerDateValidFrom\" , \"tufOwnerDateValidTo\" FROM \"tuf_owner_hst\" WHERE \"tufOwnerDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -13188,7 +13120,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_exploration_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_exploration_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -13434,7 +13366,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateApproved\" FROM \"bsns_arr_area\" WHERE \"baaDateApproved\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateApproved\" FROM \"bsns_arr_area\" WHERE \"baaDateApproved\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -13452,7 +13384,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldOperatorFrom\" , \"fldOperatorTo\" FROM \"field_operator_hst\" WHERE \"fldOperatorTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldOperatorFrom\" , \"fldOperatorTo\" FROM \"field_operator_hst\" WHERE \"fldOperatorTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -13555,7 +13487,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbEntryDate\" FROM \"wellbore_shallow_all\" WHERE \"wlbEntryDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbEntryDate\" FROM \"wellbore_shallow_all\" WHERE \"wlbEntryDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -13815,23 +13747,6 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prfNpdidInformationCarrier\" , \"prfYear\" , \"prfMonth\" FROM \"field_production_monthly\" WHERE \"prfNpdidInformationCarrier\"  <>  '44576'"
-                         ] ;
-  rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
-                           rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/field/{prfNpdidInformationCarrier}" ;
-                                           rr:termType  rr:IRI
-                                         ] ;
-                           rr:predicate  <http://sws.ifi.uio.no/vocab/npd-v2#productionForField>
-                         ] ;
-  rr:subjectMap          [ a            rr:TermMap , rr:SubjectMap ;
-                           rr:template  "http://sws.ifi.uio.no/data/npd-v2/field/{prfNpdidInformationCarrier}/production/{prfYear}/{prfMonth}" ;
-                           rr:termType  rr:IRI
-                         ]
-] .
-
-[ a                      rr:TriplesMap ;
-  rr:logicalTable        [ a            rr:R2RMLView ;
                            rr:sqlQuery  "SELECT \"prlArea\". \"prlArea_id\" ,  \"prlArea\". \"prlNpdidLicence\" ,  \"prlArea\". \"prlAreaPolyDateValidFrom\" ,  \"prlArea\". \"prlAreaPolyDateValidTo\" ,  \"company\". \"cmpNpdidCompany\" FROM \"prlArea\" INNER JOIN \"company\" ON \"prlArea\". \"prlLastOperatorNpdidCompany\"  =  \"company\". \"cmpNpdidCompany\""
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
@@ -13928,7 +13843,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateValidTo\" FROM \"bsns_arr_area\" WHERE \"baaDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateValidTo\" FROM \"bsns_arr_area\" WHERE \"baaDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -13963,7 +13878,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"cmpNpdidCompany\" , \"baaLicenseeDateValidFrom\" , \"baaLicenseeDateValidTo\" FROM \"bsns_arr_area_licensee_hst\" WHERE \"baaLicenseeDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"cmpNpdidCompany\" , \"baaLicenseeDateValidFrom\" , \"baaLicenseeDateValidTo\" FROM \"bsns_arr_area_licensee_hst\" WHERE \"baaLicenseeDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -14034,7 +13949,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlAreaPolyBlockName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"licence_area_poly_hst\" WHERE \"prlAreaPolyDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlAreaPolyBlockName\" , \"prlAreaPolyPolyNo\" , \"prlAreaPolyDateValidFrom\" , \"prlAreaPolyDateValidTo\" FROM \"licence_area_poly_hst\" WHERE \"prlAreaPolyDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -14052,7 +13967,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaTransferDirection\" , \"cmpNpdidCompany\" , \"baaTransferDateValidFrom\" , \"dateSyncNPD\" FROM \"bsns_arr_area_transfer_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaTransferDirection\" , \"cmpNpdidCompany\" , \"baaTransferDateValidFrom\" , \"dateSyncNPD\" FROM \"bsns_arr_area_transfer_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -14098,7 +14013,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" , \"prlOperDateValidFrom\" FROM \"licence_licensee_hst\" WHERE \"prlOperDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlLicenseeDateValidFrom\" , \"prlLicenseeDateValidTo\" , \"prlOperDateValidFrom\" FROM \"licence_licensee_hst\" WHERE \"prlOperDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -14144,7 +14059,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbWdssQcDate\" FROM \"wellbore_exploration_all\" WHERE \"wlbWdssQcDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbWdssQcDate\" FROM \"wellbore_exploration_all\" WHERE \"wlbWdssQcDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -14371,7 +14286,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"lsuNpdidLithoStrat\" , \"dateSyncNPD\" FROM \"wellbore_formation_top\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"lsuNpdidLithoStrat\" , \"dateSyncNPD\" FROM \"wellbore_formation_top\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -14423,7 +14338,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOwnerDateValidFrom\" , \"tufOwnerDateValidTo\" , \"dateSyncNPD\" FROM \"tuf_owner_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"cmpNpdidCompany\" , \"tufOwnerDateValidFrom\" , \"tufOwnerDateValidTo\" , \"dateSyncNPD\" FROM \"tuf_owner_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -14441,7 +14356,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlMessageDocumentNo\" , \"ptlMessageDateUpdated\" FROM \"tuf_petreg_message\" WHERE \"ptlMessageDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlMessageDocumentNo\" , \"ptlMessageDateUpdated\" FROM \"tuf_petreg_message\" WHERE \"ptlMessageDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -14511,7 +14426,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldStatus\" , \"fldStatusFromDate\" , \"fldStatusToDate\" FROM \"field_activity_status_hst\" WHERE \"fldStatusFromDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldStatus\" , \"fldStatusFromDate\" , \"fldStatusToDate\" FROM \"field_activity_status_hst\" WHERE \"fldStatusFromDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -14638,7 +14553,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"cmpNpdidCompany\" , \"baaLicenseeDateValidFrom\" , \"baaLicenseeDateValidTo\" , \"baaLicenseeDateUpdated\" FROM \"bsns_arr_area_licensee_hst\" WHERE \"baaLicenseeDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"cmpNpdidCompany\" , \"baaLicenseeDateValidFrom\" , \"baaLicenseeDateValidTo\" , \"baaLicenseeDateUpdated\" FROM \"bsns_arr_area_licensee_hst\" WHERE \"baaLicenseeDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -14734,7 +14649,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"dateSyncNPD\" FROM \"wellbore_development_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"dateSyncNPD\" FROM \"wellbore_development_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -14961,7 +14876,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaTransferDirection\" , \"cmpNpdidCompany\" , \"baaTransferDateValidFrom\" , \"baaTransferDateUpdated\" FROM \"bsns_arr_area_transfer_hst\" WHERE \"baaTransferDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaTransferDirection\" , \"cmpNpdidCompany\" , \"baaTransferDateValidFrom\" , \"baaTransferDateUpdated\" FROM \"bsns_arr_area_transfer_hst\" WHERE \"baaTransferDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -15031,7 +14946,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTransferDirection\" , \"cmpNpdidCompany\" , \"prlTransferDateValidFrom\" , \"prlTransferDateUpdated\" FROM \"licence_transfer_hst\" WHERE \"prlTransferDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTransferDirection\" , \"cmpNpdidCompany\" , \"prlTransferDateValidFrom\" , \"prlTransferDateUpdated\" FROM \"licence_transfer_hst\" WHERE \"prlTransferDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -15259,7 +15174,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" , \"fldOwnerFrom\" FROM \"field_licensee_hst\" WHERE \"fldOwnerFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" , \"fldOwnerFrom\" FROM \"field_licensee_hst\" WHERE \"fldOwnerFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -15571,7 +15486,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"dateSyncNPD\" FROM \"tuf_petreg_licence\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"dateSyncNPD\" FROM \"tuf_petreg_licence\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -15999,7 +15914,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldOperatorFrom\" , \"fldOperatorTo\" , \"dateSyncNPD\" FROM \"field_operator_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldOperatorFrom\" , \"fldOperatorTo\" , \"dateSyncNPD\" FROM \"field_operator_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -16109,7 +16024,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlMessageDocumentNo\" , \"dateSyncNPD\" FROM \"tuf_petreg_message\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlMessageDocumentNo\" , \"dateSyncNPD\" FROM \"tuf_petreg_message\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -16275,7 +16190,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlOperDateUpdated\" FROM \"licence_petreg_licence_oper\" WHERE \"ptlOperDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlOperDateUpdated\" FROM \"licence_petreg_licence_oper\" WHERE \"ptlOperDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -16311,7 +16226,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbEntryDate\" FROM \"wellbore_exploration_all\" WHERE \"wlbEntryDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbEntryDate\" FROM \"wellbore_exploration_all\" WHERE \"wlbEntryDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -16347,7 +16262,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"seaName\" , \"seaPlanFromDate\" FROM \"seis_acquisition\" WHERE \"seaPlanFromDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"seaName\" , \"seaPlanFromDate\" FROM \"seis_acquisition\" WHERE \"seaPlanFromDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -16474,7 +16389,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"wlbNamePart2\" , \"dateSyncNPD\" FROM \"wellbore_shallow_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNamePart1\" , \"wlbNamePart2\" , \"dateSyncNPD\" FROM \"wellbore_shallow_all\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -16757,7 +16672,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldStatus\" , \"fldStatusFromDate\" , \"fldStatusToDate\" FROM \"field_activity_status_hst\" WHERE \"fldStatusToDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldStatus\" , \"fldStatusFromDate\" , \"fldStatusToDate\" FROM \"field_activity_status_hst\" WHERE \"fldStatusToDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -16943,7 +16858,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" FROM \"licence_phase_hst\" WHERE \"prlDatePhaseValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" FROM \"licence_phase_hst\" WHERE \"prlDatePhaseValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -17078,7 +16993,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlOperDateValidFrom\" , \"prlOperDateValidTo\" FROM \"licence_oper_hst\" WHERE \"prlOperDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlOperDateValidFrom\" , \"prlOperDateValidTo\" FROM \"licence_oper_hst\" WHERE \"prlOperDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -17174,7 +17089,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTransferDirection\" , \"cmpNpdidCompany\" , \"prlTransferDateValidFrom\" FROM \"licence_transfer_hst\" WHERE \"prlTransferDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTransferDirection\" , \"cmpNpdidCompany\" , \"prlTransferDateValidFrom\" FROM \"licence_transfer_hst\" WHERE \"prlTransferDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -17210,7 +17125,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlMessageDocumentNo\" , \"dateSyncNPD\" FROM \"licence_petreg_message\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlMessageDocumentNo\" , \"dateSyncNPD\" FROM \"licence_petreg_message\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -17298,7 +17213,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"seaName\" , \"seaDateStarting\" FROM \"seis_acquisition\" WHERE \"seaDateStarting\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"seaName\" , \"seaDateStarting\" FROM \"seis_acquisition\" WHERE \"seaDateStarting\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -17334,7 +17249,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"seaName\" , \"dateSyncNPD\" FROM \"seis_acquisition\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"seaName\" , \"dateSyncNPD\" FROM \"seis_acquisition\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -17352,7 +17267,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateUpdated\" FROM \"bsns_arr_area\" WHERE \"baaDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateUpdated\" FROM \"bsns_arr_area\" WHERE \"baaDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -17441,7 +17356,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"dateSyncNPD\" FROM \"licence\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"dateSyncNPD\" FROM \"licence\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -17476,7 +17391,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldNpdidOwner\" , \"fldOwnershipFromDate\" , \"fldOwnershipToDate\" FROM \"field_owner_hst\" WHERE \"fldOwnershipToDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldNpdidOwner\" , \"fldOwnershipFromDate\" , \"fldOwnershipToDate\" FROM \"field_owner_hst\" WHERE \"fldOwnershipToDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -17540,7 +17455,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTaskID\" , \"dateSyncNPD\" FROM \"licence_task\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlTaskID\" , \"dateSyncNPD\" FROM \"licence_task\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -17609,7 +17524,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldDateOffResEstDisplay\" FROM \"field_reserves\" WHERE \"fldDateOffResEstDisplay\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"fldDateOffResEstDisplay\" FROM \"field_reserves\" WHERE \"fldDateOffResEstDisplay\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -17679,7 +17594,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbCompletionDate\" FROM \"wellbore_development_all\" WHERE \"wlbCompletionDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbCompletionDate\" FROM \"wellbore_development_all\" WHERE \"wlbCompletionDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -17854,7 +17769,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"lsuNpdidLithoStrat\" , \"dateSyncNPD\" FROM \"strat_litho_wellbore_core\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"lsuNpdidLithoStrat\" , \"dateSyncNPD\" FROM \"strat_litho_wellbore_core\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -17890,7 +17805,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_mud_id\" , \"wlbNpdidWellbore\" , \"wlbMudDateMeasured\" FROM \"wellbore_mud\" WHERE \"wlbMudDateMeasured\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_mud_id\" , \"wlbNpdidWellbore\" , \"wlbMudDateMeasured\" FROM \"wellbore_mud\" WHERE \"wlbMudDateMeasured\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -17990,7 +17905,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wellbore_document_id\" , \"wlbNpdidWellbore\" , \"wlbDocumentName\" , \"dateSyncNPD\" FROM \"wellbore_document\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wellbore_document_id\" , \"wlbNpdidWellbore\" , \"wlbDocumentName\" , \"dateSyncNPD\" FROM \"wellbore_document\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -18169,7 +18084,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateUpdatedMax\" FROM \"licence_petreg_licence\" WHERE \"ptlDateUpdatedMax\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateUpdatedMax\" FROM \"licence_petreg_licence\" WHERE \"ptlDateUpdatedMax\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -18221,7 +18136,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlOperDateUpdated\" FROM \"tuf_petreg_licence_oper\" WHERE \"ptlOperDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"tufNpdidTuf\" , \"ptlOperDateUpdated\" FROM \"tuf_petreg_licence_oper\" WHERE \"ptlOperDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -18442,7 +18357,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlOperDateValidFrom\" , \"prlOperDateValidTo\" FROM \"licence_oper_hst\" WHERE \"prlOperDateValidTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlOperDateValidFrom\" , \"prlOperDateValidTo\" FROM \"licence_oper_hst\" WHERE \"prlOperDateValidTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -18491,7 +18406,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" , \"fldOwnerTo\" FROM \"field_licensee_hst\" WHERE \"fldOwnerTo\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"fldNpdidField\" , \"cmpNpdidCompany\" , \"fldLicenseeFrom\" , \"fldLicenseeTo\" , \"fldOwnerTo\" FROM \"field_licensee_hst\" WHERE \"fldOwnerTo\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -18538,7 +18453,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"seaName\" , \"seaPlanToDate\" FROM \"seis_acquisition\" WHERE \"seaPlanToDate\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"seaName\" , \"seaPlanToDate\" FROM \"seis_acquisition\" WHERE \"seaPlanToDate\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -18567,7 +18482,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlOperDateValidFrom\" , \"prlOperDateValidTo\" , \"dateSyncNPD\" FROM \"licence_oper_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"cmpNpdidCompany\" , \"prlOperDateValidFrom\" , \"prlOperDateValidTo\" , \"dateSyncNPD\" FROM \"licence_oper_hst\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -18639,7 +18554,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateUpdatedMax\" FROM \"bsns_arr_area\" WHERE \"baaDateUpdatedMax\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaDateUpdatedMax\" FROM \"bsns_arr_area\" WHERE \"baaDateUpdatedMax\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -18755,7 +18670,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" FROM \"licence_phase_hst\" WHERE \"prlDatePhaseValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"prlPhase\" , \"prlDatePhaseValidFrom\" , \"prlDatePhaseValidTo\" FROM \"licence_phase_hst\" WHERE \"prlDatePhaseValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -19108,7 +19023,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdated\" FROM \"wellbore_development_all\" WHERE \"wlbDateUpdated\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"wlbDateUpdated\" FROM \"wellbore_development_all\" WHERE \"wlbDateUpdated\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
@@ -19161,7 +19076,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateAwarded\" FROM \"licence_petreg_licence\" WHERE \"ptlDateAwarded\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"prlNpdidLicence\" , \"ptlDateAwarded\" FROM \"licence_petreg_licence\" WHERE \"ptlDateAwarded\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -19179,7 +19094,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_npdid_overview\" WHERE \"dateSyncNPD\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"wlbNpdidWellbore\" , \"dateSyncNPD\" FROM \"wellbore_npdid_overview\" WHERE \"dateSyncNPD\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
@@ -19341,7 +19256,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaAreaPolyBlockName\" , \"baaAreaPolyNo\" , \"baaAreaPolyDateValidFrom\" , \"baaAreaPolyDateValidTo\" FROM \"bsns_arr_area_area_poly_hst\" WHERE \"baaAreaPolyDateValidFrom\"  <>  '9999-12-31T00:00:00'"
+                           rr:sqlQuery  "SELECT \"baaNpdidBsnsArrArea\" , \"baaAreaPolyBlockName\" , \"baaAreaPolyNo\" , \"baaAreaPolyDateValidFrom\" , \"baaAreaPolyDateValidTo\" FROM \"bsns_arr_area_area_poly_hst\" WHERE \"baaAreaPolyDateValidFrom\"  <>  '9999-12-31'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;

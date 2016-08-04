@@ -33,7 +33,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNsMin" FROM  "wellbore_coordinates"
 
 mappingId	Mapping:00002:Literal:licence_transfer_hst:prlTransferDateUpdated
 target		npd:licence/{prlNpdidLicence}/transfer/{prlTransferDirection}/{cmpNpdidCompany}/history/{prlTransferDateValidFrom} npdv:dateUpdated {prlTransferDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlTransferDirection" , "cmpNpdidCompany" , "prlTransferDateValidFrom" , "prlTransferDateUpdated" FROM "licence_transfer_hst" WHERE "prlTransferDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlTransferDirection" , "cmpNpdidCompany" , "prlTransferDateValidFrom" , "prlTransferDateUpdated" FROM "licence_transfer_hst" WHERE "prlTransferDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00003:Literal:wellbore_development_all:wlbNsDeg
@@ -93,12 +93,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbNpdidWellboreReclass" FROM  "wellbore_de
 
 mappingId	Mapping:00015:Literal:wellbore_coordinates:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/point npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_coordinates" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_coordinates" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00016:Literal:licence_petreg_licence:ptlDateAwarded
 target		npd:petreg/licence/{prlNpdidLicence} ptl:dateAwarded {ptlDateAwarded}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "ptlDateAwarded" FROM "licence_petreg_licence" WHERE "ptlDateAwarded"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "ptlDateAwarded" FROM "licence_petreg_licence" WHERE "ptlDateAwarded"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00017:Literal:wellbore_dst:wlbDstOilDensity
@@ -113,12 +113,12 @@ source		SELECT "seaSurveyName" , "seaSensorLength" FROM  "seaMultiline"
 
 mappingId	Mapping:00019:Literal:tuf_petreg_licence:ptlDateValidTo
 target		npd:petreg/facility/{tufNpdidTuf} ptl:dateLicenceValidTo {ptlDateValidTo}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "ptlDateValidTo" FROM "tuf_petreg_licence" WHERE "ptlDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "ptlDateValidTo" FROM "tuf_petreg_licence" WHERE "ptlDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00020:Literal:wellbore_document:wlbDocumentDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore}/document/{wellbore_document_id}/{wlbDocumentName} npdv:dateUpdated {wlbDocumentDateUpdated}^^xsd:dateTime . 
-source		SELECT "wellbore_document_id" , "wlbNpdidWellbore" , "wlbDocumentName" , "wlbDocumentDateUpdated" FROM "wellbore_document" WHERE "wlbDocumentDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_document_id" , "wlbNpdidWellbore" , "wlbDocumentName" , "wlbDocumentDateUpdated" FROM "wellbore_document" WHERE "wlbDocumentDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00021:Literal:wellbore_shallow_all:wlbGeodeticDatum
@@ -153,7 +153,7 @@ source		SELECT "baaNpdidBsnsArrArea" , "baaAreaPolyBlockName" , "baaAreaPolyNo" 
 
 mappingId	Mapping:00027:Literal:company_reserves:cmpDateOffResEstDisplay
 target		npd:company/{cmpNpdidCompany}/reserve/{fldNpdidField} npdv:dateResourceEstimate {cmpDateOffResEstDisplay}^^xsd:dateTime . 
-source		SELECT "cmpNpdidCompany" , "fldNpdidField" , "cmpDateOffResEstDisplay" FROM "company_reserves" WHERE "cmpDateOffResEstDisplay"  <>  '9999-12-31T00:00:00'
+source		SELECT "cmpNpdidCompany" , "fldNpdidField" , "cmpDateOffResEstDisplay" FROM "company_reserves" WHERE "cmpDateOffResEstDisplay"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00028:Literal:wellbore_development_all:wlbTotalDepth
@@ -168,12 +168,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbCompletionYear" FROM  "wellbore_developm
 
 mappingId	Mapping:00030:Literal:discovery_reserves:dateSyncNPD
 target		npd:discovery/{dscNpdidDiscovery}/{dscReservesRC} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "dscNpdidDiscovery" , "dscReservesRC" , "dateSyncNPD" FROM "discovery_reserves" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "dscNpdidDiscovery" , "dscReservesRC" , "dateSyncNPD" FROM "discovery_reserves" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00031:Literal:bsns_arr_area_licensee_hst:baaLicenseeDateValidFrom
 target		npd:baa/{baaNpdidBsnsArrArea}/licensee/{cmpNpdidCompany}/history/{baaLicenseeDateValidFrom}/{baaLicenseeDateValidTo} npdv:dateBaaLicenseeValidFrom {baaLicenseeDateValidFrom}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "cmpNpdidCompany" , "baaLicenseeDateValidFrom" , "baaLicenseeDateValidTo" FROM "bsns_arr_area_licensee_hst" WHERE "baaLicenseeDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "cmpNpdidCompany" , "baaLicenseeDateValidFrom" , "baaLicenseeDateValidTo" FROM "bsns_arr_area_licensee_hst" WHERE "baaLicenseeDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00032:Literal:wellbore_development_all:wlbEwUtm
@@ -183,7 +183,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwUtm" FROM  "wellbore_development_all"
 
 mappingId	Mapping:00033:Literal:discovery:dateSyncNPD
 target		npd:discovery/{dscNpdidDiscovery} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "dscNpdidDiscovery" , "dateSyncNPD" FROM "discovery" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "dscNpdidDiscovery" , "dateSyncNPD" FROM "discovery" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00034:Literal:wellbore_shallow_all:wlbNpdidWellbore
@@ -203,7 +203,7 @@ source		SELECT "seaName" FROM "seis_acquisition" WHERE "seaShallowDrilling" = 'N
 
 mappingId	Mapping:00037:Literal:licence_petreg_licence:ptlDateValidFrom
 target		npd:petreg/licence/{prlNpdidLicence} ptl:dateLicenceValidFrom {ptlDateValidFrom}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "ptlDateValidFrom" FROM "licence_petreg_licence" WHERE "ptlDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "ptlDateValidFrom" FROM "licence_petreg_licence" WHERE "ptlDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00038:Literal:seaArea:seaSourceNumber
@@ -223,7 +223,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNamePart3" FROM  "wellbore_exploration_a
 
 mappingId	Mapping:00041:Literal:licence_phase_hst:dateSyncNPD
 target		npd:licence/{prlNpdidLicence}/phase/{prlPhase}/history/{prlDatePhaseValidFrom}/{prlDatePhaseValidTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" , "dateSyncNPD" FROM "licence_phase_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" , "dateSyncNPD" FROM "licence_phase_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00042:Literal:wellbore_exploration_all:wlbSeismicLocation
@@ -263,7 +263,7 @@ source		SELECT "prlNpdidLicence" , "prlTransferDirection" , "cmpNpdidCompany" , 
 
 mappingId	Mapping:00049:Literal:bsns_arr_area:baaDateUpdated
 target		npd:baa/{baaNpdidBsnsArrArea} npdv:dateUpdated {baaDateUpdated}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaDateUpdated" FROM "bsns_arr_area" WHERE "baaDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaDateUpdated" FROM "bsns_arr_area" WHERE "baaDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00050:Literal:field_reserves:fldRemainingNGL
@@ -288,12 +288,12 @@ source		SELECT "pipNpdidPipe" , "pipName" FROM  "pipLine"
 
 mappingId	Mapping:00054:Literal:wellbore_casing_and_lot:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/test/casingleakoff/{wellbore_casing_and_lot_id} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wellbore_casing_and_lot_id" , "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_casing_and_lot" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_casing_and_lot_id" , "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_casing_and_lot" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00055:Literal:wellbore_formation_top:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/stratum/{lsuNpdidLithoStrat}/depth/{lsuTopDepth}/{lsuBottomDepth} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" , "lsuTopDepth" , "lsuBottomDepth" , "dateSyncNPD" FROM "wellbore_formation_top" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" , "lsuTopDepth" , "lsuBottomDepth" , "dateSyncNPD" FROM "wellbore_formation_top" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 
@@ -335,7 +335,7 @@ source		SELECT "wellbore_mud_id" , "wlbNpdidWellbore" , "wlbMudType" FROM  "well
 
 mappingId	Mapping:00064:Literal:strat_litho_wellbore_core:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/stratum/{lsuNpdidLithoStrat}/cores npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" , "dateSyncNPD" FROM "strat_litho_wellbore_core" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" , "dateSyncNPD" FROM "strat_litho_wellbore_core" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00065:Literal:facility_fixed:fclEwMin
@@ -395,7 +395,7 @@ source		SELECT "prlArea_id" , "prlNpdidLicence" , "prlAreaPolyDateValidFrom" , "
 
 mappingId	Mapping:00076:Literal:wellbore_core:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/core/{wlbCoreNumber} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "dateSyncNPD" FROM "wellbore_core" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "dateSyncNPD" FROM "wellbore_core" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00077:Literal:company_reserves:cmpRemainingCondensate
@@ -405,12 +405,12 @@ source		SELECT "cmpNpdidCompany" , "fldNpdidField" , "cmpRemainingCondensate" FR
 
 mappingId	Mapping:00078:Literal:discovery_reserves:dscReservesDateUpdated
 target		npd:discovery/{dscNpdidDiscovery}/{dscReservesRC} npdv:dateUpdated {dscReservesDateUpdated}^^xsd:dateTime . 
-source		SELECT "dscNpdidDiscovery" , "dscReservesRC" , "dscReservesDateUpdated" FROM "discovery_reserves" WHERE "dscReservesDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "dscNpdidDiscovery" , "dscReservesRC" , "dscReservesDateUpdated" FROM "discovery_reserves" WHERE "dscReservesDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00079:Literal:wellbore_exploration_all:wlbCompletionDate
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateWellboreCompletion {wlbCompletionDate}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbCompletionDate" FROM "wellbore_exploration_all" WHERE "wlbCompletionDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbCompletionDate" FROM "wellbore_exploration_all" WHERE "wlbCompletionDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00080:Literal:wellbore_development_all:wlbFactMapUrl
@@ -445,12 +445,12 @@ source		SELECT "wellbore_core_photo_id" , "wlbNpdidWellbore" , "wlbCoreNumber" ,
 
 mappingId	Mapping:00086:Literal:bsns_arr_area:baaDateValidFrom
 target		npd:baa/{baaNpdidBsnsArrArea} npdv:dateBaaValidFrom {baaDateValidFrom}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaDateValidFrom" FROM "bsns_arr_area" WHERE "baaDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaDateValidFrom" FROM "bsns_arr_area" WHERE "baaDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00087:Literal:field_operator_hst:fldOperatorTo
 target		npd:field/{fldNpdidField}/operator/{cmpNpdidCompany}/history/{fldOperatorFrom}/{fldOperatorTo} npdv:dateFieldOperatorTo {fldOperatorTo}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldOperatorFrom" , "fldOperatorTo" FROM "field_operator_hst" WHERE "fldOperatorTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldOperatorFrom" , "fldOperatorTo" FROM "field_operator_hst" WHERE "fldOperatorTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00088:Literal:wellbore_exploration_all:wlbNpdidWellboreReclass
@@ -465,7 +465,7 @@ source		SELECT "seaName" , "seaSurveyTypeMain" FROM  "seis_acquisition"
 
 mappingId	Mapping:00090:Literal:wellbore_development_all:wlbWdssQcdate
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateWDSSQC {wlbWdssQcdate}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbWdssQcdate" FROM "wellbore_development_all" WHERE "wlbWdssQcdate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbWdssQcdate" FROM "wellbore_development_all" WHERE "wlbWdssQcdate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00091:Literal:field_production_totalt_NCS_year:prfPrdGasNetBillSm
@@ -485,7 +485,7 @@ source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "ptlLicenseeInterest" FROM  "
 
 mappingId	Mapping:00094:Literal:seis_acquisition:seaPlanFromDate
 target		npd:survey/{seaName} npdv:dateSurveyPlannedStart {seaPlanFromDate}^^xsd:dateTime . 
-source		SELECT "seaName" , "seaPlanFromDate" FROM "seis_acquisition" WHERE "seaPlanFromDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "seaName" , "seaPlanFromDate" FROM "seis_acquisition" WHERE "seaPlanFromDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00095:Literal:wellbore_exploration_all:wlbEwCode
@@ -505,7 +505,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNamePart3" FROM  "wellbore_development_a
 
 mappingId	Mapping:00098:Literal:wellbore_development_all:wlbDateUpdatedMax
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateUpdatedMax {wlbDateUpdatedMax}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbDateUpdatedMax" FROM "wellbore_development_all" WHERE "wlbDateUpdatedMax"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbDateUpdatedMax" FROM "wellbore_development_all" WHERE "wlbDateUpdatedMax"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00099:Literal:wellbore_npdid_overview:wlbNpdidWellbore
@@ -515,7 +515,7 @@ source		SELECT "wlbNpdidWellbore" FROM  "wellbore_npdid_overview"
 
 mappingId	Mapping:00100:Literal:licence_licensee_hst:prlLicenseeDateValidFrom
 target		npd:licence/{prlNpdidLicence}/licensee/{cmpNpdidCompany}/history/{prlLicenseeDateValidFrom}/{prlLicenseeDateValidTo} npdv:dateLicenseeValidFrom {prlLicenseeDateValidFrom}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" FROM "licence_licensee_hst" WHERE "prlLicenseeDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" FROM "licence_licensee_hst" WHERE "prlLicenseeDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00101:Literal:wellbore_shallow_all:wlbEwDeg
@@ -525,7 +525,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwDeg" FROM  "wellbore_shallow_all"
 
 mappingId	Mapping:00102:Literal:wellbore_exploration_all:wlbDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateUpdated {wlbDateUpdated}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbDateUpdated" FROM "wellbore_exploration_all" WHERE "wlbDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbDateUpdated" FROM "wellbore_exploration_all" WHERE "wlbDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00103:Literal:discovery:dscFactMapUrl
@@ -535,7 +535,7 @@ source		SELECT "dscNpdidDiscovery" , "dscFactMapUrl" FROM  "discovery"
 
 mappingId	Mapping:00104:Literal:wellbore_dst:wlbDstDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore}/test/drillstem/{wlbDstTestNumber} npdv:dateUpdated {wlbDstDateUpdated}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbDstTestNumber" , "wlbDstDateUpdated" FROM "wellbore_dst" WHERE "wlbDstDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbDstTestNumber" , "wlbDstDateUpdated" FROM "wellbore_dst" WHERE "wlbDstDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00105:Literal:licence:prlFactMapUrl
@@ -545,7 +545,7 @@ source		SELECT "prlNpdidLicence" , "prlFactMapUrl" FROM  "licence"
 
 mappingId	Mapping:00106:Literal:wellbore_dst:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/test/drillstem/{wlbDstTestNumber} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbDstTestNumber" , "dateSyncNPD" FROM "wellbore_dst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbDstTestNumber" , "dateSyncNPD" FROM "wellbore_dst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00107:Literal:wellbore_development_all:fclNpdidFacilityProducing
@@ -715,7 +715,7 @@ source		SELECT "dscNpdidDiscovery" , "dscDiscoveryYear" FROM  "discovery"
 
 mappingId	Mapping:00140:Literal:wellbore_shallow_all:wlbEntryDate
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateWellboreEntry {wlbEntryDate}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbEntryDate" FROM "wellbore_shallow_all" WHERE "wlbEntryDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbEntryDate" FROM "wellbore_shallow_all" WHERE "wlbEntryDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00141:Literal:wellbore_development_all:wlbNsMin
@@ -730,7 +730,7 @@ source		SELECT "apaAreaNet_id" , "qdrName" , "blkName" , "prvName" , "blkId" , "
 
 mappingId	Mapping:00143:Literal:field_owner_hst:dateSyncNPD
 target		npd:field/{fldNpdidField}/owner/{fldNpdidOwner}/history/{fldOwnershipFromDate}/{fldOwnershipToDate} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldNpdidOwner" , "fldOwnershipFromDate" , "fldOwnershipToDate" , "dateSyncNPD" FROM "field_owner_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldNpdidOwner" , "fldOwnershipFromDate" , "fldOwnershipToDate" , "dateSyncNPD" FROM "field_owner_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00144:Literal:seis_acquisition_coordinates_inc_turnarea:seaPolygonEWSec
@@ -750,7 +750,7 @@ source		SELECT "tufNpdidTuf" FROM  "tuf_petreg_licence"
 
 mappingId	Mapping:00147:Literal:company:dateSyncNPD
 target		npd:company/{cmpNpdidCompany} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "cmpNpdidCompany" , "dateSyncNPD" FROM "company" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "cmpNpdidCompany" , "dateSyncNPD" FROM "company" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00148:Literal:field_production_yearly:prfPrdProducedWaterInFieldMillSm3
@@ -760,12 +760,12 @@ source		SELECT "prfNpdidInformationCarrier" , "prfYear" , "prfPrdProducedWaterIn
 
 mappingId	Mapping:00149:Literal:wellbore_exploration_all:wlbWdssQcDate
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateWDSSQC {wlbWdssQcDate}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbWdssQcDate" FROM "wellbore_exploration_all" WHERE "wlbWdssQcDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbWdssQcDate" FROM "wellbore_exploration_all" WHERE "wlbWdssQcDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00150:Literal:facility_moveable:dateSyncNPD
 target		npd:facility/{fclNpdidFacility} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "fclNpdidFacility" , "dateSyncNPD" FROM "facility_moveable" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "fclNpdidFacility" , "dateSyncNPD" FROM "facility_moveable" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00151:Literal:company:cmpShortName
@@ -780,7 +780,7 @@ source		SELECT "fclNpdidFacility" , "fclFunctions" FROM  "facility_moveable"
 
 mappingId	Mapping:00153:Literal:licence_oper_hst:prlOperDateUpdated
 target		npd:licence/{prlNpdidLicence}/operator/{cmpNpdidCompany}/history/{prlOperDateValidFrom}/{prlOperDateValidTo} npdv:dateUpdated {prlOperDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlOperDateValidFrom" , "prlOperDateValidTo" , "prlOperDateUpdated" FROM "licence_oper_hst" WHERE "prlOperDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlOperDateValidFrom" , "prlOperDateValidTo" , "prlOperDateUpdated" FROM "licence_oper_hst" WHERE "prlOperDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00154:Literal:wellbore_shallow_all:wlbEntryYear
@@ -835,7 +835,7 @@ source		SELECT "fclNpdidFacility" , "fclGeodeticDatum" FROM  "facility_fixed"
 
 mappingId	Mapping:00164:Literal:field_owner_hst:fldOwnershipFromDate
 target		npd:field/{fldNpdidField}/owner/{fldNpdidOwner}/history/{fldOwnershipFromDate}/{fldOwnershipToDate} npdv:dateFieldOwnerFrom {fldOwnershipFromDate}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldNpdidOwner" , "fldOwnershipFromDate" , "fldOwnershipToDate" FROM "field_owner_hst" WHERE "fldOwnershipFromDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldNpdidOwner" , "fldOwnershipFromDate" , "fldOwnershipToDate" FROM "field_owner_hst" WHERE "fldOwnershipFromDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00165:Literal:discovery_reserves:dscReservesRC
@@ -850,7 +850,7 @@ source		SELECT "prfYear" , "prfPrdOilNetMillSm" FROM  "field_production_totalt_N
 
 mappingId	Mapping:00167:Literal:discovery:dscDateUpdatedMax
 target		npd:discovery/{dscNpdidDiscovery} npdv:dateUpdatedMax {dscDateUpdatedMax}^^xsd:dateTime . 
-source		SELECT "dscNpdidDiscovery" , "dscDateUpdatedMax" FROM "discovery" WHERE "dscDateUpdatedMax"  <>  '9999-12-31T00:00:00'
+source		SELECT "dscNpdidDiscovery" , "dscDateUpdatedMax" FROM "discovery" WHERE "dscDateUpdatedMax"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00168:Literal:wellbore_shallow_all:wlbNsCode
@@ -860,12 +860,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbNsCode" FROM  "wellbore_shallow_all"
 
 mappingId	Mapping:00169:Literal:wellbore_oil_sample:wlbOilSampleDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore}/test/oilsample/{wellbore_oil_sample_id} npdv:dateUpdated {wlbOilSampleDateUpdated}^^xsd:dateTime . 
-source		SELECT "wellbore_oil_sample_id" , "wlbNpdidWellbore" , "wlbOilSampleDateUpdated" FROM "wellbore_oil_sample" WHERE "wlbOilSampleDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_oil_sample_id" , "wlbNpdidWellbore" , "wlbOilSampleDateUpdated" FROM "wellbore_oil_sample" WHERE "wlbOilSampleDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00170:Literal:tuf_owner_hst:tufOwnerDateValidTo
 target		npd:facility/{tufNpdidTuf}/owner/{cmpNpdidCompany}/history/{tufOwnerDateValidFrom}/{tufOwnerDateValidTo} npdv:dateTUFOwnerValidTo {tufOwnerDateValidTo}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOwnerDateValidFrom" , "tufOwnerDateValidTo" FROM "tuf_owner_hst" WHERE "tufOwnerDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOwnerDateValidFrom" , "tufOwnerDateValidTo" FROM "tuf_owner_hst" WHERE "tufOwnerDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00171:Literal:Trans:wellbore_development_all:wlbMultilateral
@@ -905,7 +905,7 @@ source		SELECT "wellbore_casing_and_lot_id" , "wlbNpdidWellbore" , "wlbHoleDiame
 
 mappingId	Mapping:00178:Literal:wellbore_shallow_all:wlbDateUpdatedMax
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateUpdatedMax {wlbDateUpdatedMax}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbDateUpdatedMax" FROM "wellbore_shallow_all" WHERE "wlbDateUpdatedMax"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbDateUpdatedMax" FROM "wellbore_shallow_all" WHERE "wlbDateUpdatedMax"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00179:Literal:seis_acquisition:seaBoatTotalKm
@@ -915,7 +915,7 @@ source		SELECT "seaName" , "seaBoatTotalKm" FROM  "seis_acquisition"
 
 mappingId	Mapping:00180:Literal:licence_petreg_licence_licencee:dateSyncNPD
 target		npd:petreg/licence/{prlNpdidLicence}/licencee/{cmpNpdidCompany} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "dateSyncNPD" FROM "licence_petreg_licence_licencee" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "dateSyncNPD" FROM "licence_petreg_licence_licencee" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00181:Literal:bsns_arr_area:baaName
@@ -935,7 +935,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNsDecDeg" FROM  "wellbore_development_al
 
 mappingId	Mapping:00184:Literal:wellbore_oil_sample:wlbOilSampleTestDate
 target		npd:wellbore/{wlbNpdidWellbore}/test/oilsample/{wellbore_oil_sample_id} npdv:dateOilSampleTest {wlbOilSampleTestDate}^^xsd:dateTime . 
-source		SELECT "wellbore_oil_sample_id" , "wlbNpdidWellbore" , "wlbOilSampleTestDate" FROM "wellbore_oil_sample" WHERE "wlbOilSampleTestDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_oil_sample_id" , "wlbNpdidWellbore" , "wlbOilSampleTestDate" FROM "wellbore_oil_sample" WHERE "wlbOilSampleTestDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00185:Literal:wellbore_development_all:wlbDiskosWellboreParent
@@ -960,7 +960,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwCode" FROM  "wellbore_shallow_all"
 
 mappingId	Mapping:00189:Literal:licence:prlDateGranted
 target		npd:licence/{prlNpdidLicence} npdv:dateLicenceGranted {prlDateGranted}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlDateGranted" FROM "licence" WHERE "prlDateGranted"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlDateGranted" FROM "licence" WHERE "prlDateGranted"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00190:Literal:seaArea:seaSourcePressure
@@ -985,7 +985,7 @@ source		SELECT "fclNpdidFacility" FROM  "facility_moveable"
 
 mappingId	Mapping:00194:Literal:bsns_arr_area:dateSyncNPD
 target		npd:baa/{baaNpdidBsnsArrArea} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "dateSyncNPD" FROM "bsns_arr_area" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "dateSyncNPD" FROM "bsns_arr_area" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00195:Literal:field_reserves:fldRemainingOE
@@ -1020,7 +1020,7 @@ source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom
 
 mappingId	Mapping:00201:Literal:wellbore_exploration_all:wlbDateUpdatedMax
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateUpdatedMax {wlbDateUpdatedMax}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbDateUpdatedMax" FROM "wellbore_exploration_all" WHERE "wlbDateUpdatedMax"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbDateUpdatedMax" FROM "wellbore_exploration_all" WHERE "wlbDateUpdatedMax"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00202:Literal:discovery:dscHcType
@@ -1030,7 +1030,7 @@ source		SELECT "dscNpdidDiscovery" , "dscHcType" FROM  "discovery"
 
 mappingId	Mapping:00203:Literal:licence_petreg_licence:dateSyncNPD
 target		npd:petreg/licence/{prlNpdidLicence} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "dateSyncNPD" FROM "licence_petreg_licence" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "dateSyncNPD" FROM "licence_petreg_licence" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00204:Literal:wellbore_coordinates:wlbEwUtm
@@ -1075,12 +1075,12 @@ source		SELECT "wellbore_oil_sample_id" , "wlbNpdidWellbore" , "wlbOilSampleBott
 
 mappingId	Mapping:00212:Literal:field_licensee_hst:fldOwnerFrom
 target		npd:field/{fldNpdidField}/licensee/{cmpNpdidCompany}/history/{fldLicenseeFrom}/{fldLicenseeTo} npdv:dateFieldOwnerFrom {fldOwnerFrom}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" , "fldOwnerFrom" FROM "field_licensee_hst" WHERE "fldOwnerFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" , "fldOwnerFrom" FROM "field_licensee_hst" WHERE "fldOwnerFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00213:Literal:seis_acquisition_progress:seaProgressDate
 target		npd:survey/{seaProgressText2}/status/{seis_acquisition_progress_id} npdv:dateSurveyProgress {seaProgressDate}^^xsd:dateTime . 
-source		SELECT "seis_acquisition_progress_id" , "seaProgressText2" , "seaProgressDate" FROM "seis_acquisition_progress" WHERE "seaProgressDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "seis_acquisition_progress_id" , "seaProgressText2" , "seaProgressDate" FROM "seis_acquisition_progress" WHERE "seaProgressDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00214:Literal:Trans:company:cmpLicenceOperFormer
@@ -1100,7 +1100,7 @@ source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbC
 
 mappingId	Mapping:00217:Literal:licence_licensee_hst:prlOperDateValidTo
 target		npd:licence/{prlNpdidLicence}/licensee/{cmpNpdidCompany}/history/{prlLicenseeDateValidFrom}/{prlLicenseeDateValidTo} npdv:dateOperatorValidTo {prlOperDateValidTo}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" , "prlOperDateValidTo" FROM "licence_licensee_hst" WHERE "prlOperDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" , "prlOperDateValidTo" FROM "licence_licensee_hst" WHERE "prlOperDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00218:Literal:seaMultiline:seaPlanCdpKm
@@ -1110,7 +1110,7 @@ source		SELECT "seaSurveyName" , "seaPlanCdpKm" FROM  "seaMultiline"
 
 mappingId	Mapping:00219:Literal:tuf_petreg_message:ptlMessageDateUpdated
 target		npd:petreg/facility/{tufNpdidTuf}/message/{ptlMessageDocumentNo} ptl:dateUpdated {ptlMessageDateUpdated}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "ptlMessageDocumentNo" , "ptlMessageDateUpdated" FROM "tuf_petreg_message" WHERE "ptlMessageDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "ptlMessageDocumentNo" , "ptlMessageDateUpdated" FROM "tuf_petreg_message" WHERE "ptlMessageDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00220:Literal:field_activity_status_hst:fldStatus
@@ -1135,7 +1135,7 @@ source		SELECT "prlNpdidLicence" , "prlTaskID" , "wlbName" FROM  "licence_task"
 
 mappingId	Mapping:00224:Literal:licence_oper_hst:dateSyncNPD
 target		npd:licence/{prlNpdidLicence}/operator/{cmpNpdidCompany}/history/{prlOperDateValidFrom}/{prlOperDateValidTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlOperDateValidFrom" , "prlOperDateValidTo" , "dateSyncNPD" FROM "licence_oper_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlOperDateValidFrom" , "prlOperDateValidTo" , "dateSyncNPD" FROM "licence_oper_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00225:Literal:facility_fixed:fclNsSec
@@ -1170,7 +1170,7 @@ source		SELECT "fclNpdidFacility" , "fclNsMin" FROM  "facility_fixed"
 
 mappingId	Mapping:00231:Literal:discovery_reserves:dscDateOffResEstDisplay
 target		npd:discovery/{dscNpdidDiscovery}/{dscReservesRC} npdv:dateResourceEstimate {dscDateOffResEstDisplay}^^xsd:dateTime . 
-source		SELECT "dscNpdidDiscovery" , "dscReservesRC" , "dscDateOffResEstDisplay" FROM "discovery_reserves" WHERE "dscDateOffResEstDisplay"  <>  '9999-12-31T00:00:00'
+source		SELECT "dscNpdidDiscovery" , "dscReservesRC" , "dscDateOffResEstDisplay" FROM "discovery_reserves" WHERE "dscDateOffResEstDisplay"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00232:Literal:field:fldName
@@ -1190,7 +1190,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbDiskosWellboreParent" FROM  "wellbore_ex
 
 mappingId	Mapping:00235:Literal:licence_licensee_hst:prlLicenseeDateUpdated
 target		npd:licence/{prlNpdidLicence}/licensee/{cmpNpdidCompany}/history/{prlLicenseeDateValidFrom}/{prlLicenseeDateValidTo} npdv:dateUpdated {prlLicenseeDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" , "prlLicenseeDateUpdated" FROM "licence_licensee_hst" WHERE "prlLicenseeDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" , "prlLicenseeDateUpdated" FROM "licence_licensee_hst" WHERE "prlLicenseeDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00236:Literal:wellbore_exploration_all:wlbNpdidWellbore
@@ -1235,7 +1235,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbDstTestNumber" , "wlbDstFromDepth" FROM 
 
 mappingId	Mapping:00244:Literal:company_reserves:dateSyncNPD
 target		npd:company/{cmpNpdidCompany}/reserve/{fldNpdidField} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "cmpNpdidCompany" , "fldNpdidField" , "dateSyncNPD" FROM "company_reserves" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "cmpNpdidCompany" , "fldNpdidField" , "dateSyncNPD" FROM "company_reserves" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00245:Literal:wellbore_exploration_all:wlbDrillingDays
@@ -1250,12 +1250,12 @@ source		SELECT "seaSurveyName" , "seaPolygonPointNumber" , "seaPolygonNSDeg" FRO
 
 mappingId	Mapping:00247:Literal:bsns_arr_area_operator:baaOperatorDateUpdated
 target		npd:baa/{baaNpdidBsnsArrArea} npdv:dateUpdated {baaOperatorDateUpdated}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaOperatorDateUpdated" FROM "bsns_arr_area_operator" WHERE "baaOperatorDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaOperatorDateUpdated" FROM "bsns_arr_area_operator" WHERE "baaOperatorDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00248:Literal:tuf_owner_hst:dateSyncNPD
 target		npd:facility/{tufNpdidTuf}/owner/{cmpNpdidCompany}/history/{tufOwnerDateValidFrom}/{tufOwnerDateValidTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOwnerDateValidFrom" , "tufOwnerDateValidTo" , "dateSyncNPD" FROM "tuf_owner_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOwnerDateValidFrom" , "tufOwnerDateValidTo" , "dateSyncNPD" FROM "tuf_owner_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00249:Literal:wellbore_exploration_all:wlbPlotSymbol
@@ -1265,12 +1265,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbPlotSymbol" FROM  "wellbore_exploration_
 
 mappingId	Mapping:00250:Literal:field_reserves:fldDateOffResEstDisplay
 target		npd:field/{fldNpdidField}/reserve npdv:dateResourceEstimate {fldDateOffResEstDisplay}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldDateOffResEstDisplay" FROM "field_reserves" WHERE "fldDateOffResEstDisplay"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldDateOffResEstDisplay" FROM "field_reserves" WHERE "fldDateOffResEstDisplay"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00251:Literal:wellbore_oil_sample:wlbOilSampledateReceivedDate
 target		npd:wellbore/{wlbNpdidWellbore}/test/oilsample/{wellbore_oil_sample_id} npdv:dateOilSampleReceived {wlbOilSampledateReceivedDate}^^xsd:dateTime . 
-source		SELECT "wellbore_oil_sample_id" , "wlbNpdidWellbore" , "wlbOilSampledateReceivedDate" FROM "wellbore_oil_sample" WHERE "wlbOilSampledateReceivedDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_oil_sample_id" , "wlbNpdidWellbore" , "wlbOilSampledateReceivedDate" FROM "wellbore_oil_sample" WHERE "wlbOilSampledateReceivedDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00252:Literal:wellbore_oil_sample:wlbOilSampleTestNumber
@@ -1295,7 +1295,7 @@ source		SELECT "prlNpdidLicence" , "blcName" , "prlAreaPolyPolyNo" , "prlAreaPol
 
 mappingId	Mapping:00256:Literal:field_operator_hst:fldOperatorFrom
 target		npd:field/{fldNpdidField}/operator/{cmpNpdidCompany}/history/{fldOperatorFrom}/{fldOperatorTo} npdv:dateFieldOperatorFrom {fldOperatorFrom}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldOperatorFrom" , "fldOperatorTo" FROM "field_operator_hst" WHERE "fldOperatorFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldOperatorFrom" , "fldOperatorTo" FROM "field_operator_hst" WHERE "fldOperatorFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00257:Literal:wellbore_development_all:wlbDrillPermit
@@ -1325,7 +1325,7 @@ source		SELECT "fldNpdidField" , "fldFactPageUrl" FROM  "field"
 
 mappingId	Mapping:00262:Literal:licence_petreg_licence_oper:ptlOperDateUpdated
 target		npd:petreg/licence/{prlNpdidLicence} ptl:dateUpdated {ptlOperDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "ptlOperDateUpdated" FROM "licence_petreg_licence_oper" WHERE "ptlOperDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "ptlOperDateUpdated" FROM "licence_petreg_licence_oper" WHERE "ptlOperDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00263:Literal:seaArea:seaSensorNumbers
@@ -1340,7 +1340,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbFactPageUrl" FROM  "wellbore_development
 
 mappingId	Mapping:00265:Literal:licence_petreg_licence:ptlDateValidTo
 target		npd:petreg/licence/{prlNpdidLicence} ptl:dateLicenceValidTo {ptlDateValidTo}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "ptlDateValidTo" FROM "licence_petreg_licence" WHERE "ptlDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "ptlDateValidTo" FROM "licence_petreg_licence" WHERE "ptlDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00266:Literal:Trans:discovery:nmaName
@@ -1360,12 +1360,12 @@ source		SELECT "dscNpdidDiscovery" FROM "discovery" WHERE "nmaName" = 'North sea
 
 mappingId	Mapping:00269:Literal:licence_task:dateSyncNPD
 target		npd:licence/{prlNpdidLicence}/task/{prlTaskID} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlTaskID" , "dateSyncNPD" FROM "licence_task" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlTaskID" , "dateSyncNPD" FROM "licence_task" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00270:Literal:bsns_arr_area_licensee_hst:baaLicenseeDateUpdated
 target		npd:baa/{baaNpdidBsnsArrArea}/licensee/{cmpNpdidCompany}/history/{baaLicenseeDateValidFrom}/{baaLicenseeDateValidTo} npdv:dateUpdated {baaLicenseeDateUpdated}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "cmpNpdidCompany" , "baaLicenseeDateValidFrom" , "baaLicenseeDateValidTo" , "baaLicenseeDateUpdated" FROM "bsns_arr_area_licensee_hst" WHERE "baaLicenseeDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "cmpNpdidCompany" , "baaLicenseeDateValidFrom" , "baaLicenseeDateValidTo" , "baaLicenseeDateUpdated" FROM "bsns_arr_area_licensee_hst" WHERE "baaLicenseeDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00271:Literal:facility_moveable:fclFactPageUrl
@@ -1375,7 +1375,7 @@ source		SELECT "fclNpdidFacility" , "fclFactPageUrl" FROM  "facility_moveable"
 
 mappingId	Mapping:00272:Literal:bsns_arr_area_licensee_hst:baaLicenseeDateValidTo
 target		npd:baa/{baaNpdidBsnsArrArea}/licensee/{cmpNpdidCompany}/history/{baaLicenseeDateValidFrom}/{baaLicenseeDateValidTo} npdv:dateBaaLicenseeValidTo {baaLicenseeDateValidTo}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "cmpNpdidCompany" , "baaLicenseeDateValidFrom" , "baaLicenseeDateValidTo" FROM "bsns_arr_area_licensee_hst" WHERE "baaLicenseeDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "cmpNpdidCompany" , "baaLicenseeDateValidFrom" , "baaLicenseeDateValidTo" FROM "bsns_arr_area_licensee_hst" WHERE "baaLicenseeDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00273:Literal:seaArea:seaPlanCdpKm
@@ -1390,7 +1390,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNsSec" FROM  "wellbore_coordinates"
 
 mappingId	Mapping:00275:Literal:licence_oper_hst:prlOperDateValidFrom
 target		npd:licence/{prlNpdidLicence}/operator/{cmpNpdidCompany}/history/{prlOperDateValidFrom}/{prlOperDateValidTo} npdv:dateOperatorValidFrom {prlOperDateValidFrom}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlOperDateValidFrom" , "prlOperDateValidTo" FROM "licence_oper_hst" WHERE "prlOperDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlOperDateValidFrom" , "prlOperDateValidTo" FROM "licence_oper_hst" WHERE "prlOperDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00276:Literal:seaArea:sea3DKm2
@@ -1400,17 +1400,17 @@ source		SELECT "seaArea_id" , "seaSurveyName" , "sea3DKm2" FROM  "seaArea"
 
 mappingId	Mapping:00277:Literal:licence_task:prlTaskDateUpdated
 target		npd:licence/{prlNpdidLicence}/task/{prlTaskID} npdv:dateUpdated {prlTaskDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlTaskID" , "prlTaskDateUpdated" FROM "licence_task" WHERE "prlTaskDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlTaskID" , "prlTaskDateUpdated" FROM "licence_task" WHERE "prlTaskDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00278:Literal:tuf_petreg_licence:ptlDateUpdated
 target		npd:petreg/facility/{tufNpdidTuf} ptl:dateUpdated {ptlDateUpdated}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "ptlDateUpdated" FROM "tuf_petreg_licence" WHERE "ptlDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "ptlDateUpdated" FROM "tuf_petreg_licence" WHERE "ptlDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00279:Literal:wellbore_oil_sample:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/test/oilsample/{wellbore_oil_sample_id} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wellbore_oil_sample_id" , "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_oil_sample" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_oil_sample_id" , "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_oil_sample" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00280:Literal:bsns_arr_area_transfer_hst:baaTransferredInterest
@@ -1430,7 +1430,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbDstTestNumber" , "wlbDstBottomHolePress"
 
 mappingId	Mapping:00283:Literal:wellbore_mud:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/test/mud/{wellbore_mud_id} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wellbore_mud_id" , "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_mud" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_mud_id" , "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_mud" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00284:Literal:wellbore_shallow_all:wlbNsMin
@@ -1450,7 +1450,7 @@ source		SELECT "prfYear" , "prfMonth" , "prfPrdProducedWaterInFieldMillSm3" FROM
 
 mappingId	Mapping:00287:Literal:field_licensee_hst:fldLicenseeTo
 target		npd:field/{fldNpdidField}/licensee/{cmpNpdidCompany}/history/{fldLicenseeFrom}/{fldLicenseeTo} npdv:dateFieldLicenseeTo {fldLicenseeTo}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" FROM "field_licensee_hst" WHERE "fldLicenseeTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" FROM "field_licensee_hst" WHERE "fldLicenseeTo"  <>  '9999-12-31'
 
 
 
@@ -1461,12 +1461,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbDstTestNumber" , "wlbDstOilProd" FROM  "
 
 mappingId	Mapping:00290:Literal:licence_licensee_hst:prlOperDateValidFrom
 target		npd:licence/{prlNpdidLicence}/licensee/{cmpNpdidCompany}/history/{prlLicenseeDateValidFrom}/{prlLicenseeDateValidTo} npdv:dateOperatorValidFrom {prlOperDateValidFrom}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" , "prlOperDateValidFrom" FROM "licence_licensee_hst" WHERE "prlOperDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" , "prlOperDateValidFrom" FROM "licence_licensee_hst" WHERE "prlOperDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00291:Literal:tuf_petreg_licence_oper:dateSyncNPD
 target		npd:petreg/facility/{tufNpdidTuf} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "dateSyncNPD" FROM "tuf_petreg_licence_oper" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "dateSyncNPD" FROM "tuf_petreg_licence_oper" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00292:Literal:wellbore_exploration_all:wlbDiskosWellboreType
@@ -1476,7 +1476,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbDiskosWellboreType" FROM  "wellbore_expl
 
 mappingId	Mapping:00293:Literal:bsns_arr_area_area_poly_hst:baaAreaPolyDateValidTo
 target		npd:baa/{baaNpdidBsnsArrArea}/block/{baaAreaPolyBlockName}/polyno/{baaAreaPolyNo}/history/{baaAreaPolyDateValidFrom}/{baaAreaPolyDateValidTo} npdv:dateBaaAreaValidTo {baaAreaPolyDateValidTo}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaAreaPolyBlockName" , "baaAreaPolyNo" , "baaAreaPolyDateValidFrom" , "baaAreaPolyDateValidTo" FROM "bsns_arr_area_area_poly_hst" WHERE "baaAreaPolyDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaAreaPolyBlockName" , "baaAreaPolyNo" , "baaAreaPolyDateValidFrom" , "baaAreaPolyDateValidTo" FROM "bsns_arr_area_area_poly_hst" WHERE "baaAreaPolyDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00294:Literal:wellbore_dst:wlbDstGasDensity
@@ -1486,7 +1486,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbDstTestNumber" , "wlbDstGasDensity" FROM
 
 mappingId	Mapping:00295:Literal:bsns_arr_area_transfer_hst:baaTransferDateUpdated
 target		npd:baa/{baaNpdidBsnsArrArea}/transfer/{baaTransferDirection}/{cmpNpdidCompany}/history/{baaTransferDateValidFrom} npdv:dateUpdated {baaTransferDateUpdated}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaTransferDirection" , "cmpNpdidCompany" , "baaTransferDateValidFrom" , "baaTransferDateUpdated" FROM "bsns_arr_area_transfer_hst" WHERE "baaTransferDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaTransferDirection" , "cmpNpdidCompany" , "baaTransferDateValidFrom" , "baaTransferDateUpdated" FROM "bsns_arr_area_transfer_hst" WHERE "baaTransferDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00296:Literal:wellbore_exploration_all:wlbCompletionYear
@@ -1516,7 +1516,7 @@ source		SELECT "pipNpdidPipe" FROM  "pipLine"
 
 mappingId	Mapping:00301:Literal:facility_fixed:fclStartupDate
 target		npd:facility/{fclNpdidFacility} npdv:dateProductionStart {fclStartupDate}^^xsd:dateTime . 
-source		SELECT "fclNpdidFacility" , "fclStartupDate" FROM "facility_fixed" WHERE "fclStartupDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "fclNpdidFacility" , "fclStartupDate" FROM "facility_fixed" WHERE "fclStartupDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00302:Literal:bsns_arr_area:baaFactMapUrl
@@ -1546,7 +1546,7 @@ source		SELECT "seaSurveyName" , "seaPolygonPointNumber" , "seaPolygonNSMin" FRO
 
 mappingId	Mapping:00307:Literal:seis_acquisition:seaDateFinalized
 target		npd:survey/{seaName} npdv:dateSurveyActualCompleted {seaDateFinalized}^^xsd:dateTime . 
-source		SELECT "seaName" , "seaDateFinalized" FROM "seis_acquisition" WHERE "seaDateFinalized"  <>  '9999-12-31T00:00:00'
+source		SELECT "seaName" , "seaDateFinalized" FROM "seis_acquisition" WHERE "seaDateFinalized"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00308:Literal:wellbore_exploration_all:wlbNamePart1
@@ -1556,7 +1556,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNamePart1" FROM  "wellbore_exploration_a
 
 mappingId	Mapping:00309:Literal:bsns_arr_area:baaDateApproved
 target		npd:baa/{baaNpdidBsnsArrArea} npdv:dateApproved {baaDateApproved}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaDateApproved" FROM "bsns_arr_area" WHERE "baaDateApproved"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaDateApproved" FROM "bsns_arr_area" WHERE "baaDateApproved"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00310:Literal:wellbore_casing_and_lot:wlbCasingDiameter
@@ -1596,12 +1596,12 @@ source		SELECT "prfNpdidInformationCarrier" , "prfYear" , "prfMonth" , "prfPrdNG
 
 mappingId	Mapping:00317:Literal:licence:prlDateValidTo
 target		npd:licence/{prlNpdidLicence} npdv:dateLicenceValidTo {prlDateValidTo}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlDateValidTo" FROM "licence" WHERE "prlDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlDateValidTo" FROM "licence" WHERE "prlDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00318:Literal:licence_phase_hst:prlDatePhaseValidTo
 target		npd:licence/{prlNpdidLicence}/phase/{prlPhase}/history/{prlDatePhaseValidFrom}/{prlDatePhaseValidTo} npdv:dateStatusValidTo {prlDatePhaseValidTo}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" FROM "licence_phase_hst" WHERE "prlDatePhaseValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" FROM "licence_phase_hst" WHERE "prlDatePhaseValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00319:Literal:dscArea:dscNpdidResInclInDiscovery
@@ -1611,7 +1611,7 @@ source		SELECT "dscNpdidDiscovery" , "dscHcType" , "dscNpdidResInclInDiscovery" 
 
 mappingId	Mapping:00320:Literal:licence_phase_hst:prlPhaseDateUpdated
 target		npd:licence/{prlNpdidLicence}/phase/{prlPhase}/history/{prlDatePhaseValidFrom}/{prlDatePhaseValidTo} npdv:dateUpdated {prlPhaseDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" , "prlPhaseDateUpdated" FROM "licence_phase_hst" WHERE "prlPhaseDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" , "prlPhaseDateUpdated" FROM "licence_phase_hst" WHERE "prlPhaseDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00321:Literal:wellbore_exploration_all:wlbEwDesDeg
@@ -1621,7 +1621,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwDesDeg" FROM  "wellbore_exploration_al
 
 mappingId	Mapping:00322:Literal:tuf_petreg_licence:ptlDateValidFrom
 target		npd:petreg/facility/{tufNpdidTuf} ptl:dateLicenceValidFrom {ptlDateValidFrom}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "ptlDateValidFrom" FROM "tuf_petreg_licence" WHERE "ptlDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "ptlDateValidFrom" FROM "tuf_petreg_licence" WHERE "ptlDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00323:Literal:wellbore_development_all:wlbGeodeticDatum
@@ -1636,7 +1636,7 @@ source		SELECT "prlNpdidLicence" , "ptlMessageDocumentNo" FROM  "licence_petreg_
 
 mappingId	Mapping:00325:Literal:tuf_petreg_licence:dateSyncNPD
 target		npd:petreg/facility/{tufNpdidTuf} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "dateSyncNPD" FROM "tuf_petreg_licence" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "dateSyncNPD" FROM "tuf_petreg_licence" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 
@@ -1652,7 +1652,7 @@ source		SELECT "prfNpdidInformationCarrier" , "prfYear" , "prfPrdOeNetMillSm3" F
 
 mappingId	Mapping:00329:Literal:field:fldDateUpdatedMax
 target		npd:field/{fldNpdidField} npdv:dateUpdatedMax {fldDateUpdatedMax}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldDateUpdatedMax" FROM "field" WHERE "fldDateUpdatedMax"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldDateUpdatedMax" FROM "field" WHERE "fldDateUpdatedMax"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00330:Literal:seis_acquisition_coordinates_inc_turnarea:seaPolygonNSSec
@@ -1667,7 +1667,7 @@ source		SELECT "prfNpdidInformationCarrier" , "prfYear" FROM  "field_investment_
 
 mappingId	Mapping:00332:Literal:wellbore_mud:wlbMudDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore}/test/mud/{wellbore_mud_id} npdv:dateUpdated {wlbMudDateUpdated}^^xsd:dateTime . 
-source		SELECT "wellbore_mud_id" , "wlbNpdidWellbore" , "wlbMudDateUpdated" FROM "wellbore_mud" WHERE "wlbMudDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_mud_id" , "wlbNpdidWellbore" , "wlbMudDateUpdated" FROM "wellbore_mud" WHERE "wlbMudDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00333:Literal:field_licensee_hst:fldCompanyShare
@@ -1747,7 +1747,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbUtmZone" FROM  "wellbore_coordinates"
 
 mappingId	Mapping:00348:Literal:licence_oper_hst:prlOperDateValidTo
 target		npd:licence/{prlNpdidLicence}/operator/{cmpNpdidCompany}/history/{prlOperDateValidFrom}/{prlOperDateValidTo} npdv:dateOperatorValidTo {prlOperDateValidTo}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlOperDateValidFrom" , "prlOperDateValidTo" FROM "licence_oper_hst" WHERE "prlOperDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlOperDateValidFrom" , "prlOperDateValidTo" FROM "licence_oper_hst" WHERE "prlOperDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00349:Literal:wellbore_exploration_all:wlbEwSec
@@ -1757,7 +1757,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwSec" FROM  "wellbore_exploration_all"
 
 mappingId	Mapping:00350:Literal:bsns_arr_area_area_poly_hst:dateSyncNPD
 target		npd:baa/{baaNpdidBsnsArrArea}/block/{baaAreaPolyBlockName}/polyno/{baaAreaPolyNo}/history/{baaAreaPolyDateValidFrom}/{baaAreaPolyDateValidTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaAreaPolyBlockName" , "baaAreaPolyNo" , "baaAreaPolyDateValidFrom" , "baaAreaPolyDateValidTo" , "dateSyncNPD" FROM "bsns_arr_area_area_poly_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaAreaPolyBlockName" , "baaAreaPolyNo" , "baaAreaPolyDateValidFrom" , "baaAreaPolyDateValidTo" , "dateSyncNPD" FROM "bsns_arr_area_area_poly_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00351:Literal:wellbore_development_all:wlbNamePart5
@@ -1767,7 +1767,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNamePart5" FROM  "wellbore_development_a
 
 mappingId	Mapping:00352:Literal:tuf_petreg_licence_licencee:ptlLicenseeDateUpdated
 target		npd:petreg/facility/{tufNpdidTuf}/licencee/{cmpNpdidCompany} ptl:dateUpdated {ptlLicenseeDateUpdated}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "ptlLicenseeDateUpdated" FROM "tuf_petreg_licence_licencee" WHERE "ptlLicenseeDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "ptlLicenseeDateUpdated" FROM "tuf_petreg_licence_licencee" WHERE "ptlLicenseeDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00353:Literal:seis_acquisition_coordinates_inc_turnarea:seaPolygonEWMin
@@ -1782,7 +1782,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbWell" FROM  "wellbore_development_all"
 
 mappingId	Mapping:00355:Literal:wellbore_development_all:wlbDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateUpdated {wlbDateUpdated}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbDateUpdated" FROM "wellbore_development_all" WHERE "wlbDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbDateUpdated" FROM "wellbore_development_all" WHERE "wlbDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00356:Literal:licence:prlOriginalArea
@@ -1802,7 +1802,7 @@ source		SELECT "fclNpdidFacility" , "fclNsDeg" FROM  "facility_fixed"
 
 mappingId	Mapping:00359:Literal:licence_petreg_licence:ptlDateUpdated
 target		npd:petreg/licence/{prlNpdidLicence} ptl:dateUpdated {ptlDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "ptlDateUpdated" FROM "licence_petreg_licence" WHERE "ptlDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "ptlDateUpdated" FROM "licence_petreg_licence" WHERE "ptlDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00360:Literal:wellbore_coordinates:wlbNsDeg
@@ -1812,7 +1812,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNsDeg" FROM  "wellbore_coordinates"
 
 mappingId	Mapping:00361:Literal:wellbore_development_all:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_development_all" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_development_all" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00362:Literal:company_reserves:cmpRecoverableNGL
@@ -1822,7 +1822,7 @@ source		SELECT "cmpNpdidCompany" , "fldNpdidField" , "cmpRecoverableNGL" FROM  "
 
 mappingId	Mapping:00363:Literal:discovery:dscDateUpdated
 target		npd:discovery/{dscNpdidDiscovery} npdv:dateUpdated {dscDateUpdated}^^xsd:dateTime . 
-source		SELECT "dscNpdidDiscovery" , "dscDateUpdated" FROM "discovery" WHERE "dscDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "dscNpdidDiscovery" , "dscDateUpdated" FROM "discovery" WHERE "dscDateUpdated"  <>  '9999-12-31'
 
 
 
@@ -1844,12 +1844,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbNsDeg" FROM  "wellbore_shallow_all"
 
 mappingId	Mapping:00368:Literal:seis_acquisition:dateSyncNPD
 target		npd:survey/{seaName} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "seaName" , "dateSyncNPD" FROM "seis_acquisition" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "seaName" , "dateSyncNPD" FROM "seis_acquisition" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00369:Literal:tuf_petreg_licence_licencee:dateSyncNPD
 target		npd:petreg/facility/{tufNpdidTuf}/licencee/{cmpNpdidCompany} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "dateSyncNPD" FROM "tuf_petreg_licence_licencee" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "dateSyncNPD" FROM "tuf_petreg_licence_licencee" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00370:Literal:wellbore_core_photo:wlbCorePhotoImgUrl
@@ -2014,17 +2014,17 @@ source		SELECT "wlbNpdidWellbore" FROM "wellbore_exploration_all" WHERE "wlbAgeA
 
 mappingId	Mapping:00402:Literal:facility_moveable:fclDateUpdated
 target		npd:facility/{fclNpdidFacility} npdv:dateUpdated {fclDateUpdated}^^xsd:dateTime . 
-source		SELECT "fclNpdidFacility" , "fclDateUpdated" FROM "facility_moveable" WHERE "fclDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "fclNpdidFacility" , "fclDateUpdated" FROM "facility_moveable" WHERE "fclDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00403:Literal:licence:prlDateUpdatedMax
 target		npd:licence/{prlNpdidLicence} npdv:dateUpdatedMax {prlDateUpdatedMax}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlDateUpdatedMax" FROM "licence" WHERE "prlDateUpdatedMax"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlDateUpdatedMax" FROM "licence" WHERE "prlDateUpdatedMax"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00404:Literal:licence_transfer_hst:dateSyncNPD
 target		npd:licence/{prlNpdidLicence}/transfer/{prlTransferDirection}/{cmpNpdidCompany}/history/{prlTransferDateValidFrom} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlTransferDirection" , "cmpNpdidCompany" , "prlTransferDateValidFrom" , "dateSyncNPD" FROM "licence_transfer_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlTransferDirection" , "cmpNpdidCompany" , "prlTransferDateValidFrom" , "dateSyncNPD" FROM "licence_transfer_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00405:Literal:wellbore_shallow_all:wlbNamePart1
@@ -2039,7 +2039,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwSec" FROM  "wellbore_shallow_all"
 
 mappingId	Mapping:00407:Literal:wellbore_exploration_all:wlbEntryDate
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateWellboreEntry {wlbEntryDate}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbEntryDate" FROM "wellbore_exploration_all" WHERE "wlbEntryDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbEntryDate" FROM "wellbore_exploration_all" WHERE "wlbEntryDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00408:Literal:licence_area_poly_hst:prlAreaPolyPolyArea
@@ -2049,7 +2049,7 @@ source		SELECT "prlNpdidLicence" , "prlAreaPolyBlockName" , "prlAreaPolyPolyNo" 
 
 mappingId	Mapping:00409:Literal:wellbore_shallow_all:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_shallow_all" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_shallow_all" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00410:Literal:wellbore_exploration_all:wlbWell
@@ -2064,7 +2064,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwCode" FROM  "wellbore_development_all"
 
 mappingId	Mapping:00412:Literal:field_owner_hst:fldOwnerDateUpdated
 target		npd:field/{fldNpdidField}/owner/{fldNpdidOwner}/history/{fldOwnershipFromDate}/{fldOwnershipToDate} npdv:dateUpdated {fldOwnerDateUpdated}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldNpdidOwner" , "fldOwnershipFromDate" , "fldOwnershipToDate" , "fldOwnerDateUpdated" FROM "field_owner_hst" WHERE "fldOwnerDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldNpdidOwner" , "fldOwnershipFromDate" , "fldOwnershipToDate" , "fldOwnerDateUpdated" FROM "field_owner_hst" WHERE "fldOwnerDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00413:Literal:licence_phase_hst:prlPhase
@@ -2134,12 +2134,12 @@ source		SELECT "prlNpdidLicence" , "prlTaskID" , "prlTaskName" FROM  "licence_ta
 
 mappingId	Mapping:00426:Literal:prlAreaSplitByBlock:prlAreaPolyDateValidFrom
 target		npd:licence/{prlNpdidLicence}/block/{blcName}/polyno/{prlAreaPolyPolyNo}/history/{prlAreaPolyDateValidFrom}/{prlAreaPolyDateValidTo} npdv:dateLicenceAreaValidFrom {prlAreaPolyDateValidFrom}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "blcName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "prlAreaSplitByBlock" WHERE "prlAreaPolyDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "blcName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "prlAreaSplitByBlock" WHERE "prlAreaPolyDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00427:Literal:licence_phase_hst:prlDateInitialPeriodExpires
 target		npd:licence/{prlNpdidLicence}/phase/{prlPhase}/history/{prlDatePhaseValidFrom}/{prlDatePhaseValidTo} npdv:dateInitialStatusTo {prlDateInitialPeriodExpires}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" , "prlDateInitialPeriodExpires" FROM "licence_phase_hst" WHERE "prlDateInitialPeriodExpires"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" , "prlDateInitialPeriodExpires" FROM "licence_phase_hst" WHERE "prlDateInitialPeriodExpires"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00428:Literal:field:fldFactMapUrl
@@ -2154,7 +2154,7 @@ source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" FROM  "strat_litho_well
 
 mappingId	Mapping:00430:Literal:licence_phase_hst:prlDatePhaseValidFrom
 target		npd:licence/{prlNpdidLicence}/phase/{prlPhase}/history/{prlDatePhaseValidFrom}/{prlDatePhaseValidTo} npdv:dateStatusValidFrom {prlDatePhaseValidFrom}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" FROM "licence_phase_hst" WHERE "prlDatePhaseValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" FROM "licence_phase_hst" WHERE "prlDatePhaseValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00431:Literal:field:fldCurrentActivitySatus
@@ -2176,17 +2176,17 @@ source		SELECT "dscNpdidDiscovery" , "dscName" FROM  "discovery"
 
 mappingId	Mapping:00435:Literal:bsns_arr_area_transfer_hst:baaTransferDateValidFrom
 target		npd:baa/{baaNpdidBsnsArrArea}/transfer/{baaTransferDirection}/{cmpNpdidCompany}/history/{baaTransferDateValidFrom} npdv:dateTransferValidFrom {baaTransferDateValidFrom}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaTransferDirection" , "cmpNpdidCompany" , "baaTransferDateValidFrom" FROM "bsns_arr_area_transfer_hst" WHERE "baaTransferDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaTransferDirection" , "cmpNpdidCompany" , "baaTransferDateValidFrom" FROM "bsns_arr_area_transfer_hst" WHERE "baaTransferDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00436:Literal:field_operator_hst:fldOperatorDateUpdated
 target		npd:field/{fldNpdidField}/operator/{cmpNpdidCompany}/history/{fldOperatorFrom}/{fldOperatorTo} npdv:dateUpdated {fldOperatorDateUpdated}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldOperatorFrom" , "fldOperatorTo" , "fldOperatorDateUpdated" FROM "field_operator_hst" WHERE "fldOperatorDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldOperatorFrom" , "fldOperatorTo" , "fldOperatorDateUpdated" FROM "field_operator_hst" WHERE "fldOperatorDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00437:Literal:prlArea:prlAreaPolyDateValidTo
 target		npd:licence/{prlNpdidLicence}/area/{prlArea_id}/history/{prlAreaPolyDateValidFrom}/{prlAreaPolyDateValidTo} npdv:dateLicenceAreaValidTo {prlAreaPolyDateValidTo}^^xsd:dateTime . 
-source		SELECT "prlArea_id" , "prlNpdidLicence" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "prlArea" WHERE "prlAreaPolyDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlArea_id" , "prlNpdidLicence" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "prlArea" WHERE "prlAreaPolyDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00438:Literal:bsns_arr_area:baaFactPageUrl
@@ -2196,12 +2196,12 @@ source		SELECT "baaNpdidBsnsArrArea" , "baaFactPageUrl" FROM  "bsns_arr_area"
 
 mappingId	Mapping:00439:Literal:bsns_arr_area_transfer_hst:dateSyncNPD
 target		npd:baa/{baaNpdidBsnsArrArea}/transfer/{baaTransferDirection}/{cmpNpdidCompany}/history/{baaTransferDateValidFrom} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaTransferDirection" , "cmpNpdidCompany" , "baaTransferDateValidFrom" , "dateSyncNPD" FROM "bsns_arr_area_transfer_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaTransferDirection" , "cmpNpdidCompany" , "baaTransferDateValidFrom" , "dateSyncNPD" FROM "bsns_arr_area_transfer_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00440:Literal:field_licensee_hst:fldOwnerTo
 target		npd:field/{fldNpdidField}/licensee/{cmpNpdidCompany}/history/{fldLicenseeFrom}/{fldLicenseeTo} npdv:dateFieldOwnerTo {fldOwnerTo}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" , "fldOwnerTo" FROM "field_licensee_hst" WHERE "fldOwnerTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" , "fldOwnerTo" FROM "field_licensee_hst" WHERE "fldOwnerTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00441:Literal:Trans:wellbore_shallow_all:wlbMainArea
@@ -2241,7 +2241,7 @@ source		SELECT "prfNpdidInformationCarrier" , "prfYear" , "prfPrdNGLNetMillSm3" 
 
 mappingId	Mapping:00448:Literal:field:fldDateUpdated
 target		npd:field/{fldNpdidField} npdv:dateUpdated {fldDateUpdated}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldDateUpdated" FROM "field" WHERE "fldDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldDateUpdated" FROM "field" WHERE "fldDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00449:Literal:discovery_reserves:dscRecoverableOil
@@ -2256,7 +2256,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwDeg" FROM  "wellbore_exploration_all"
 
 mappingId	Mapping:00451:Literal:licence_petreg_message:ptlMessageRegisteredDate
 target		npd:petreg/licence/{prlNpdidLicence}/message/{ptlMessageDocumentNo} ptl:dateMessageRegistered {ptlMessageRegisteredDate}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "ptlMessageDocumentNo" , "ptlMessageRegisteredDate" FROM "licence_petreg_message" WHERE "ptlMessageRegisteredDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "ptlMessageDocumentNo" , "ptlMessageRegisteredDate" FROM "licence_petreg_message" WHERE "ptlMessageRegisteredDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00452:Literal:apaAreaNet:blkId
@@ -2266,7 +2266,7 @@ source		SELECT "apaAreaNet_id" , "qdrName" , "blkName" , "prvName" , "blkId" FRO
 
 mappingId	Mapping:00453:Literal:field_reserves:dateSyncNPD
 target		npd:field/{fldNpdidField}/reserve npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "dateSyncNPD" FROM "field_reserves" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "dateSyncNPD" FROM "field_reserves" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00454:Literal:wellbore_exploration_all:wlbFactMapUrl
@@ -2281,12 +2281,12 @@ source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" , "lsuTopDepth" , "lsuB
 
 mappingId	Mapping:00456:Literal:licence_task:prlTaskExpiryDate
 target		npd:licence/{prlNpdidLicence}/task/{prlTaskID} npdv:dateTaskExpiry {prlTaskExpiryDate}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlTaskID" , "prlTaskExpiryDate" FROM "licence_task" WHERE "prlTaskExpiryDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlTaskID" , "prlTaskExpiryDate" FROM "licence_task" WHERE "prlTaskExpiryDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00457:Literal:tuf_petreg_licence:ptlDateUpdatedMax
 target		npd:petreg/facility/{tufNpdidTuf} ptl:dateUpdatedMax {ptlDateUpdatedMax}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "ptlDateUpdatedMax" FROM "tuf_petreg_licence" WHERE "ptlDateUpdatedMax"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "ptlDateUpdatedMax" FROM "tuf_petreg_licence" WHERE "ptlDateUpdatedMax"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00458:Literal:wellbore_shallow_all:wlbTotalDepth
@@ -2296,12 +2296,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbTotalDepth" FROM  "wellbore_shallow_all"
 
 mappingId	Mapping:00459:Literal:field_operator_hst:dateSyncNPD
 target		npd:field/{fldNpdidField}/operator/{cmpNpdidCompany}/history/{fldOperatorFrom}/{fldOperatorTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldOperatorFrom" , "fldOperatorTo" , "dateSyncNPD" FROM "field_operator_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldOperatorFrom" , "fldOperatorTo" , "dateSyncNPD" FROM "field_operator_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00460:Literal:field_licensee_hst:fldLicenseeDateUpdated
 target		npd:field/{fldNpdidField}/licensee/{cmpNpdidCompany}/history/{fldLicenseeFrom}/{fldLicenseeTo} npdv:dateUpdated {fldLicenseeDateUpdated}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" , "fldLicenseeDateUpdated" FROM "field_licensee_hst" WHERE "fldLicenseeDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" , "fldLicenseeDateUpdated" FROM "field_licensee_hst" WHERE "fldLicenseeDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00461:Literal:facility_fixed:fclNpdidFacility
@@ -2344,7 +2344,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbReentryExplorationActivity" FROM  "wellb
 
 mappingId	Mapping:00469:Literal:field_licensee_hst:fldLicenseeFrom
 target		npd:field/{fldNpdidField}/licensee/{cmpNpdidCompany}/history/{fldLicenseeFrom}/{fldLicenseeTo} npdv:dateFieldLicenseeFrom {fldLicenseeFrom}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" FROM "field_licensee_hst" WHERE "fldLicenseeFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" FROM "field_licensee_hst" WHERE "fldLicenseeFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00470:Literal:company:cmpLongName
@@ -2414,7 +2414,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNsUtm" FROM  "wellbore_coordinates"
 
 mappingId	Mapping:00483:Literal:prlArea:prlAreaPolyDateValidFrom
 target		npd:licence/{prlNpdidLicence}/area/{prlArea_id}/history/{prlAreaPolyDateValidFrom}/{prlAreaPolyDateValidTo} npdv:dateLicenceAreaValidFrom {prlAreaPolyDateValidFrom}^^xsd:dateTime . 
-source		SELECT "prlArea_id" , "prlNpdidLicence" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "prlArea" WHERE "prlAreaPolyDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlArea_id" , "prlNpdidLicence" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "prlArea" WHERE "prlAreaPolyDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00484:Literal:wellbore_shallow_all:wlbNamePart3
@@ -2434,12 +2434,12 @@ source		SELECT "seaSurveyName" , "seaSensorType" FROM  "seaMultiline"
 
 mappingId	Mapping:00487:Literal:field:dateSyncNPD
 target		npd:field/{fldNpdidField} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "dateSyncNPD" FROM "field" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "dateSyncNPD" FROM "field" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00488:Literal:licence:prlDateUpdated
 target		npd:licence/{prlNpdidLicence} npdv:dateUpdated {prlDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlDateUpdated" FROM "licence" WHERE "prlDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlDateUpdated" FROM "licence" WHERE "prlDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00489:Literal:Trans:company:cmpLicenceLicenseeFormer
@@ -2454,7 +2454,7 @@ source		SELECT "cmpNpdidCompany" FROM "company" WHERE "cmpLicenceLicenseeFormer"
 
 mappingId	Mapping:00491:Literal:licence_licensee_hst:dateSyncNPD
 target		npd:licence/{prlNpdidLicence}/licensee/{cmpNpdidCompany}/history/{prlLicenseeDateValidFrom}/{prlLicenseeDateValidTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" , "dateSyncNPD" FROM "licence_licensee_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" , "dateSyncNPD" FROM "licence_licensee_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00492:Literal:pipLine:pipCurrentPhase
@@ -2494,12 +2494,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwDesDeg" FROM  "wellbore_coordinates"
 
 mappingId	Mapping:00499:Literal:field_activity_status_hst:fldStatusDateUpdated
 target		npd:field/{fldNpdidField}/activity/{fldStatus}/history/{fldStatusFromDate}/{fldStatusToDate} npdv:dateUpdated {fldStatusDateUpdated}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldStatus" , "fldStatusFromDate" , "fldStatusToDate" , "fldStatusDateUpdated" FROM "field_activity_status_hst" WHERE "fldStatusDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldStatus" , "fldStatusFromDate" , "fldStatusToDate" , "fldStatusDateUpdated" FROM "field_activity_status_hst" WHERE "fldStatusDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00500:Literal:discovery:dscDateFromInclInField
 target		npd:discovery/{dscNpdidDiscovery} npdv:dateIncludedInField {dscDateFromInclInField}^^xsd:dateTime . 
-source		SELECT "dscNpdidDiscovery" , "dscDateFromInclInField" FROM "discovery" WHERE "dscDateFromInclInField"  <>  '9999-12-31T00:00:00'
+source		SELECT "dscNpdidDiscovery" , "dscDateFromInclInField" FROM "discovery" WHERE "dscDateFromInclInField"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00501:Literal:field_reserves:fldRemainingCondensate
@@ -2529,7 +2529,7 @@ source		SELECT "dscNpdidDiscovery" , "dscReservesRC" , "dscRecoverableCondensate
 
 mappingId	Mapping:00506:Literal:baaArea:baaAreaPolyDateValidTo
 target		npd:baa/{baaNpdidBsnsArrArea}/polygon/{baaNpdidBsnsArrAreaPoly} npdv:dateBaaAreaValidTo {baaAreaPolyDateValidTo}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaNpdidBsnsArrAreaPoly" , "baaAreaPolyDateValidTo" FROM "baaArea" WHERE "baaAreaPolyDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaNpdidBsnsArrAreaPoly" , "baaAreaPolyDateValidTo" FROM "baaArea" WHERE "baaAreaPolyDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00507:Literal:wellbore_development_all:fclNpdidFacilityDrilling
@@ -2539,12 +2539,12 @@ source		SELECT "wlbNpdidWellbore" , "fclNpdidFacilityDrilling" FROM  "wellbore_d
 
 mappingId	Mapping:00508:Literal:licence_petreg_licence_oper:dateSyncNPD
 target		npd:petreg/licence/{prlNpdidLicence} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "dateSyncNPD" FROM "licence_petreg_licence_oper" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "dateSyncNPD" FROM "licence_petreg_licence_oper" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00509:Literal:facility_fixed:dateSyncNPD
 target		npd:facility/{fclNpdidFacility} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "fclNpdidFacility" , "dateSyncNPD" FROM "facility_fixed" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "fclNpdidFacility" , "dateSyncNPD" FROM "facility_fixed" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00510:Literal:bsns_arr_area_licensee_hst:baaLicenseeSdfi
@@ -2554,7 +2554,7 @@ source		SELECT "baaNpdidBsnsArrArea" , "cmpNpdidCompany" , "baaLicenseeDateValid
 
 mappingId	Mapping:00511:Literal:licence_petreg_message:dateSyncNPD
 target		npd:petreg/licence/{prlNpdidLicence}/message/{ptlMessageDocumentNo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "ptlMessageDocumentNo" , "dateSyncNPD" FROM "licence_petreg_message" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "ptlMessageDocumentNo" , "dateSyncNPD" FROM "licence_petreg_message" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00512:Literal:wellbore_core_photo:wlbCorePhotoTitle
@@ -2591,7 +2591,7 @@ source		SELECT "wellbore_document_id" , "wlbNpdidWellbore" , "wlbDocumentName" ,
 
 mappingId	Mapping:00519:Literal:tuf_owner_hst:tufOwnerDateValidFrom
 target		npd:facility/{tufNpdidTuf}/owner/{cmpNpdidCompany}/history/{tufOwnerDateValidFrom}/{tufOwnerDateValidTo} npdv:dateTUFOwnerValidFrom {tufOwnerDateValidFrom}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOwnerDateValidFrom" , "tufOwnerDateValidTo" FROM "tuf_owner_hst" WHERE "tufOwnerDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOwnerDateValidFrom" , "tufOwnerDateValidTo" FROM "tuf_owner_hst" WHERE "tufOwnerDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00520:Literal:Trans:company:cmpLicenceLicenseeCurrent
@@ -2914,7 +2914,7 @@ source		SELECT "cmpNpdidCompany" , "cmpGroup" FROM  "company"
 
 mappingId	Mapping:00584:Literal:wellbore_casing_and_lot:wlbCasingDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore}/test/casingleakoff/{wellbore_casing_and_lot_id} npdv:dateUpdated {wlbCasingDateUpdated}^^xsd:dateTime . 
-source		SELECT "wellbore_casing_and_lot_id" , "wlbNpdidWellbore" , "wlbCasingDateUpdated" FROM "wellbore_casing_and_lot" WHERE "wlbCasingDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_casing_and_lot_id" , "wlbNpdidWellbore" , "wlbCasingDateUpdated" FROM "wellbore_casing_and_lot" WHERE "wlbCasingDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00585:Literal:wellbore_development_all:wlbWellboreName
@@ -2949,7 +2949,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbWellType" FROM  "wellbore_npdid_overview
 
 mappingId	Mapping:00591:Literal:wellbore_document:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/document/{wellbore_document_id}/{wlbDocumentName} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wellbore_document_id" , "wlbNpdidWellbore" , "wlbDocumentName" , "dateSyncNPD" FROM "wellbore_document" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_document_id" , "wlbNpdidWellbore" , "wlbDocumentName" , "dateSyncNPD" FROM "wellbore_document" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00592:Literal:prlAreaSplitByBlock:prlAreaPolyToZvalue
@@ -2979,7 +2979,7 @@ source		SELECT "fldNpdidField" , "fldRemainingGas" FROM  "field_reserves"
 
 mappingId	Mapping:00597:Literal:facility_fixed:fclDateUpdated
 target		npd:facility/{fclNpdidFacility} npdv:dateUpdated {fclDateUpdated}^^xsd:dateTime . 
-source		SELECT "fclNpdidFacility" , "fclDateUpdated" FROM "facility_fixed" WHERE "fclDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "fclNpdidFacility" , "fclDateUpdated" FROM "facility_fixed" WHERE "fclDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00598:Literal:field_reserves:fldRecoverableOE
@@ -3024,12 +3024,12 @@ source		SELECT "fldNpdidField" , "fldRecoverableCondensate" FROM  "field_reserve
 
 mappingId	Mapping:00606:Literal:licence_area_poly_hst:prlAreaPolyDateValidFrom
 target		npd:licence/{prlNpdidLicence}/block/{prlAreaPolyBlockName}/polyno/{prlAreaPolyPolyNo}/history/{prlAreaPolyDateValidFrom}/{prlAreaPolyDateValidTo} npdv:dateLicenceAreaValidFrom {prlAreaPolyDateValidFrom}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlAreaPolyBlockName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "licence_area_poly_hst" WHERE "prlAreaPolyDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlAreaPolyBlockName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "licence_area_poly_hst" WHERE "prlAreaPolyDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00607:Literal:wellbore_core_photo:wlbCorePhotoDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore}/core/{wlbCoreNumber}/photo/{wellbore_core_photo_id}/{wlbCorePhotoTitle} npdv:dateUpdated {wlbCorePhotoDateUpdated}^^xsd:dateTime . 
-source		SELECT "wellbore_core_photo_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbCorePhotoTitle" , "wlbCorePhotoDateUpdated" FROM "wellbore_core_photo" WHERE "wlbCorePhotoDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_core_photo_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbCorePhotoTitle" , "wlbCorePhotoDateUpdated" FROM "wellbore_core_photo" WHERE "wlbCorePhotoDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00608:Literal:wellbore_dst:wlbDstGasOilRelation
@@ -3064,12 +3064,12 @@ source		SELECT "tufNpdidTuf" , "tufName" FROM  "tuf_petreg_licence"
 
 mappingId	Mapping:00614:Literal:bsns_arr_area_area_poly_hst:baaAreaPolyDateUpdated
 target		npd:baa/{baaNpdidBsnsArrArea}/block/{baaAreaPolyBlockName}/polyno/{baaAreaPolyNo}/history/{baaAreaPolyDateValidFrom}/{baaAreaPolyDateValidTo} npdv:dateUpdated {baaAreaPolyDateUpdated}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaAreaPolyBlockName" , "baaAreaPolyNo" , "baaAreaPolyDateValidFrom" , "baaAreaPolyDateValidTo" , "baaAreaPolyDateUpdated" FROM "bsns_arr_area_area_poly_hst" WHERE "baaAreaPolyDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaAreaPolyBlockName" , "baaAreaPolyNo" , "baaAreaPolyDateValidFrom" , "baaAreaPolyDateValidTo" , "baaAreaPolyDateUpdated" FROM "bsns_arr_area_area_poly_hst" WHERE "baaAreaPolyDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00615:Literal:seis_acquisition:seaPlanToDate
 target		npd:survey/{seaName} npdv:dateSurveyPlannedCompleted {seaPlanToDate}^^xsd:dateTime . 
-source		SELECT "seaName" , "seaPlanToDate" FROM "seis_acquisition" WHERE "seaPlanToDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "seaName" , "seaPlanToDate" FROM "seis_acquisition" WHERE "seaPlanToDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00616:Literal:Trans:wellbore_exploration_all:wlbMultilateral
@@ -3094,7 +3094,7 @@ source		SELECT "prlNpdidLicence" , "blcName" , "prlAreaPolyPolyNo" , "prlAreaPol
 
 mappingId	Mapping:00620:Literal:seis_acquisition:seaDateStarting
 target		npd:survey/{seaName} npdv:dateSurveyActualStart {seaDateStarting}^^xsd:dateTime . 
-source		SELECT "seaName" , "seaDateStarting" FROM "seis_acquisition" WHERE "seaDateStarting"  <>  '9999-12-31T00:00:00'
+source		SELECT "seaName" , "seaDateStarting" FROM "seis_acquisition" WHERE "seaDateStarting"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00621:Literal:wellbore_exploration_all:wlbGeodeticDatum
@@ -3267,9 +3267,6 @@ target		npd:ncs/production/{prfYear} npdv:producedWater {prfPrdProducedWaterInFi
 source		SELECT "prfYear" , "prfPrdProducedWaterInFieldMillSm3" FROM  "field_production_totalt_NCS_year" 
 
 
-mappingId	Mapping:00655:Literal:apaAreaNet:qdrName
-target		npd:quadrant/{qdrName}/block/{blkName}/award/{prvName}/area/{apaAreaNet_id} npdv:quadrantLocation npd:quadrant/{qdrName} . 
-source		SELECT "apaAreaNet_id" , "qdrName" , "blkName" , "prvName" , "blkId" FROM  "apaAreaNet" 
 
 
 
@@ -3307,7 +3304,7 @@ source		SELECT "prlNpdidLicence" , "prlTaskID" FROM  "licence_task"
 
 mappingId	Mapping:00663:Literal:tuf_operator_hst:tufOperDateValidFrom
 target		npd:facility/{tufNpdidTuf}/operator/{cmpNpdidCompany}/history/{tufOperDateValidFrom}/{tufOperDateValidTo} npdv:dateTUFOperatorValidFrom {tufOperDateValidFrom}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOperDateValidFrom" , "tufOperDateValidTo" FROM "tuf_operator_hst" WHERE "tufOperDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOperDateValidFrom" , "tufOperDateValidTo" FROM "tuf_operator_hst" WHERE "tufOperDateValidFrom"  <>  '9999-12-31'
 
 
 
@@ -3332,7 +3329,7 @@ source		SELECT "baaNpdidBsnsArrArea" , "baaTransferDirection" , "cmpNpdidCompany
 
 mappingId	Mapping:00669:Literal:tuf_petreg_message:dateSyncNPD
 target		npd:petreg/facility/{tufNpdidTuf}/message/{ptlMessageDocumentNo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "ptlMessageDocumentNo" , "dateSyncNPD" FROM "tuf_petreg_message" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "ptlMessageDocumentNo" , "dateSyncNPD" FROM "tuf_petreg_message" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00670:Literal:wellbore_exploration_all:wlbPressReleaseUrl
@@ -3352,12 +3349,12 @@ source		SELECT "tufNpdidTuf" , "ptlMessageDocumentNo" FROM  "tuf_petreg_message"
 
 mappingId	Mapping:00673:Literal:field_activity_status_hst:fldStatusToDate
 target		npd:field/{fldNpdidField}/activity/{fldStatus}/history/{fldStatusFromDate}/{fldStatusToDate} npdv:dateStatusTo {fldStatusToDate}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldStatus" , "fldStatusFromDate" , "fldStatusToDate" FROM "field_activity_status_hst" WHERE "fldStatusToDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldStatus" , "fldStatusFromDate" , "fldStatusToDate" FROM "field_activity_status_hst" WHERE "fldStatusToDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00674:Literal:tuf_petreg_message:ptlMessageRegisteredDate
 target		npd:petreg/facility/{tufNpdidTuf}/message/{ptlMessageDocumentNo} ptl:dateMessageRegistered {ptlMessageRegisteredDate}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "ptlMessageDocumentNo" , "ptlMessageRegisteredDate" FROM "tuf_petreg_message" WHERE "ptlMessageRegisteredDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "ptlMessageDocumentNo" , "ptlMessageRegisteredDate" FROM "tuf_petreg_message" WHERE "ptlMessageRegisteredDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00675:Literal:field_reserves:fldNpdidField
@@ -3382,27 +3379,27 @@ source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" , "lsuTopDepth" , "lsuB
 
 mappingId	Mapping:00679:Literal:bsns_arr_area:baaDateValidTo
 target		npd:baa/{baaNpdidBsnsArrArea} npdv:dateBaaValidTo {baaDateValidTo}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaDateValidTo" FROM "bsns_arr_area" WHERE "baaDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaDateValidTo" FROM "bsns_arr_area" WHERE "baaDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00680:Literal:field_owner_hst:fldOwnershipToDate
 target		npd:field/{fldNpdidField}/owner/{fldNpdidOwner}/history/{fldOwnershipFromDate}/{fldOwnershipToDate} npdv:dateFieldOwnerTo {fldOwnershipToDate}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldNpdidOwner" , "fldOwnershipFromDate" , "fldOwnershipToDate" FROM "field_owner_hst" WHERE "fldOwnershipToDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldNpdidOwner" , "fldOwnershipFromDate" , "fldOwnershipToDate" FROM "field_owner_hst" WHERE "fldOwnershipToDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00681:Literal:licence:dateSyncNPD
 target		npd:licence/{prlNpdidLicence} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "dateSyncNPD" FROM "licence" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "dateSyncNPD" FROM "licence" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00682:Literal:wellbore_development_all:wlbCompletionDate
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateWellboreCompletion {wlbCompletionDate}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbCompletionDate" FROM "wellbore_development_all" WHERE "wlbCompletionDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbCompletionDate" FROM "wellbore_development_all" WHERE "wlbCompletionDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00683:Literal:bsns_arr_area_licensee_hst:dateSyncNPD
 target		npd:baa/{baaNpdidBsnsArrArea}/licensee/{cmpNpdidCompany}/history/{baaLicenseeDateValidFrom}/{baaLicenseeDateValidTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "cmpNpdidCompany" , "baaLicenseeDateValidFrom" , "baaLicenseeDateValidTo" , "dateSyncNPD" FROM "bsns_arr_area_licensee_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "cmpNpdidCompany" , "baaLicenseeDateValidFrom" , "baaLicenseeDateValidTo" , "dateSyncNPD" FROM "bsns_arr_area_licensee_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00684:Literal:wellbore_exploration_all:wlbNamePart2
@@ -3417,7 +3414,7 @@ source		SELECT "cmpNpdidCompany" , "fldNpdidField" , "cmpRecoverableOE" FROM  "c
 
 mappingId	Mapping:00686:Literal:tuf_operator_hst:dateSyncNPD
 target		npd:facility/{tufNpdidTuf}/operator/{cmpNpdidCompany}/history/{tufOperDateValidFrom}/{tufOperDateValidTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOperDateValidFrom" , "tufOperDateValidTo" , "dateSyncNPD" FROM "tuf_operator_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOperDateValidFrom" , "tufOperDateValidTo" , "dateSyncNPD" FROM "tuf_operator_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00687:Literal:wellbore_shallow_all:wlbNsSec
@@ -3437,7 +3434,7 @@ source		SELECT "seaSurveyName" , "seaPolygonPointNumber" , "seaPolygonEWDeg" FRO
 
 mappingId	Mapping:00690:Literal:wellbore_shallow_all:wlbCompletionDate
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateWellboreCompletion {wlbCompletionDate}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbCompletionDate" FROM "wellbore_shallow_all" WHERE "wlbCompletionDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbCompletionDate" FROM "wellbore_shallow_all" WHERE "wlbCompletionDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00691:Literal:apaAreaNet:prvName
@@ -3447,12 +3444,12 @@ source		SELECT "apaAreaNet_id" , "qdrName" , "blkName" , "prvName" , "blkId" FRO
 
 mappingId	Mapping:00692:Literal:prlAreaSplitByBlock:prlAreaPolyDateValidTo
 target		npd:licence/{prlNpdidLicence}/block/{blcName}/polyno/{prlAreaPolyPolyNo}/history/{prlAreaPolyDateValidFrom}/{prlAreaPolyDateValidTo} npdv:dateLicenceAreaValidTo {prlAreaPolyDateValidTo}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "blcName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "prlAreaSplitByBlock" WHERE "prlAreaPolyDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "blcName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "prlAreaSplitByBlock" WHERE "prlAreaPolyDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00693:Literal:bsns_arr_area:baaDateUpdatedMax
 target		npd:baa/{baaNpdidBsnsArrArea} npdv:dateUpdatedMax {baaDateUpdatedMax}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaDateUpdatedMax" FROM "bsns_arr_area" WHERE "baaDateUpdatedMax"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaDateUpdatedMax" FROM "bsns_arr_area" WHERE "baaDateUpdatedMax"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00694:Literal:licence:prlNpdidLicence
@@ -3477,7 +3474,7 @@ source		SELECT "prlNpdidLicence" , "prlName" FROM  "licence"
 
 mappingId	Mapping:00698:Literal:wellbore_development_all:wlbEntryDate
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateWellboreEntry {wlbEntryDate}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbEntryDate" FROM "wellbore_development_all" WHERE "wlbEntryDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbEntryDate" FROM "wellbore_development_all" WHERE "wlbEntryDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00699:Literal:licence_task:prlTaskStatusNo
@@ -3487,7 +3484,7 @@ source		SELECT "prlNpdidLicence" , "prlTaskID" , "prlTaskStatusNo" FROM  "licenc
 
 mappingId	Mapping:00700:Literal:licence_area_poly_hst:prlAreaPolyDateValidTo
 target		npd:licence/{prlNpdidLicence}/block/{prlAreaPolyBlockName}/polyno/{prlAreaPolyPolyNo}/history/{prlAreaPolyDateValidFrom}/{prlAreaPolyDateValidTo} npdv:dateLicenceAreaValidTo {prlAreaPolyDateValidTo}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlAreaPolyBlockName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "licence_area_poly_hst" WHERE "prlAreaPolyDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlAreaPolyBlockName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" FROM "licence_area_poly_hst" WHERE "prlAreaPolyDateValidTo"  <>  '9999-12-31'
 
 
 
@@ -3508,12 +3505,12 @@ source		SELECT "wellbore_document_id" , "wlbNpdidWellbore" , "wlbDocumentName" ,
 
 mappingId	Mapping:00705:Literal:licence_phase_hst:prlDateValidTo
 target		npd:licence/{prlNpdidLicence}/phase/{prlPhase}/history/{prlDatePhaseValidFrom}/{prlDatePhaseValidTo} npdv:dateLicenceValidTo {prlDateValidTo}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" , "prlDateValidTo" FROM "licence_phase_hst" WHERE "prlDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlPhase" , "prlDatePhaseValidFrom" , "prlDatePhaseValidTo" , "prlDateValidTo" FROM "licence_phase_hst" WHERE "prlDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00706:Literal:licence_petreg_licence_licencee:ptlLicenseeDateUpdated
 target		npd:petreg/licence/{prlNpdidLicence}/licencee/{cmpNpdidCompany} ptl:dateUpdated {ptlLicenseeDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "ptlLicenseeDateUpdated" FROM "licence_petreg_licence_licencee" WHERE "ptlLicenseeDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "ptlLicenseeDateUpdated" FROM "licence_petreg_licence_licencee" WHERE "ptlLicenseeDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00707:Literal:facility_fixed:fclNsCode
@@ -3533,7 +3530,7 @@ source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOwnerDateValidFrom" , "tu
 
 mappingId	Mapping:00710:Literal:licence_area_poly_hst:prlAreaDateUpdated
 target		npd:licence/{prlNpdidLicence}/block/{prlAreaPolyBlockName}/polyno/{prlAreaPolyPolyNo}/history/{prlAreaPolyDateValidFrom}/{prlAreaPolyDateValidTo} npdv:dateUpdated {prlAreaDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlAreaPolyBlockName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" , "prlAreaDateUpdated" FROM "licence_area_poly_hst" WHERE "prlAreaDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlAreaPolyBlockName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" , "prlAreaDateUpdated" FROM "licence_area_poly_hst" WHERE "prlAreaDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00711:Literal:licence_petreg_message:ptlMessageKindDesc
@@ -3548,7 +3545,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbDstTestNumber" , "wlbDstGasProd" FROM  "
 
 mappingId	Mapping:00713:Literal:wellbore_npdid_overview:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_npdid_overview" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_npdid_overview" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00714:Literal:prlAreaSplitByBlock:blcName
@@ -3568,7 +3565,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbEwUtm" FROM  "wellbore_exploration_all"
 
 mappingId	Mapping:00717:Literal:licence_petreg_message:ptlMessageDateUpdated
 target		npd:petreg/licence/{prlNpdidLicence}/message/{ptlMessageDocumentNo} ptl:dateUpdated {ptlMessageDateUpdated}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "ptlMessageDocumentNo" , "ptlMessageDateUpdated" FROM "licence_petreg_message" WHERE "ptlMessageDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "ptlMessageDocumentNo" , "ptlMessageDateUpdated" FROM "licence_petreg_message" WHERE "ptlMessageDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00718:Literal:Trans:seis_acquisition:seaGeographicalArea
@@ -3593,7 +3590,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNamePart4" FROM  "wellbore_development_a
 
 mappingId	Mapping:00722:Literal:wellbore_core:wlbCoreDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore}/core/{wlbCoreNumber} npdv:dateUpdated {wlbCoreDateUpdated}^^xsd:dateTime . 
-source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbCoreDateUpdated" FROM "wellbore_core" WHERE "wlbCoreDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbCoreDateUpdated" FROM "wellbore_core" WHERE "wlbCoreDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00723:Literal:wellbore_exploration_all:wlbNsDecDeg
@@ -3603,7 +3600,7 @@ source		SELECT "wlbNpdidWellbore" , "wlbNsDecDeg" FROM  "wellbore_exploration_al
 
 mappingId	Mapping:00724:Literal:field_investment_yearly:dateSyncNPD
 target		npd:field/{prfNpdidInformationCarrier}/investment/{prfYear} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prfNpdidInformationCarrier" , "prfYear" , "dateSyncNPD" FROM "field_investment_yearly" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prfNpdidInformationCarrier" , "prfYear" , "dateSyncNPD" FROM "field_investment_yearly" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00725:Literal:pipLine:pipDimension
@@ -3633,7 +3630,7 @@ source		SELECT "cmpNpdidCompany" , "fldNpdidField" , "cmpRemainingGas" FROM  "co
 
 mappingId	Mapping:00730:Literal:baaArea:baaAreaPolyDateValidFrom
 target		npd:baa/{baaNpdidBsnsArrArea}/polygon/{baaNpdidBsnsArrAreaPoly} npdv:dateBaaAreaValidFrom {baaAreaPolyDateValidFrom}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaNpdidBsnsArrAreaPoly" , "baaAreaPolyDateValidFrom" FROM "baaArea" WHERE "baaAreaPolyDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaNpdidBsnsArrAreaPoly" , "baaAreaPolyDateValidFrom" FROM "baaArea" WHERE "baaAreaPolyDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00731:Literal:pipLine:pipNpdidToFacility
@@ -3648,7 +3645,7 @@ source		SELECT "seaSurveyName" , "seaSourceSize" FROM  "seaMultiline"
 
 mappingId	Mapping:00733:Literal:wellbore_mud:wlbMudDateMeasured
 target		npd:wellbore/{wlbNpdidWellbore}/test/mud/{wellbore_mud_id} npdv:dateMudMeasured {wlbMudDateMeasured}^^xsd:dateTime . 
-source		SELECT "wellbore_mud_id" , "wlbNpdidWellbore" , "wlbMudDateMeasured" FROM "wellbore_mud" WHERE "wlbMudDateMeasured"  <>  '9999-12-31T00:00:00'
+source		SELECT "wellbore_mud_id" , "wlbNpdidWellbore" , "wlbMudDateMeasured" FROM "wellbore_mud" WHERE "wlbMudDateMeasured"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00734:Literal:wellbore_mud:wlbYieldPointAtMD
@@ -3678,32 +3675,32 @@ source		SELECT "apaAreaNet_id" , "qdrName" , "blkName" , "prvName" , "blkId" FRO
 
 mappingId	Mapping:00739:Literal:tuf_petreg_licence_oper:ptlOperDateUpdated
 target		npd:petreg/facility/{tufNpdidTuf} ptl:dateUpdated {ptlOperDateUpdated}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "ptlOperDateUpdated" FROM "tuf_petreg_licence_oper" WHERE "ptlOperDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "ptlOperDateUpdated" FROM "tuf_petreg_licence_oper" WHERE "ptlOperDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00740:Literal:bsns_arr_area_operator:dateSyncNPD
 target		npd:baa/{baaNpdidBsnsArrArea} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "dateSyncNPD" FROM "bsns_arr_area_operator" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "dateSyncNPD" FROM "bsns_arr_area_operator" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00741:Literal:field_activity_status_hst:dateSyncNPD
 target		npd:field/{fldNpdidField}/activity/{fldStatus}/history/{fldStatusFromDate}/{fldStatusToDate} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldStatus" , "fldStatusFromDate" , "fldStatusToDate" , "dateSyncNPD" FROM "field_activity_status_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldStatus" , "fldStatusFromDate" , "fldStatusToDate" , "dateSyncNPD" FROM "field_activity_status_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00742:Literal:field_activity_status_hst:fldStatusFromDate
 target		npd:field/{fldNpdidField}/activity/{fldStatus}/history/{fldStatusFromDate}/{fldStatusToDate} npdv:dateStatusFrom {fldStatusFromDate}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "fldStatus" , "fldStatusFromDate" , "fldStatusToDate" FROM "field_activity_status_hst" WHERE "fldStatusFromDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "fldStatus" , "fldStatusFromDate" , "fldStatusToDate" FROM "field_activity_status_hst" WHERE "fldStatusFromDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00743:Literal:strat_litho_wellbore:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore}/stratum/{lsuNpdidLithoStrat}/depth/{lsuTopDepth}/{lsuBottomDepth} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" , "lsuTopDepth" , "lsuBottomDepth" , "dateSyncNPD" FROM "strat_litho_wellbore" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" , "lsuTopDepth" , "lsuBottomDepth" , "dateSyncNPD" FROM "strat_litho_wellbore" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00744:Literal:bsns_arr_area_area_poly_hst:baaAreaPolyDateValidFrom
 target		npd:baa/{baaNpdidBsnsArrArea}/block/{baaAreaPolyBlockName}/polyno/{baaAreaPolyNo}/history/{baaAreaPolyDateValidFrom}/{baaAreaPolyDateValidTo} npdv:dateBaaAreaValidFrom {baaAreaPolyDateValidFrom}^^xsd:dateTime . 
-source		SELECT "baaNpdidBsnsArrArea" , "baaAreaPolyBlockName" , "baaAreaPolyNo" , "baaAreaPolyDateValidFrom" , "baaAreaPolyDateValidTo" FROM "bsns_arr_area_area_poly_hst" WHERE "baaAreaPolyDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "baaNpdidBsnsArrArea" , "baaAreaPolyBlockName" , "baaAreaPolyNo" , "baaAreaPolyDateValidFrom" , "baaAreaPolyDateValidTo" FROM "bsns_arr_area_area_poly_hst" WHERE "baaAreaPolyDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00745:Literal:wellbore_formation_top:lsuBottomDepth
@@ -3713,7 +3710,7 @@ source		SELECT "wlbNpdidWellbore" , "lsuNpdidLithoStrat" , "lsuTopDepth" , "lsuB
 
 mappingId	Mapping:00746:Literal:wellbore_shallow_all:wlbDateUpdated
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateUpdated {wlbDateUpdated}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "wlbDateUpdated" FROM "wellbore_shallow_all" WHERE "wlbDateUpdated"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "wlbDateUpdated" FROM "wellbore_shallow_all" WHERE "wlbDateUpdated"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00747:Literal:Trans:licence_area_poly_hst:prlAreaPolyStratigraphical
@@ -3743,7 +3740,7 @@ source		SELECT "seaSurveyName" , "seaSourceType" FROM  "seaMultiline"
 
 mappingId	Mapping:00752:Literal:wellbore_exploration_all:dateSyncNPD
 target		npd:wellbore/{wlbNpdidWellbore} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_exploration_all" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNpdidWellbore" , "dateSyncNPD" FROM "wellbore_exploration_all" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00753:Literal:seis_acquisition:seaNpdidSurvey
@@ -3753,7 +3750,7 @@ source		SELECT "seaName" , "seaNpdidSurvey" FROM  "seis_acquisition"
 
 mappingId	Mapping:00754:Literal:licence_transfer_hst:prlTransferDateValidFrom
 target		npd:licence/{prlNpdidLicence}/transfer/{prlTransferDirection}/{cmpNpdidCompany}/history/{prlTransferDateValidFrom} npdv:dateTransferValidFrom {prlTransferDateValidFrom}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlTransferDirection" , "cmpNpdidCompany" , "prlTransferDateValidFrom" FROM "licence_transfer_hst" WHERE "prlTransferDateValidFrom"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlTransferDirection" , "cmpNpdidCompany" , "prlTransferDateValidFrom" FROM "licence_transfer_hst" WHERE "prlTransferDateValidFrom"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00755:Literal:facility_moveable:fclName
@@ -3763,7 +3760,7 @@ source		SELECT "fclNpdidFacility" , "fclName" FROM  "facility_moveable"
 
 mappingId	Mapping:00756:Literal:field_licensee_hst:dateSyncNPD
 target		npd:field/{fldNpdidField}/licensee/{cmpNpdidCompany}/history/{fldLicenseeFrom}/{fldLicenseeTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" , "dateSyncNPD" FROM "field_licensee_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "fldNpdidField" , "cmpNpdidCompany" , "fldLicenseeFrom" , "fldLicenseeTo" , "dateSyncNPD" FROM "field_licensee_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00757:Literal:prlAreaSplitByBlock:prlAreaPolyPolyNo
@@ -3773,7 +3770,7 @@ source		SELECT "prlNpdidLicence" , "blcName" , "prlAreaPolyPolyNo" , "prlAreaPol
 
 mappingId	Mapping:00758:Literal:licence_licensee_hst:prlLicenseeDateValidTo
 target		npd:licence/{prlNpdidLicence}/licensee/{cmpNpdidCompany}/history/{prlLicenseeDateValidFrom}/{prlLicenseeDateValidTo} npdv:dateLicenseeValidTo {prlLicenseeDateValidTo}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" FROM "licence_licensee_hst" WHERE "prlLicenseeDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "cmpNpdidCompany" , "prlLicenseeDateValidFrom" , "prlLicenseeDateValidTo" FROM "licence_licensee_hst" WHERE "prlLicenseeDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00759:Literal:wellbore_development_all:wlbFinalVerticalDepth
@@ -3788,12 +3785,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbNamePart4" FROM  "wellbore_exploration_a
 
 mappingId	Mapping:00761:Literal:licence_area_poly_hst:dateSyncNPD
 target		npd:licence/{prlNpdidLicence}/block/{prlAreaPolyBlockName}/polyno/{prlAreaPolyPolyNo}/history/{prlAreaPolyDateValidFrom}/{prlAreaPolyDateValidTo} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "prlAreaPolyBlockName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" , "dateSyncNPD" FROM "licence_area_poly_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "prlAreaPolyBlockName" , "prlAreaPolyPolyNo" , "prlAreaPolyDateValidFrom" , "prlAreaPolyDateValidTo" , "dateSyncNPD" FROM "licence_area_poly_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00762:Literal:tuf_operator_hst:tufOperDateValidTo
 target		npd:facility/{tufNpdidTuf}/operator/{cmpNpdidCompany}/history/{tufOperDateValidFrom}/{tufOperDateValidTo} npdv:dateTUFOperatorValidTo {tufOperDateValidTo}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOperDateValidFrom" , "tufOperDateValidTo" FROM "tuf_operator_hst" WHERE "tufOperDateValidTo"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "cmpNpdidCompany" , "tufOperDateValidFrom" , "tufOperDateValidTo" FROM "tuf_operator_hst" WHERE "tufOperDateValidTo"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00763:Literal:wellbore_development_all:wlbEwDesDeg
@@ -3808,12 +3805,12 @@ source		SELECT "wlbNpdidWellbore" , "wlbNamePart5" FROM  "wellbore_shallow_all"
 
 mappingId	Mapping:00765:Literal:seis_acquisition_coordinates_inc_turnarea:dateSyncNPD
 target		npd:survey/{seaSurveyName}/point/{seaPolygonPointNumber} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "seaSurveyName" , "seaPolygonPointNumber" , "dateSyncNPD" FROM "seis_acquisition_coordinates_inc_turnarea" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "seaSurveyName" , "seaPolygonPointNumber" , "dateSyncNPD" FROM "seis_acquisition_coordinates_inc_turnarea" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00766:Literal:licence_petreg_licence:ptlDateUpdatedMax
 target		npd:petreg/licence/{prlNpdidLicence} ptl:dateUpdatedMax {ptlDateUpdatedMax}^^xsd:dateTime . 
-source		SELECT "prlNpdidLicence" , "ptlDateUpdatedMax" FROM "licence_petreg_licence" WHERE "ptlDateUpdatedMax"  <>  '9999-12-31T00:00:00'
+source		SELECT "prlNpdidLicence" , "ptlDateUpdatedMax" FROM "licence_petreg_licence" WHERE "ptlDateUpdatedMax"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00767:Literal:wellbore_casing_and_lot:wlbHoleDepth
@@ -3828,7 +3825,7 @@ source		SELECT "prlArea_id" , "prlNpdidLicence" , "prlAreaPolyDateValidFrom" , "
 
 mappingId	Mapping:00769:Literal:Extra:ex7:dateSyncNPD
 target		npd:quadrant/{wlbNamePart1} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNamePart1" , "dateSyncNPD" FROM "wellbore_shallow_all" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNamePart1" , "dateSyncNPD" FROM "wellbore_shallow_all" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00770:Literal:Extra:ex10:wlbNamePart1
@@ -3838,7 +3835,7 @@ source		SELECT "wlbNamePart1" , "wlbNamePart2" FROM  "wellbore_shallow_all"
 
 mappingId	Mapping:00771:Literal:Extra:ex10:dateSyncNPD
 target		npd:block/{wlbNamePart1}/{wlbNamePart2} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNamePart1" , "wlbNamePart2" , "dateSyncNPD" FROM "wellbore_shallow_all" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNamePart1" , "wlbNamePart2" , "dateSyncNPD" FROM "wellbore_shallow_all" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00772:Literal:Extra:ex6:wlbNamePart1
@@ -3848,7 +3845,7 @@ source		SELECT "wlbNamePart1" FROM  "wellbore_exploration_all"
 
 mappingId	Mapping:00773:Literal:Extra:ex12:dateSyncNPD
 target		npd:facility/{tufNpdidTuf} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "dateSyncNPD" FROM "tuf_operator_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "dateSyncNPD" FROM "tuf_operator_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00774:Literal:Extra:ex12:tufName
@@ -3858,7 +3855,7 @@ source		SELECT "tufNpdidTuf" , "tufName" FROM  "tuf_operator_hst"
 
 mappingId	Mapping:00775:Literal:Extra:ex9:dateSyncNPD
 target		npd:block/{wlbNamePart1}/{wlbNamePart2} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNamePart1" , "wlbNamePart2" , "dateSyncNPD" FROM "wellbore_exploration_all" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNamePart1" , "wlbNamePart2" , "dateSyncNPD" FROM "wellbore_exploration_all" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00776:Literal:Extra:ex13:wlbNpdidWellbore
@@ -3868,7 +3865,7 @@ source		SELECT "wlbNpdidWellbore" FROM  "wellbore_core"
 
 mappingId	Mapping:00777:Literal:Extra:ex11:dateSyncNPD
 target		npd:facility/{tufNpdidTuf} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "tufNpdidTuf" , "dateSyncNPD" FROM "tuf_owner_hst" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "tufNpdidTuf" , "dateSyncNPD" FROM "tuf_owner_hst" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00778:Literal:Extra:ex8:wlbNpdidWellbore
@@ -3913,17 +3910,17 @@ source		SELECT "wlbNamePart1" , "wlbNamePart2" , "wlbNpdidWellbore" FROM  "wellb
 
 mappingId	Mapping:00786:Literal:Extra:ex5:dateSyncNPD
 target		npd:quadrant/{wlbNamePart1} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNamePart1" , "dateSyncNPD" FROM "wellbore_development_all" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNamePart1" , "dateSyncNPD" FROM "wellbore_development_all" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00787:Literal:Extra:ex3:dateSyncNPD
 target		npd:stratum/{lsuNpdidLithoStrat} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "lsuNpdidLithoStrat" , "dateSyncNPD" FROM "wellbore_formation_top" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "lsuNpdidLithoStrat" , "dateSyncNPD" FROM "wellbore_formation_top" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00788:Literal:Extra:ex4:dateSyncNPD
 target		npd:well/{wlbWell} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbWell" , "dateSyncNPD" FROM "wellbore_npdid_overview" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbWell" , "dateSyncNPD" FROM "wellbore_npdid_overview" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00789:Literal:Extra:ex3:lsuNpdidLithoStrat
@@ -3958,12 +3955,12 @@ source		SELECT "tufNpdidTuf" , "tufName" FROM  "tuf_owner_hst"
 
 mappingId	Mapping:00796:Literal:Extra:ex3:lsuWellboreUpdatedDate
 target		npd:stratum/{lsuNpdidLithoStrat} npdv:dateUpdated {lsuWellboreUpdatedDate}^^xsd:dateTime . 
-source		SELECT "lsuNpdidLithoStrat" , "lsuWellboreUpdatedDate" FROM "wellbore_formation_top" WHERE "lsuWellboreUpdatedDate"  <>  '9999-12-31T00:00:00'
+source		SELECT "lsuNpdidLithoStrat" , "lsuWellboreUpdatedDate" FROM "wellbore_formation_top" WHERE "lsuWellboreUpdatedDate"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00797:Literal:Extra:ex6:dateSyncNPD
 target		npd:quadrant/{wlbNamePart1} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNamePart1" , "dateSyncNPD" FROM "wellbore_exploration_all" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNamePart1" , "dateSyncNPD" FROM "wellbore_exploration_all" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00798:Literal:Extra:ex11:tufNpdidTuf
@@ -3993,7 +3990,7 @@ source		SELECT "wlbNamePart1" , "wlbNamePart2" FROM  "wellbore_development_all"
 
 mappingId	Mapping:00803:Literal:Extra:ex8:dateSyncNPD
 target		npd:block/{wlbNamePart1}/{wlbNamePart2} npdv:dateSyncNPD {dateSyncNPD}^^xsd:dateTime . 
-source		SELECT "wlbNamePart1" , "wlbNamePart2" , "dateSyncNPD" FROM "wellbore_development_all" WHERE "dateSyncNPD"  <>  '9999-12-31T00:00:00'
+source		SELECT "wlbNamePart1" , "wlbNamePart2" , "dateSyncNPD" FROM "wellbore_development_all" WHERE "dateSyncNPD"  <>  '9999-12-31'
 
 
 mappingId	Mapping:00804:Table:npdv:BAA
@@ -5856,24 +5853,6 @@ target		npd:stratum/{wellbore_formation_top.lsuNpdidLithoStrat} npdv:geochronolo
 source		SELECT wellbore_exploration_all. "wlbNpdidWellbore" ,  wellbore_formation_top. "lsuNpdidLithoStrat" FROM "wellbore_formation_top" ,  "wellbore_exploration_all" WHERE wellbore_formation_top. "lsuName" = wellbore_exploration_all. "wlbFormationAtTd" AND wellbore_exploration_all. "wlbAgeWithHc3" = 'TRIASSIC'
 
 
-mappingId	Mapping:NPD:Manual6:1
-target		npd:field/{prfNpdidInformationCarrier}/production/{prfYear} npdv:productionForField npd:field/{prfNpdidInformationCarrier} . 
-source		SELECT "prfNpdidInformationCarrier" , "prfYear" FROM "field_production_yearly" WHERE "prfNpdidInformationCarrier"  <>  '44576'
-
-
-mappingId	Mapping:NPD:Manual6:2
-target		npd:field/{prfNpdidInformationCarrier}/production/{prfYear} npdv:productionForDiscovery npd:discovery/{prfNpdidInformationCarrier} . 
-source		SELECT "prfNpdidInformationCarrier" , "prfYear" FROM "field_production_yearly" WHERE "prfNpdidInformationCarrier" = '44576'
-
-
-mappingId	Mapping:NPD:Manual6:3
-target		npd:field/{prfNpdidInformationCarrier}/production/{prfYear}/{prfMonth} npdv:productionForField npd:field/{prfNpdidInformationCarrier} . 
-source		SELECT "prfNpdidInformationCarrier" , "prfYear" , "prfMonth" FROM "field_production_monthly" WHERE "prfNpdidInformationCarrier"  <>  '44576'
-
-
-mappingId	Mapping:NPD:Manual6:4
-target		npd:field/{prfNpdidInformationCarrier}/production/{prfYear}/{prfMonth} npdv:productionForDiscovery npd:discovery/{prfNpdidInformationCarrier} . 
-source		SELECT "prfNpdidInformationCarrier" , "prfYear" , "prfMonth" FROM "field_production_monthly" WHERE "prfNpdidInformationCarrier" = '44576'
 
 
 mappingId	Mapping:NPD:Manual8:1
@@ -5897,8 +5876,8 @@ source		SELECT "prlArea_id" , "prlNpdidLicence" , "prlAreaPolyDateValidFrom" , "
 
 
 mappingId	Mapping:NPD:Manual9:3
-target		npd:licence/{prlNpdidLicence} npdv:currentAreaSize {prlOriginalArea}^^xsd:decimal . 
-source		SELECT "prlNpdidLicence" , "prlOriginalArea" FROM  "licence" 
+target		npd:licence/{prlNpdidLicence} npdv:currentAreaSize {prlCurrentArea}^^xsd:decimal . 
+source		SELECT "prlNpdidLicence" , "prlCurrentArea" FROM  "licence" 
 
 
 mappingId	Mapping:NPD:Manual10:1
@@ -5908,7 +5887,7 @@ source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbC
 
 mappingId	Mapping:NPD:Manual10:2
 target		npd:wellbore/{wlbNpdidWellbore}/core/{wlbCoreNumber} npdv:coreIntervalBottom {wlbCoreIntervalBottomFT}^^xsd:decimal . 
-source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbCoreIntervalBottom" * 0.3048 AS wlbCoreIntervalBottomFT FROM "wellbore_core" WHERE "wlbCoreIntervalUom" = '[ft   ]'
+source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbCoreIntervalBottom" * 0.3048 AS wlbCoreIntervalBottomFT FROM "wellbore_core" WHERE "wlbCoreIntervalUom" = '[ft  ]'
 
 
 mappingId	Mapping:NPD:Manual11:1
@@ -5918,7 +5897,7 @@ source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbC
 
 mappingId	Mapping:NPD:Manual11:2
 target		npd:wellbore/{wlbNpdidWellbore}/core/{wlbCoreNumber} npdv:coreIntervalTop {wlbCoreIntervalTopFT}^^xsd:decimal . 
-source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbCoreIntervalTop" * 0.3048 AS wlbCoreIntervalTopFT FROM "wellbore_core" WHERE "wlbCoreIntervalUom" = '[ft   ]'
+source		SELECT "wellbore_core_id" , "wlbNpdidWellbore" , "wlbCoreNumber" , "wlbCoreIntervalTop" * 0.3048 AS wlbCoreIntervalTopFT FROM "wellbore_core" WHERE "wlbCoreIntervalUom" = '[ft  ]'
 
 
 mappingId	Mapping:NPD:Manual12

@@ -7,14 +7,14 @@ SELECT DISTINCT ?wellbore ?wc ?well ?length
   ?wc npdv:coreForWellbore ?wellbore.
   {  
      ?wc npdv:coresTotalLength ?lmeters ;
-         npdv:coreIntervalUOM "000002"^^xsd:string .
+         npdv:coreIntervalUOM "[m   ]"^^xsd:string .
          BIND(?lmeters AS ?length)
   } 
   UNION
   {
     ?wc npdv:coresTotalLength ?lfeets ;
-        npdv:coreIntervalUOM "000001"^^xsd:string .
-    BIND((?lfeets) AS ?length) # originally  * 0.3048 
+        npdv:coreIntervalUOM "[ft   ]"^^xsd:string .
+    BIND((?lfeets * 0.3048) AS ?length) 
   }                
   FILTER (?length < 22337)
 }

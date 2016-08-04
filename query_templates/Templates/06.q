@@ -27,9 +27,7 @@ WHERE {
         ] .
   { ?wc npdv:coresTotalLength ?length } 
 
-  FILTER(?year >= "$"^^xsd:integer &&
-         ?length > $ 
+  FILTER(?year >= "${1:wellbore_development_all.wlbCompletionYear}"^^xsd:integer &&
+         ?length > ${1:wellbore_core.wlbTotalCoreLength}
   )
 } ORDER BY ?wellbore
-
-# This query has 2 tree witnesses.
