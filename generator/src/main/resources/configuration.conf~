@@ -1,7 +1,0 @@
-jdbc-connector jdbc:mysql
-database-url localhost/npd_clean_no_spatial
-database-user test
-database-pwd ontop2014
-random-gen false
-obda-file src/main/resources/npd-v2-ql_a.obda
-pumper-type OBDA
