@@ -14,9 +14,7 @@ Components of the NPD Benchmark (v1.9.0)
 * **30 between Real World and Technical Queries**:
 
   * 14 BGP Queries  
-
-  * 7 Queries with Aggregate Functions 
-  
+  * 7 Queries with Aggregate Functions
   * 9 Queries with Tree-witnesses
 
 * **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWL API interface
