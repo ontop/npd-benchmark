@@ -13,9 +13,11 @@ Components of the NPD Benchmark (v1.9.0)
 
 * **30 between Real World and Technical Queries**:
 
-  * **9 Classically Optimizable Queries**  (that is, queries that can be translated into efficient SQL by using only information in mappings, ontology, and database dependencies)
+  * **14 BGP Queries**  
 
-  * **21 Non-classically Optimizable Queries** (that is, queries that require information from the data [e.g., dependencies not specified in the database schema] in order the be translated into efficient SQL queries)
+  * **7 Queries with Aggregate Functions** 
+  
+  * **9 Queries with Tree-witnesses**
 
 * **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWL API interface
 
