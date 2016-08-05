@@ -4,7 +4,7 @@ SELECT DISTINCT ?wellbore ?wc ?well ?length
 		      	    		 npdv:belongsToWell ?well.  
 		      	    ?wc npdv:coreForWellbore ?wellbore;
 		      	        npdv:coresTotalLength ?length;
-		      	        npdv:coreIntervalUOM "000001"^^xsd:string . # feets
+		      	        npdv:coreIntervalUOM "[ft   ]"^^xsd:string . # feets
 		      	        	      	        
 	FILTER (?length < 56796)		   
 }
