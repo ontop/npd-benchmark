@@ -50,7 +50,7 @@ then
 		echo 'SET foreign_key_checks = 0;' > sql.tmp
 		echo LOAD DATA INFILE "'"${CSV}"'" INTO TABLE $TABLE_NAME FIELDS TERMINATED BY "'"'`'"'" >> sql.tmp
 		cat sql.tmp 
-		mysql $DB_ADDR --user=$USER --password=gr3g4r10 < sql.tmp
+		mysql $DB_ADDR --user=$USER --password=password < sql.tmp
 		rm sql.tmp
 	    else
 		echo "usage: ./loadCsvToTable.sh csv db_addr table_name username db_type (db_type = postgres, mysql, db2)"
