@@ -12,7 +12,7 @@ postgres () {
 
     #PGPASSWORD=postgres psql --user=${USERNAME} --dbname=$DB_ADDR -c "COPY "'"'$TABLE_NAME'"'" FROM '$CSV' DELIMITER '"'`'"' CSV;"
 
-    PGPASSWORD=postgres psql --user=${USERNAME} --dbname=$DB_ADDR -c "COPY "'"'$TABLE_NAME'"'" FROM '$CSV' DELIMITER '"'`'"';"
+    PGPASSWORD=postgres psql -U "${USERNAME}" -h localhost --dbname=$DB_ADDR -c "COPY "'"'$TABLE_NAME'"'" FROM '$CSV' DELIMITER '"'`'"';"
 }
 
 db2 () {

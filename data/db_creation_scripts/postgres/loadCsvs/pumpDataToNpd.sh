@@ -11,7 +11,7 @@ pump () {
     ./loadCsvToTable.sh $DATA_FILE $DB_NAME $TABLE_NAME $USER postgres 
 }
 
-: ${1?"Usage: $0 DB_NAME DB USER CSVS_DIR"}
+: ${1?"Usage: $0 DB_NAME DB_USER CSVS_DIR"}
 : ${2?"Usage: $0 DB_NAME DB_USER CSVS_DIR"}
 : ${3?"Usage: $0 DB_NAME DB_USER CSVS_DIR"}
 DB_NAME=$1
