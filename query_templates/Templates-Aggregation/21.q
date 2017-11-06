@@ -23,6 +23,6 @@ PREFIX diskosv: <http://sws.ifi.uio.no/vocab/diskos#>
 			 ?fr npdv:productionYear ?year ;   
 			 npdv:productionMonth ?m ;   
 			 npdv:producedGas     ?g .
-			 FILTER (?year > ${1:field_production_totalt_NCS_year.prfYear})      
+			 FILTER (?year > ${1:field_production_totalt_NCS_year.prfYear:none})      
 			 }    
 			 GROUP BY ?fr

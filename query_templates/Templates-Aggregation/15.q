@@ -24,6 +24,6 @@ WHERE {
        	npdv:dateLicenseeValidFrom ?date ;   
       	npdv:licenseeInterest ?interest ;   
        	npdv:licenseeForLicence ?licenceURI . 
-	FILTER(?date > "${1:licence_licensee_hst.prlLicenseeDateValidFrom}"^^xsd:dateTime)  
+	FILTER(?date > "${1:licence_licensee_hst.prlLicenseeDateValidFrom:none}"^^xsd:dateTime)  
   }   
  GROUP BY ?licenceURI

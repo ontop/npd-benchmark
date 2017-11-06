@@ -22,5 +22,5 @@ PREFIX diskosv: <http://sws.ifi.uio.no/vocab/diskos#>
 	    [ ] a npdv:ProductionLicence ;  
 	      	npdv:name ?licence ;  
 	      	npdv:dateLicenceGranted ?dateGranted ;  
- FILTER(?dateGranted > "${1:licence.prlDateGranted}"^^xsd:dateTime)  
+ FILTER(?dateGranted > "${1:licence.prlDateGranted:none}"^^xsd:dateTime)  
 }

@@ -20,14 +20,14 @@ PREFIX diskosv: <http://sws.ifi.uio.no/vocab/diskos#>
 SELECT ?field
       (SUM(?o) AS ?oil)
 WHERE {
-  [ npdv:productionYear ${1:field_production_totalt_NCS_year.prfYear} ;
+  [ npdv:productionYear ${1:field_production_totalt_NCS_year.prfYear:none} ;
     npdv:productionMonth ?m ;
     npdv:producedOil     ?o ;
     npdv:productionForField
     [ rdf:type npdv:Field ;
       npdv:name ?field ;
       npdv:currentFieldOperator
-      [ npdv:shortName "${1:company.cmpShortName}"^^xsd:string ] ] ]
+      [ npdv:shortName "${1:company.cmpShortName:none}"^^xsd:string ] ] ]
   FILTER(?m >= 1 &&
          ?m <= 6)
 } GROUP BY ?field ORDER BY ?field

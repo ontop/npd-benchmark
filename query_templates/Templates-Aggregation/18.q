@@ -24,7 +24,7 @@ WHERE {
        npdv:productionForField [ npdv:name ?field ] ;
        npdv:producedOil            ?oil ;
        npdv:productionYear         ?year .
-   FILTER (?year < ${1:field_production_totalt_NCS_year.prfYear}) 
+   FILTER (?year < ${1:field_production_totalt_NCS_year.prfYear:none}) 
 } 
 GROUP BY ?field
 ORDER BY DESC(?avgOil)

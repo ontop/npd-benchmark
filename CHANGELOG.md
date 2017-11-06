@@ -1,4 +1,13 @@
 ==================
+NPD Benchmark v1.10.0
+==================
+
+- Updated queries
+- Alignment of schema constraints between the PostgreSQL and MySQL versions
+- VIG version 1.8.1 (https://github.com/ontop/vig)
+- OBDA-Mixer version 1.2.0 (https://github.com/ontop/obda-mixer)
+
+==================
 NPD Benchmark v1.9.0
 ==================
 
