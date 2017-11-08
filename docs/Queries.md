@@ -1,12 +1,12 @@
 The original NPD SPARQL query set contains __25__ queries obtained by interviewing users
 of the NPD dataset. Starting from the original NPD query set, we devised __30__
-queries having different degrees of complexity. The query set contains all the __21__ queries from the version 1.1 of the benchmark, plus __8__ queries with tree-witnesses in order to test the rewriting triggered by the existential in the RHS of OWL 2 QL ontologies.
+queries having different degrees of complexity. The query set contains all the __21__ queries from the version 1.1 of the benchmark, plus __8__ queries with tree-witnesses in order to test the rewriting triggered by the existential in the RHS of OWL 2 QL ontologies when using conjunctive queries.
 
-The query set can be itself partitioned into 2 subsets:
+We partition the query set as follows:
 
-* **9 Classically Optimizable Queries**  (that is, queries that can be translated into efficient SQL by using only information in mappings, ontology, and database dependencies)
-
-* **21 Non-classically Optimizable Queries** (that is, queries that require information from the data [e.g., dependencies not specified in the database schema] in order the be translated into efficient SQL queries) 
+* **14 BGP Queries**
+* **7 Queries with Aggregate Functions**
+* **9 Queries with Tree-witnesses**
 
 The following table reports statistics for each query in the benchmark.
 
@@ -53,13 +53,6 @@ The following table reports statistics for each query in the benchmark.
 * **Agg**: Aggregates **Y** es or **N** o
 * **Filt**: Filters **Y** es or **N** o
 * **Mod**: Modifiers **Y** es or **N** o
-
-## Classically Optimizable Queries
-
-The queries in this set are **q1,q2,q3,q4,q5,q7,q8,q25**. These queries 
-
-* Do not contain OPTIONAL.
-* Do admit an efficient (that is, a small number of SPJ queries) translation that is logically derivable without resorting to the data stored in the physical source (but by using the database dependencies explicitly specified in the database schema).
 
 ### Query q1
 
@@ -115,10 +108,6 @@ WHERE {
       FILTER(?dateValidTo > "1979-12-31T00:00:00"^^xsd:dateTime)
 } ORDER BY ?licence
 ```
-
-## Non-classically Optimizable Queries
-
-This set of queries contains all the queries with tree-witnesses (that is, queries which require the full reasoning in OWL 2 QL for the answers to be complete)
 
 ### Query q6
 
