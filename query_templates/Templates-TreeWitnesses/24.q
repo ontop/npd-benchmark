@@ -1,14 +1,18 @@
-PREFIX : <http://sws.ifi.uio.no/vocab/npd-v2#> 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-PREFIX npd: <http://sws.ifi.uio.no/data/npd-v2/> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-PREFIX nlx: <http://sws.ifi.uio.no/data/norlex/> 
 PREFIX npdv: <http://sws.ifi.uio.no/vocab/npd-v2#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-SELECT DISTINCT ?member   
-		   WHERE {
-		      ?member npdv:member ?awc.
-		      ?awc npdv:coreForWellbore [ rdf:type npdv:Wellbore ].   
-		   }
-LIMIT 50
+SELECT DISTINCT ?member ?wc ?length ?coresTotalNo   
+WHERE {
+      {
+	?member npdv:member ?awc.
+      	?wc npdv:coreForWellbore [ rdf:type npdv:Wellbore ];   
+     	npdv:coresTotalLength ?length;
+      	npdv:coresTotalNo ?coresTotalNo;
+      	npdv:coreIntervalUOM "[m   ]"^^xsd:string . # Meters		      
+      }
+      UNION 
+      { 
+      	?wc npdv:coresTotalLength ?l ;
+      	npdv:coreIntervalUOM "[ft   ]"^^xsd:string . # Feets
+      	BIND((?l * 0.3048) AS ?length)		      
+      }   
+FILTER(?length > ${1:wellbore_core.wlbTotalCoreLength:none})
+}

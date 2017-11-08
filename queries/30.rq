@@ -1,0 +1,24 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX npdv: <http://sws.ifi.uio.no/vocab/npd-v2#>
+
+SELECT DISTINCT ?wellbore ?wc ?well ?year ?length
+WHERE { 
+  ?wellbore npdv:wellboreForDiscovery ?discovery;
+            npdv:belongsToWell ?well;
+	    npdv:wellboreCompletionYear ?year.
+  ?wc npdv:coreForWellbore ?wellbore.
+  {
+    {  
+      ?wc npdv:coresTotalLength ?lmeters ;
+      npdv:coreIntervalUOM "[m   ]"^^xsd:string .
+      BIND(?lmeters AS ?length)
+    } 
+    UNION
+    {
+      ?wc npdv:coresTotalLength ?lfeets ;
+      npdv:coreIntervalUOM "[ft   ]"^^xsd:string .
+      BIND((?lfeets * 0.3048) AS ?length) 
+    }
+  }
+  FILTER (?year >= "2008"^^xsd:integer)
+}

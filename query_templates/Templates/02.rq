@@ -1,0 +1,14 @@
+PREFIX npdv: <http://sws.ifi.uio.no/vocab/npd-v2#>
+
+SELECT ?licenceURI ?company ?date 
+WHERE {
+  ?licenceURI a npdv:ProductionLicence .
+  
+  [ ] a npdv:ProductionLicenceOperator ;
+  npdv:dateOperatorValidFrom ?date ;
+  npdv:licenceOperatorCompany [ npdv:name ?company ] ;
+  npdv:operatorForLicence ?licenceURI .
+
+  FILTER(?date > "${1:licence_oper_hst.prlOperDateValidFrom:none}"^^xsd:date)
+  
+} ORDER BY ?licenceURI
