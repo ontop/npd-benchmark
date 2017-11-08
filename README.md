@@ -3,8 +3,8 @@ npd-benchmark (v1.9.0)
 
 Official Documentation: 
 
-* http://ontop.github.io/npd-benchmark/
-* `docs` folder
+* http://ontop.github.io/npd-benchmark/ (for master branch only)
+* `docs` folder (version-specific documentation)
 
 Components of the NPD Benchmark (v1.9.0)
 
