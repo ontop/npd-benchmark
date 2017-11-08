@@ -1,6 +1,11 @@
 npd-benchmark (v1.9.0)
 ====================
 
+Official Documentation: 
+
+* http://ontop.github.io/npd-benchmark/
+* `docs` folder
+
 Components of the NPD Benchmark (v1.9.0)
 
 * **NPD Dataset** (mysql dump of the original dataset, postgres and mysql schemas)
