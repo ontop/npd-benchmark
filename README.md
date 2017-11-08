@@ -4,7 +4,7 @@ npd-benchmark (v1.9.0)
 Official Documentation: 
 
 * http://ontop.github.io/npd-benchmark/ (for master branch only)
-* `docs` folder (version-specific documentation)
+* `docs` folder (version-specific documentation, in Markdown format)
 
 Components of the NPD Benchmark (v1.9.0)
 
@@ -23,10 +23,6 @@ Components of the NPD Benchmark (v1.9.0)
   * 9 Queries with Tree-witnesses
 
 * **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWL API interface
-
-For more info refer to the wiki
-
-https://github.com/ontop/npd-benchmark/wiki
 
 Credits & Disclaimer
 --------
