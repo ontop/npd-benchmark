@@ -1,63 +1,18 @@
-npd-benchmark (v1.9.0)
-====================
+The NPD benchmark is a benchmark specifically designed for OBDA systems. An OBDA system is a system that separates the user from the physical data source(s) by means of a conceptual view of the data which provides the user with a convenient vocabulary.
 
-Components of the NPD Benchmark (v1.9.0)
+The benchmark is made of the following components:
 
-* **NPD Dataset** (mysql dump of the original dataset, postgres and mysql schemas)
+1. MySQL and PostegreSQL dumps for the original NPD dataset
+2. [30 Real World and Technical Queries]([Queries])
+3. [Ontology](Ontology)
+4. [Mappings](Mappings) files, for PostgreSQL and MySQL
+5. [VIG](https://github.com/ontop/vig), a data-scaler for OBDA Benchmarks
+6. [OBDA-Mixer](https://github.com/ontop/obda-mixer), an extensible automatized testing platform that can be adapted in order to work with any OBDA system providing a Java OWL API
 
-* **Vig**: Generates custom datasets starting from the NPD Dataset (https://github.com/ontop/vig)
+### Experimental
 
-* **OWL 2 QL NPD ontology** (containing information about petroleum activities on the Norwegian continental shelf)
+* [SWRL-NPD](SWRL-NPD) An enriched version of the NPD ontology with SWRL axioms. 
 
-* **R2RML and OBDA mappings** for PostgreSQL and MySQL
+### Development and Future Directions
 
-* **30 between Real World and Technical Queries**:
-
-  * 14 BGP Queries  
-  * 7 Queries with Aggregate Functions
-  * 9 Queries with Tree-witnesses
-
-* **Mixer**: Automatized Test Platform (https://github.com/ontop/obda-mixer) for OBDA Systems with Java OWL API interface
-
-For more info refer to the wiki
-
-https://github.com/ontop/npd-benchmark/wiki
-
-Credits & Disclaimer
---------
-
-This benchmark is based on the [Norwegian Petroleum Directorate](http://sws.ifi.uio.no/project/npd-v2/)
-(March 2014). 
-NPD does not provide any warranty nor takes any responsibility on this work nor on a
-ny of the provided files.
-
-The mappings, ontology, and query files have been adapted for OBDA benchmarking purposes.
-
-Publications 
----------
-
-* **The NPD benchmark: Reality check for OBDA systems**. Davide Lanti, Martin Rezk, Guohui Xiao, and Diego Calvanese. In Proc. of the 18th Int. Conf. on Extending Database Technology (EDBT 2015). ACM Press, 2015. (http://openproceedings.org/2015/conf/edbt/paper-350.pdf)
-
-* **A Scalable Benchmark for OBDA Systems**. Preliminary Report Calvanese, D.; Lanti, D.
-; Rezk, M.; Slusnys, M.; and Xiao, G. In In Proc. of the 3rd Int. Workshop on OWL Re
-asoner Evaluation (ORE 2014), 2014. (http://www.ghxiao.org/publications/2014-ore-npd.pdf)
-
-* **The NPD Benchmark for OBDA Systems**. Lanti, D.; Rezk, M.; Slusnys, M.; Xiao, G.; and
- Calvanese, D. In Proc. of the 10th International Workshop on Scalable Semantic Web 
-Knowledge Base Systems (SSWS 2014), 2014. (http://www.ghxiao.org/publications/2014-ssws-npd.pdf) 
-
-* **Data Scaling in OBDA Benchmarks: The VIG Approach**. Davide Lanti, Guohui Xiao, Diego Calvanese. 2016 
-   Available at https://arxiv.org/abs/1607.06343.
-
-Presentations and Results
-----------
-
-[EDBT 2015](https://github.com/ontop/npd-benchmark/tree/master/evaluations/edbt2015Talk)
-
-Contacts
-----------
-
-* [Davide Lanti](http://www.inf.unibz.it/~dlanti/)
-* [Martin Rezk](http://www.inf.unibz.it/~mrezk/) 
-* [Guohui Xiao](http://www.ghxiao.org)
-* [Diego Calvanese](http://www.inf.unibz.it/~calvanese/)
+Check the [Development](Development) page.
