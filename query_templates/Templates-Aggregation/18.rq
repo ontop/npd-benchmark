@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX npdv: <http://sws.ifi.uio.no/vocab/npd-v2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?field  (AVG(?oil) AS ?avgOil)  
+WHERE {
+  [ ] a npdv:FieldYearlyProduction ;
+  npdv:productionForField [ npdv:name ?field ] ;
+  npdv:producedOil            ?oil ;
+  npdv:productionYear         ?year .
+  FILTER (?year < ${1:field_production_totalt_NCS_year.prfYear:none}) 
+} 
+GROUP BY ?field
+ORDER BY DESC(?avgOil)
