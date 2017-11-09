@@ -131,7 +131,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlAreaPolyDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -211,7 +211,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -384,7 +384,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlMessageRegisteredDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -402,7 +402,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -483,7 +483,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -547,7 +547,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -582,7 +582,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{seaPlanFromDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -628,7 +628,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dscDateOffResEstDisplay}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -663,7 +663,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -698,7 +698,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbEntryDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -802,7 +802,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaLicenseeDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1138,7 +1138,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1173,7 +1173,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldStatusDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1202,7 +1202,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1398,7 +1398,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlAreaPolyDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1525,7 +1525,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1594,7 +1594,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlLicenseeDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1655,7 +1655,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldOwnerTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1724,7 +1724,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1787,7 +1787,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -1935,7 +1935,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlDatePhaseValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2062,7 +2062,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlDatePhaseValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2080,7 +2080,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2116,7 +2116,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2134,7 +2134,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2204,7 +2204,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2291,7 +2291,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2397,7 +2397,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlAreaDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2612,7 +2612,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2763,7 +2763,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbDateUpdatedMax}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2781,7 +2781,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fclStartupDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2816,7 +2816,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaOperatorDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2845,7 +2845,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2914,7 +2914,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbOilSampleDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -2932,7 +2932,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -3182,7 +3182,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -3325,7 +3325,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlOperDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -3343,7 +3343,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -3567,7 +3567,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaAreaPolyDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -3638,7 +3638,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaAreaPolyDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -3674,7 +3674,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbCoreDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -3794,7 +3794,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -3830,7 +3830,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaLicenseeDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -3986,7 +3986,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{tufOperDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4060,7 +4060,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4106,7 +4106,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4142,7 +4142,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbOilSampleTestDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4223,7 +4223,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4409,7 +4409,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlOperDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4504,7 +4504,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlMessageDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4562,7 +4562,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaDateApproved}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4580,7 +4580,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4688,7 +4688,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4734,7 +4734,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4769,7 +4769,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -4798,7 +4798,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -5358,7 +5358,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -5508,7 +5508,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldOwnershipToDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -5555,7 +5555,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbMudDateMeasured}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -5699,7 +5699,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbCompletionDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -5746,7 +5746,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -5764,7 +5764,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaAreaPolyDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -5834,7 +5834,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -6377,7 +6377,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{tufOperDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -6406,7 +6406,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbOilSampledateReceivedDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -6441,7 +6441,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbDateUpdatedMax}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -6459,7 +6459,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbEntryDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -6603,7 +6603,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldLicenseeTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -6779,7 +6779,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -6808,7 +6808,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldOperatorFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7017,7 +7017,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbWdssQcDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7116,7 +7116,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7170,7 +7170,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldOwnerFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7233,7 +7233,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fclDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7279,7 +7279,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{seaProgressDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7363,7 +7363,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7433,7 +7433,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7451,7 +7451,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaAreaPolyDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7500,7 +7500,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlLicenseeDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7581,7 +7581,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlLicenseeDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7679,7 +7679,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7714,7 +7714,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{cmpDateOffResEstDisplay}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7749,7 +7749,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldDateOffResEstDisplay}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7785,7 +7785,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlTransferDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7831,7 +7831,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{tufOwnerDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -7924,7 +7924,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldOperatorDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -8001,7 +8001,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -8030,7 +8030,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -8463,7 +8463,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dscReservesDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -8499,7 +8499,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlAreaPolyDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -8602,7 +8602,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -8761,7 +8761,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -8779,7 +8779,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -9196,7 +9196,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldOwnershipFromDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -9249,7 +9249,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -9439,7 +9439,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldStatusToDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -9604,7 +9604,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldOperatorTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -9777,7 +9777,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{lsuWellboreUpdatedDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -9795,7 +9795,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -9813,7 +9813,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlOperDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -9862,7 +9862,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -9880,7 +9880,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldOwnerDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10118,7 +10118,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10188,7 +10188,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10303,7 +10303,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10407,7 +10407,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlAreaPolyDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10425,7 +10425,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlDateUpdatedMax}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10532,7 +10532,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaTransferDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10550,7 +10550,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{seaDateStarting}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10633,7 +10633,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10726,7 +10726,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlDateAwarded}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10791,7 +10791,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbDstDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10879,7 +10879,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbCasingDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -10968,7 +10968,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldLicenseeDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -11073,7 +11073,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlAreaPolyDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -11294,7 +11294,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlAreaPolyDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -11476,7 +11476,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlDateGranted}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -11586,7 +11586,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -11710,7 +11710,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbDocumentDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -11953,7 +11953,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbWdssQcdate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -12029,7 +12029,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbCorePhotoDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -12109,7 +12109,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlMessageRegisteredDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -12420,7 +12420,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlOperDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -12543,7 +12543,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbMudDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -12656,7 +12656,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -12709,7 +12709,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlTransferDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -12814,7 +12814,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -12861,7 +12861,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{tufOwnerDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -13005,7 +13005,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -13023,7 +13023,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -13270,7 +13270,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -13369,7 +13369,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldDateUpdatedMax}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -13404,7 +13404,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaDateUpdatedMax}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -13667,7 +13667,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -13685,7 +13685,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbCompletionDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -13865,7 +13865,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlDateInitialPeriodExpires}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14023,7 +14023,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlOperDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14041,7 +14041,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14162,7 +14162,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaTransferDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14215,7 +14215,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14308,7 +14308,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldLicenseeFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14425,7 +14425,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlOperDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14461,7 +14461,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14545,7 +14545,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14563,7 +14563,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14592,7 +14592,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14662,7 +14662,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlDateUpdatedMax}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -14938,7 +14938,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -15240,7 +15240,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -15341,7 +15341,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dscDateFromInclInField}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -15428,7 +15428,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -15503,7 +15503,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlOperDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -15667,7 +15667,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -15830,7 +15830,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -15859,7 +15859,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{seaDateFinalized}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -15965,7 +15965,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dscDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -15983,7 +15983,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -16410,7 +16410,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{seaPlanToDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -16544,7 +16544,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbEntryDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -16615,7 +16615,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlLicenseeDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -16633,7 +16633,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlTaskExpiryDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -16651,7 +16651,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -16705,7 +16705,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlTaskDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -16758,7 +16758,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -16776,7 +16776,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -17184,7 +17184,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fclDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -17649,7 +17649,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaAreaPolyDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -17684,7 +17684,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbCompletionDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -17750,7 +17750,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -17902,7 +17902,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -17965,7 +17965,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlPhaseDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -18168,7 +18168,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{baaLicenseeDateValidTo}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -18186,7 +18186,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -18320,7 +18320,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlMessageDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -18383,7 +18383,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -18453,7 +18453,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{prlLicenseeDateValidFrom}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -18913,7 +18913,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlDateUpdated}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -18990,7 +18990,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{ptlDateUpdatedMax}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -19120,7 +19120,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{wlbDateUpdatedMax}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -19138,7 +19138,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dscDateUpdatedMax}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -19207,7 +19207,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:ObjectMap , rr:TermMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{fldStatusFromDate}" ;
                                            rr:termType  rr:Literal
                                          ] ;
@@ -19260,7 +19260,7 @@
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
-                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                           rr:datatype  <http://www.w3.org/2001/XMLSchema#date> ;
                                            rr:template  "{dateSyncNPD}" ;
                                            rr:termType  rr:Literal
                                          ] ;

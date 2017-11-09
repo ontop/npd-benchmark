@@ -14,16 +14,15 @@ WHERE {
   ] .
   {
     { ?wc npdv:coresTotalLength ?l ;
-      npdv:coreIntervalUOM "[m   ]"^^xsd:string .
+      npdv:coreIntervalUOM "[m   ]"^^xsd:string . # Meters
       BIND(?l AS ?length)
     } 
     UNION
     { ?wc npdv:coresTotalLength ?l ;
-      npdv:coreIntervalUOM "[ft   ]"^^xsd:string .
+      npdv:coreIntervalUOM "[ft   ]"^^xsd:string . # Feets
       BIND((?l * 0.3048) AS ?length) 
     }
   }
-  FILTER(?year >= "2008"^^xsd:integer &&
-         ?length > 50 
-	 )
+  FILTER(?year >= "2008"^^xsd:integer && 
+	 ?length > 50 )
 } ORDER BY ?wellbore

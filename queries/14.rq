@@ -15,5 +15,5 @@ WHERE {
       npdv:mudMeasuredDepth ?d .
     } 
   }
-  FILTER (?date > "1986-08-25T00:00:00"^^xsd:dateTime)
+  FILTER (?date > "1986-08-25"^^xsd:date)
 }

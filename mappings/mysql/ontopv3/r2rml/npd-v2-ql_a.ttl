@@ -95,7 +95,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlLicenseeDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -254,7 +254,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlDateAwarded" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -366,7 +366,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -483,7 +483,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -744,7 +744,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlTransferDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -773,7 +773,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaAreaPolyDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -1010,7 +1010,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaTransferDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -1068,7 +1068,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -1322,7 +1322,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldDateOffResEstDisplay" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -1694,7 +1694,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlDateGranted" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -1857,7 +1857,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -2044,7 +2044,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -2428,7 +2428,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbOilSampleDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -2474,7 +2474,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbWdssQcDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -2659,7 +2659,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "tufOwnerDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -2854,7 +2854,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbCasingDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -3414,7 +3414,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlOperDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -3526,7 +3526,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -3694,7 +3694,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -3750,7 +3750,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -3779,7 +3779,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlOperDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -4280,7 +4280,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dscReservesDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -4711,7 +4711,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldStatusFromDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -4740,7 +4740,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -4796,7 +4796,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbDocumentDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -4935,7 +4935,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlAreaPolyDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -5112,7 +5112,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -5645,7 +5645,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlOperDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -5701,7 +5701,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaAreaPolyDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -5854,7 +5854,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbCorePhotoDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -5983,7 +5983,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -6097,7 +6097,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbMudDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -6392,7 +6392,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlAreaPolyDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -6545,7 +6545,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbEntryDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -6684,7 +6684,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbWdssQcdate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -6815,7 +6815,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlTaskExpiryDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -7000,7 +7000,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -7272,7 +7272,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -7479,7 +7479,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -7547,7 +7547,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlAreaPolyDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -7576,7 +7576,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -7807,7 +7807,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldStatusToDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -7953,7 +7953,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -8026,7 +8026,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlDatePhaseValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -8055,7 +8055,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldOwnershipFromDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -8350,7 +8350,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -8462,7 +8462,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldDateUpdatedMax" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -8518,7 +8518,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -8842,7 +8842,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "seaProgressDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -9234,7 +9234,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "cmpDateOffResEstDisplay" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -9292,7 +9292,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlPhaseDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -9348,7 +9348,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaLicenseeDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -9509,7 +9509,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbEntryDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -9804,7 +9804,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -9833,7 +9833,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbMudDateMeasured" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -9889,7 +9889,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldStatusDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -9945,7 +9945,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbEntryDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10079,7 +10079,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbOilSampledateReceivedDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10308,7 +10308,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlLicenseeDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10391,7 +10391,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10447,7 +10447,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10476,7 +10476,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaAreaPolyDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10561,7 +10561,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10731,7 +10731,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10789,7 +10789,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbCoreDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10818,7 +10818,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dscDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -10876,7 +10876,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -11036,7 +11036,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -11241,7 +11241,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlDateUpdatedMax" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -11562,7 +11562,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dscDateOffResEstDisplay" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -11710,7 +11710,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -11739,7 +11739,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -12778,7 +12778,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -12807,7 +12807,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -12836,7 +12836,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlMessageRegisteredDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -13108,7 +13108,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbCompletionDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -13137,7 +13137,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldLicenseeDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -13217,7 +13217,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -13329,7 +13329,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldOwnerFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -13412,7 +13412,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlAreaDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -13942,7 +13942,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -13998,7 +13998,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14300,7 +14300,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "seaPlanToDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14429,7 +14429,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlOperDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14458,7 +14458,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14514,7 +14514,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14543,7 +14543,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlAreaPolyDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14572,7 +14572,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaDateUpdatedMax" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14628,7 +14628,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlAreaPolyDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14711,7 +14711,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "seaDateFinalized" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14908,7 +14908,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaAreaPolyDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -14993,7 +14993,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlMessageRegisteredDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -15149,7 +15149,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -15285,7 +15285,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -15341,7 +15341,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbOilSampleTestDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -15370,7 +15370,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaLicenseeDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -15711,7 +15711,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "tufOperDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -15740,7 +15740,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -15869,7 +15869,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -15927,7 +15927,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -15983,7 +15983,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fclDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -16066,7 +16066,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldLicenseeFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -16195,7 +16195,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -16224,7 +16224,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldOwnerDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -16463,7 +16463,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dscDateFromInclInField" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -16751,7 +16751,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbDateUpdatedMax" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -17216,7 +17216,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -17432,7 +17432,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -17605,7 +17605,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbDateUpdatedMax" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -17753,7 +17753,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -18123,7 +18123,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlMessageDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -18152,7 +18152,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlOperDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -18208,7 +18208,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldOperatorTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -18364,7 +18364,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -18680,7 +18680,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaOperatorDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -18726,7 +18726,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlMessageDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -18879,7 +18879,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -19020,7 +19020,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlLicenseeDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -19334,7 +19334,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -19739,7 +19739,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlDateInitialPeriodExpires" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -20093,7 +20093,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -20458,7 +20458,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -20643,7 +20643,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -20672,7 +20672,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbDstDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -20701,7 +20701,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -20844,7 +20844,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -20873,7 +20873,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -21073,7 +21073,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -21102,7 +21102,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlLicenseeDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -21390,7 +21390,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -21499,7 +21499,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldOperatorFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -21586,7 +21586,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbCompletionDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -21642,7 +21642,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "lsuWellboreUpdatedDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -21671,7 +21671,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -21783,7 +21783,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -21883,7 +21883,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -22076,7 +22076,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbDateUpdatedMax" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -22366,7 +22366,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -22476,7 +22476,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaDateApproved" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -22505,7 +22505,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -22807,7 +22807,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -22948,7 +22948,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldOperatorDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -23377,7 +23377,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -23435,7 +23435,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaLicenseeDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -23491,7 +23491,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlDateUpdatedMax" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -23576,7 +23576,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldOwnershipToDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -23605,7 +23605,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlTransferDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -23788,7 +23788,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlAreaPolyDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -24075,7 +24075,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaTransferDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -24206,7 +24206,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "tufOperDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -24430,7 +24430,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlOperDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -24459,7 +24459,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -24517,7 +24517,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fclStartupDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -24590,7 +24590,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "seaDateStarting" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -25120,7 +25120,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dscDateUpdatedMax" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -25561,7 +25561,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -25590,7 +25590,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -25806,7 +25806,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "tufOwnerDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -26089,7 +26089,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlTaskDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -26663,7 +26663,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlDatePhaseValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -26709,7 +26709,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlLicenseeDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -26792,7 +26792,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -26821,7 +26821,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldLicenseeTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -27072,7 +27072,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -27230,7 +27230,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -27561,7 +27561,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -28094,7 +28094,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "prlOperDateValidTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -28416,7 +28416,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -28851,7 +28851,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fldOwnerTo" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -29001,7 +29001,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "ptlDateUpdatedMax" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -29115,7 +29115,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -29309,7 +29309,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -29338,7 +29338,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -29367,7 +29367,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -30041,7 +30041,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "baaAreaPolyDateValidFrom" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -30097,7 +30097,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbCompletionDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -30126,7 +30126,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -30395,7 +30395,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "fclDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -30575,7 +30575,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -30648,7 +30648,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "wlbDateUpdated" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -30677,7 +30677,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "dateSyncNPD" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
@@ -30764,7 +30764,7 @@
                             <http://www.w3.org/ns/r2rml#column>
                                     "seaPlanFromDate" ;
                             <http://www.w3.org/ns/r2rml#datatype>
-                                    <http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                    <http://www.w3.org/2001/XMLSchema#date> ;
                             <http://www.w3.org/ns/r2rml#termType>
                                     <http://www.w3.org/ns/r2rml#Literal>
                           ] ;
