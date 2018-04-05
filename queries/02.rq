@@ -1,0 +1,18 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX npdv: <http://sws.ifi.uio.no/vocab/npd-v2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?licenceURI ?company ?date 
+WHERE {
+  ?licenceURI a npdv:ProductionLicence .
+  
+  [ ] a npdv:ProductionLicenceOperator ;
+  npdv:dateOperatorValidFrom ?date ;
+  npdv:licenceOperatorCompany [ npdv:name ?company ] ;
+  npdv:operatorForLicence ?licenceURI .
+
+  FILTER(?date > "1979-12-31"^^xsd:date)
+  
+} ORDER BY ?licenceURI

@@ -1,3 +1,3 @@
 dbName=$1
 
-mysql --user="user" --host="localhost" --password="pwd" $dbName < ../../mysql/original_npd/npd_v2.sql
+mysql --user="fish" --host="localhost" --password="fish" $dbName < ../../mysql/original_npd/npd.mysql

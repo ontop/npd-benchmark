@@ -13,7 +13,7 @@ if [ $# -eq 5 ]
 then    
     case "$DB_TYPE" in 
 	'postgres')
-	    PGPASSWORD=${PWD} psql --user=$USER --dbname=$DB_NAME -f $FILE
+	    PGPASSWORD=${PWD} psql -U "$USER" -h localhost --dbname="$DB_NAME" -f $FILE
 	    ;;
 	'mysql')
 	    mysql $DB_NAME --user=$USER --password=${PWD} < $FILE 

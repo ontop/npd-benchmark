@@ -3107,7 +3107,7 @@
         <sql:datatype>DATETIME (column: baaDateApproved)</sql:datatype>
         <sql:comment>The date the agreement for the business arrangement area was approved by the Norwegian authorities. (column: baaDateApproved)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;BAA"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3121,7 +3121,7 @@
         <sql:column>bsns_arr_area_area_poly_hst.baaAreaPolyDateValidFrom</sql:column>
         <sql:label>Date valid from (column: baaAreaPolyDateValidFrom)</sql:label>
         <rdfs:domain rdf:resource="&npdv;BAAArea"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3135,7 +3135,7 @@
         <sql:datatype>DATETIME (column: baaAreaPolyDateValidTo)</sql:datatype>
         <sql:comment>The date the polygon area is valid to (column: baaAreaPolyDateValidTo)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;BAAArea"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3148,7 +3148,7 @@
         <sql:comment>The date the company&apos;s interest in the business arrangement area is valid from (column: baaLicenseeDateValidFrom)</sql:comment>
         <sql:column>bsns_arr_area_licensee_hst.baaLicenseeDateValidFrom</sql:column>
         <rdfs:domain rdf:resource="&npdv;BAALicensee"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3161,7 +3161,7 @@
         <sql:label>Date valid to (column: baaLicenseeDateValidTo)</sql:label>
         <sql:datatype>DATETIME (column: baaLicenseeDateValidTo)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;BAALicensee"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3174,7 +3174,7 @@
         <sql:comment>The date the agreement for the business arrangement area is valid from, according to the approval of the Norwegian authorities. (column: baaDateValidFrom)</sql:comment>
         <sql:datatype>DATETIME (column: baaDateValidFrom)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;BAA"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3187,7 +3187,7 @@
         <sql:column>bsns_arr_area.baaDateValidTo</sql:column>
         <sql:comment>The date the agreement for the business arrangement area is valid to, according to the approval of the Norwegian authorities. (column: baaDateValidTo)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;BAA"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3198,7 +3198,7 @@
         <sql:column>field_licensee_hst.fldLicenseeFrom</sql:column>
         <sql:datatype>DATETIME (column: fldLicenseeFrom)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;FieldLicensee"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3209,7 +3209,7 @@
         <sql:column>field_licensee_hst.fldLicenseeTo</sql:column>
         <sql:datatype>DATETIME (column: fldLicenseeTo)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;FieldLicensee"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3220,7 +3220,7 @@
         <sql:column>field_operator_hst.fldOperatorFrom</sql:column>
         <sql:datatype>DATETIME (column: fldOperatorFrom)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;FieldOperator"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3231,7 +3231,7 @@
         <sql:column>field_operator_hst.fldOperatorTo</sql:column>
         <sql:datatype>DATETIME (column: fldOperatorTo)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;FieldOperator"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3243,7 +3243,7 @@
         <sql:column>field_licensee_hst.fldOwnerFrom</sql:column>
         <sql:datatype>DATETIME (column: fldOwnershipFromDate)</sql:datatype>
         <sql:column>field_owner_hst.fldOwnershipFromDate</sql:column>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3255,7 +3255,7 @@
         <sql:column>field_owner_hst.fldOwnershipToDate</sql:column>
         <sql:datatype>DATETIME (column: fldOwnerTo)</sql:datatype>
         <sql:column>field_licensee_hst.fldOwnerTo</sql:column>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3268,7 +3268,7 @@
         <sql:label>Included in field from date (column: dscDateFromInclInField)</sql:label>
         <sql:comment>Included in field from date (column: dscDateFromInclInField)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;Discovery"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3281,7 +3281,7 @@
         <sql:label>Expiry date, initial period (column: prlDateInitialPeriodExpires)</sql:label>
         <sql:column>licence_phase_hst.prlDateInitialPeriodExpires</sql:column>
         <rdfs:domain rdf:resource="&npdv;ProductionLicenceStatus"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3295,7 +3295,7 @@
         <sql:column>prlArea.prlAreaPolyDateValidFrom</sql:column>
         <sql:column>prlAreaSplitByBlock.prlAreaPolyDateValidFrom</sql:column>
         <sql:column>licence_area_poly_hst.prlAreaPolyDateValidFrom</sql:column>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3309,7 +3309,7 @@
         <sql:column>prlArea.prlAreaPolyDateValidTo</sql:column>
         <sql:column>licence_area_poly_hst.prlAreaPolyDateValidTo</sql:column>
         <sql:column>prlAreaSplitByBlock.prlAreaPolyDateValidTo</sql:column>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3322,7 +3322,7 @@
         <sql:datatype>DATETIME (column: prlDateGranted)</sql:datatype>
         <sql:column>licence.prlDateGranted</sql:column>
         <rdfs:domain rdf:resource="&npdv;ProductionLicence"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3335,7 +3335,7 @@
         <sql:column>licence_phase_hst.prlDateValidTo</sql:column>
         <sql:comment>Date the production licence is valid to. (column: prlDateValidTo)</sql:comment>
         <sql:label>Date valid to (column: prlDateValidTo)</sql:label>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3348,7 +3348,7 @@
         <sql:comment>Date the company&apos;s interest in the production licence is valid from (column: prlLicenseeDateValidFrom)</sql:comment>
         <sql:datatype>DATETIME (column: prlLicenseeDateValidFrom)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;ProductionLicenceLicensee"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3361,7 +3361,7 @@
         <sql:comment>Date the company&apos;s interest in the production licence is valid to (column: prlLicenseeDateValidTo)</sql:comment>
         <sql:datatype>DATETIME (column: prlLicenseeDateValidTo)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;ProductionLicenceLicensee"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3374,7 +3374,7 @@
         <sql:comment>Date, during drilling operations, when mud properties are measured and logged. (column: wlbMudDateMeasured)</sql:comment>
         <sql:label>Date measured (column: wlbMudDateMeasured)</sql:label>
         <rdfs:domain rdf:resource="&npdv;WellboreDrillingMudSample"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3387,7 +3387,7 @@
         <sql:datatype>DATETIME (column: wlbOilSampledateReceivedDate)</sql:datatype>
         <sql:comment>Date when the sample was received at the NPD. (column: wlbOilSampledateReceivedDate)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;WellboreOilSample"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3400,7 +3400,7 @@
         <sql:label>Test date and time of day (column: wlbOilSampleTestDate)</sql:label>
         <sql:comment>Test date and time of day. (column: wlbOilSampleTestDate)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;WellboreOilSample"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3413,7 +3413,7 @@
         <sql:column>licence_licensee_hst.prlOperDateValidFrom</sql:column>
         <sql:label>Date valid from (column: prlOperDateValidFrom)</sql:label>
         <sql:datatype>DATETIME (column: prlOperDateValidFrom)</sql:datatype>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3426,7 +3426,7 @@
         <sql:comment>Date the company&apos;s operatorship is valid to (column: prlOperDateValidTo)</sql:comment>
         <sql:datatype>DATETIME (column: prlOperDateValidTo)</sql:datatype>
         <sql:column>licence_oper_hst.prlOperDateValidTo</sql:column>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3439,7 +3439,7 @@
         <sql:column>facility_fixed.fclStartupDate</sql:column>
         <sql:label>Startup date (column: fclStartupDate)</sql:label>
         <rdfs:domain rdf:resource="&npdv;FixedFacility"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3457,7 +3457,7 @@
         <sql:label>Resource updated date (column: dscDateOffResEstDisplay)</sql:label>
         <sql:label>Reserves updated date (column: fldDateOffResEstDisplay)</sql:label>
         <sql:datatype>DATETIME (column: fldDateOffResEstDisplay)</sql:datatype>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3470,7 +3470,7 @@
         <sql:comment>Status from date (column: fldStatusFromDate)</sql:comment>
         <sql:column>field_activity_status_hst.fldStatusFromDate</sql:column>
         <rdfs:domain rdf:resource="&npdv;FieldStatus"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3483,7 +3483,7 @@
         <sql:datatype>DATETIME (column: fldStatusToDate)</sql:datatype>
         <sql:column>field_activity_status_hst.fldStatusToDate</sql:column>
         <rdfs:domain rdf:resource="&npdv;FieldStatus"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3496,7 +3496,7 @@
         <sql:label>Date phase valid from (column: prlDatePhaseValidFrom)</sql:label>
         <sql:comment>Date the phase is valid from (column: prlDatePhaseValidFrom)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;ProductionLicenceStatus"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3509,7 +3509,7 @@
         <sql:comment>Date the phase is valid to (column: prlDatePhaseValidTo)</sql:comment>
         <sql:label>Date phase valid to (column: prlDatePhaseValidTo)</sql:label>
         <rdfs:domain rdf:resource="&npdv;ProductionLicenceStatus"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3522,7 +3522,7 @@
         <sql:column>seis_acquisition.seaDateFinalized</sql:column>
         <sql:comment>Date the seismic acquistion was completed. Completed means departure from the acquisition area. (column: seaDateFinalized)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;SeismicSurvey"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3535,7 +3535,7 @@
         <sql:comment>Date the seismic acquistion actually started. Started means when the vessel arrives the acquisition area. (column: seaDateStarting)</sql:comment>
         <sql:datatype>DATETIME (column: seaDateStarting)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;SeismicSurvey"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3548,7 +3548,7 @@
         <sql:datatype>DATETIME (column: seaPlanToDate)</sql:datatype>
         <sql:column>seis_acquisition.seaPlanToDate</sql:column>
         <rdfs:domain rdf:resource="&npdv;SeismicSurvey"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3561,7 +3561,7 @@
         <sql:datatype>DATETIME (column: seaPlanFromDate)</sql:datatype>
         <sql:column>seis_acquisition.seaPlanFromDate</sql:column>
         <rdfs:domain rdf:resource="&npdv;SeismicSurvey"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3572,7 +3572,7 @@
         <sql:column>seis_acquisition_progress.seaProgressDate</sql:column>
         <sql:datatype>DATETIME (column: seaProgressDate)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;SeismicSurveyProgress"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3633,7 +3633,7 @@
         <sql:column>seis_acquisition.dateSyncNPD</sql:column>
         <sql:column>wellbore_oil_sample.dateSyncNPD</sql:column>
         <sql:column>licence_transfer_hst.dateSyncNPD</sql:column>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3646,7 +3646,7 @@
         <sql:comment>The date the company&apos;s operatorship is valid from (column: tufOperDateValidFrom)</sql:comment>
         <sql:label>Date valid from (column: tufOperDateValidFrom)</sql:label>
         <rdfs:domain rdf:resource="&npdv;TUFOperator"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3659,7 +3659,7 @@
         <sql:label>Date valid to (column: tufOperDateValidTo)</sql:label>
         <sql:comment>The date the company&apos;s operatorship is valid to (column: tufOperDateValidTo)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;TUFOperator"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3672,7 +3672,7 @@
         <sql:label>Date valid from (column: tufOwnerDateValidFrom)</sql:label>
         <sql:datatype>DATETIME (column: tufOwnerDateValidFrom)</sql:datatype>
         <rdfs:domain rdf:resource="&npdv;TUFOwner"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3685,7 +3685,7 @@
         <sql:label>Date valid to (column: tufOwnerDateValidTo)</sql:label>
         <sql:comment>The date the company&apos;s ownership is valid to (column: tufOwnerDateValidTo)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;TUFOwner"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3698,7 +3698,7 @@
         <sql:column>licence_task.prlTaskExpiryDate</sql:column>
         <sql:comment>Date when the task exprires. (column: prlTaskExpiryDate)</sql:comment>
         <rdfs:domain rdf:resource="&npdv;ProductionLicenceWorkObligation"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3714,7 +3714,7 @@
         <sql:column>bsns_arr_area_transfer_hst.baaTransferDateValidFrom</sql:column>
         <sql:datatype>DATETIME (column: baaTransferDateValidFrom)</sql:datatype>
         <sql:comment>Date the transfer is valid from (column: prlTransferDateValidFrom)</sql:comment>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3835,7 +3835,7 @@
         <sql:column>discovery.dscDateUpdated</sql:column>
         <sql:datatype>DATETIME (column: fldLicenseeDateUpdated)</sql:datatype>
         <sql:comment>Date when this record was updated last or inserted the first time. (column: wlbDstDateUpdated)</sql:comment>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3865,7 +3865,7 @@
         <sql:datatype>DATETIME (column: dscDateUpdatedMax)</sql:datatype>
         <sql:column>wellbore_exploration_all.wlbDateUpdatedMax</sql:column>
         <sql:label>Date all updated (column: dscDateUpdatedMax)</sql:label>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3879,7 +3879,7 @@
         <sql:column>wellbore_exploration_all.wlbWdssQcDate</sql:column>
         <sql:datatype>DATETIME (column: wlbWdssQcDate)</sql:datatype>
         <sql:datatype>DATETIME (column: wlbWdssQcdate)</sql:datatype>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3893,7 +3893,7 @@
         <sql:datatype>DATETIME (column: wlbCompletionDate)</sql:datatype>
         <sql:column>wellbore_exploration_all.wlbCompletionDate</sql:column>
         <sql:column>wellbore_shallow_all.wlbCompletionDate</sql:column>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -3907,7 +3907,7 @@
         <sql:comment>The date when the drill bit penetrated the earth&apos;s crust / sea floor. (column: wlbEntryDate)</sql:comment>
         <sql:column>wellbore_exploration_all.wlbEntryDate</sql:column>
         <sql:label>Entry date (column: wlbEntryDate)</sql:label>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -5872,7 +5872,7 @@
         <sql:column>licence_petreg_licence.ptlDateAwarded</sql:column>
         <sql:datatype>DATETIME (column: ptlDateAwarded)</sql:datatype>
         <rdfs:domain rdf:resource="&ptl;ProductionLicence"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -5885,7 +5885,7 @@
         <sql:column>licence_petreg_licence.ptlDateValidFrom</sql:column>
         <sql:comment>Dato tillatelsen er gyldig fra. (column: ptlDateValidFrom)</sql:comment>
         <sql:label>Gyldig fra dato (column: ptlDateValidFrom)</sql:label>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -5898,7 +5898,7 @@
         <sql:datatype>DATETIME (column: ptlDateValidTo)</sql:datatype>
         <sql:column>licence_petreg_licence.ptlDateValidTo</sql:column>
         <sql:column>tuf_petreg_licence.ptlDateValidTo</sql:column>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -5911,7 +5911,7 @@
         <sql:column>tuf_petreg_message.ptlMessageRegisteredDate</sql:column>
         <sql:label>Registreringsdato (column: ptlMessageRegisteredDate)</sql:label>
         <sql:column>licence_petreg_message.ptlMessageRegisteredDate</sql:column>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -5939,7 +5939,7 @@
         <sql:label>Dato oppdatert (column: ptlMessageDateUpdated)</sql:label>
         <sql:label>Dato oppdatert (column: ptlOperDateUpdated)</sql:label>
         <sql:comment>Dato når denne posten ble oppdatert sist eller lagt inn for første gang. (column: ptlMessageDateUpdated)</sql:comment>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -5952,7 +5952,7 @@
         <sql:datatype>DATETIME (column: ptlDateUpdatedMax)</sql:datatype>
         <sql:column>licence_petreg_licence.ptlDateUpdatedMax</sql:column>
         <sql:comment>Dato når noe informasjon om denne Petroleumsregister tillatelsen ble oppdatert sist eller lagt inn for første gang. Datoen vil også bli forandret dersom data i noen av &apos;Undernivåene&apos; blir forandret. (column: ptlDateUpdatedMax)</sql:comment>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
