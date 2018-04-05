@@ -3,7 +3,7 @@ The NPD benchmark is a benchmark specifically designed for OBDA systems. An OBDA
 The benchmark is made of the following components:
 
 1. MySQL and PostegreSQL dumps for the original NPD dataset
-2. [31 Real World and Technical Queries]([Queries])
+2. [31 Real World and Technical Queries](Queries)
 3. [Ontology](Ontology)
 4. [Mappings](Mappings) files, for PostgreSQL and MySQL
 5. [VIG v1.8.1](https://github.com/ontop/vig), a data-scaler for OBDA Benchmarks
