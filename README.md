@@ -45,27 +45,14 @@ asoner Evaluation (ORE 2014), 2014. (http://www.ghxiao.org/publications/2014-ore
  Calvanese, D. In Proc. of the 10th International Workshop on Scalable Semantic Web 
 Knowledge Base Systems (SSWS 2014), 2014. (http://www.ghxiao.org/publications/2014-ssws-npd.pdf) 
 
-* **Davide Lanti, Guohui Xiao, Diego Calvanese:
-Fast and Simple Data Scaling for OBDA Benchmarks. BLINK@ISWC 2016
-   Available at http://ceur-ws.org/Vol-1700/paper-06.pdf
-
-* **Data Scaling in OBDA Benchmarks: The VIG Approach**. Davide Lanti, Guohui Xiao, Diego Calvanese. 2016 
-   Available at https://arxiv.org/abs/1607.06343.
-
-* **Davide Lanti, Guohui Xiao, Diego Calvanese:
-An Evaluation of VIG with the BSBM Benchmark. International Semantic Web Conference (Posters & Demos) 2016
-   Available at http://ceur-ws.org/Vol-1690/paper82.pdf
-
-
 Presentations and Results
 ----------
 
-[EDBT 2015](https://github.com/ontop/npd-benchmark/tree/master/evaluations/edbt2015Talk)
+[(Outdated) Talk at EDBT 2015](https://github.com/ontop/npd-benchmark/tree/master/evaluations/edbt2015Talk)
 
 Contacts
 ----------
 
 * [Davide Lanti](http://www.inf.unibz.it/~dlanti/)
-* [Martin Rezk](http://www.inf.unibz.it/~mrezk/) 
 * [Guohui Xiao](http://www.ghxiao.org)
 * [Diego Calvanese](http://www.inf.unibz.it/~calvanese/)
