@@ -13,6 +13,6 @@ WHERE {
   npdv:licenceOperatorCompany [ npdv:name ?company ] ;
   npdv:operatorForLicence ?licenceURI .
 
-  FILTER(?date > "1979-12-31T00:00:00"^^xsd:dateTime)
+  FILTER(?date > "1979-12-31"^^xsd:date)
   
 } ORDER BY ?licenceURI

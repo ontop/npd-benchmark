@@ -14,5 +14,5 @@ WHERE {
 	    npdv:licenceLicensee ?company.
   ?company npdv:name ?cName.
   
-  FILTER(?date > "2005-01-01T00:00:00.0"^^xsd:dateTime)
+  FILTER(?date > "2005-01-01"^^xsd:date)
 }

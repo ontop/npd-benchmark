@@ -11,5 +11,5 @@ WHERE {
   ?licensee npdv:licenseeForLicence ?licence;
 	    npdv:dateLicenseeValidFrom ?date;
      npdv:licenseeInterest ?interest.
-  FILTER(?date > "1996-01-01T00:00:00.0"^^xsd:dateTime)
+  FILTER(?date > "1996-01-01"^^xsd:date)
 }

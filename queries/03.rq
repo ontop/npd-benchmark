@@ -11,5 +11,5 @@ WHERE {
   npdv:dateLicenceGranted ?dateGranted ;
   npdv:dateLicenceValidTo ?dateValidTo .
 
-  FILTER(?dateValidTo > "2000-12-31T00:00:00"^^xsd:dateTime)
+  FILTER(?dateValidTo > "2000-12-31"^^xsd:date)
 } ORDER BY ?licence
