@@ -16,7 +16,3 @@ The benchmark is made of the following components:
 ### Benchmark Rules
 
 For information on how to use the benchmark for testing systems, please refer to the [rules](Benchmark Rules) page.
-
-### Development and Future Directions
-
-Check the [Development](Development) page.
