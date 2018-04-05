@@ -2,7 +2,7 @@ NPD Benchmark v1.10.0
 -----
 
 - Updated queries, plus one additional query
--- Rewritten queries: 12.rq, and from 22.rq to 30.rq
+- - Rewritten queries: 12.rq, and from 22.rq to 30.rq
 -- New query: 31.rq (join of 09.rq and 06.rq)
 - Mappings and ontology fixes:
 -- Remove xsd^^dateTime in favor of xsd^^date
