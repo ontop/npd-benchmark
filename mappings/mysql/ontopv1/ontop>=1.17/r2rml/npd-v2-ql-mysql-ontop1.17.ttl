@@ -2243,7 +2243,7 @@
 
 [ a                      rr:TriplesMap ;
   rr:logicalTable        [ a            rr:R2RMLView ;
-                           rr:sqlQuery  "SELECT wlbNpdidWellbore,wlbPressReleaseUrl FROM wellbore_exploration_all"
+                           rr:sqlQuery  "SELECT wlbNpdidWellbore,wlbPressReleaseUrl FROM wellbore_exploration_all WHERE wlbPressReleaseUrl LIKE 'http_%'"
                          ] ;
   rr:predicateObjectMap  [ a             rr:PredicateObjectMap ;
                            rr:objectMap  [ a            rr:TermMap , rr:ObjectMap ;
