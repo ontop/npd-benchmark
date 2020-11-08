@@ -8,6 +8,6 @@ WHERE {
 	    npdv:wellboreCompletionYear ?year.
   ?wc npdv:coreForWellbore ?wellbore;
       npdv:coresTotalLength ?length;
-      npdv:coreIntervalUOM "[ft   ]"^^xsd:string . # feets		      	        	      	        
-  FILTER (?year >= "2008"^^xsd:integer)		   
+      npdv:coreIntervalUOM "[ft  ]" . # feets
+  FILTER (?year >= "1900"^^xsd:integer)
 }

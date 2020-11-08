@@ -10,7 +10,7 @@ WHERE {
   npdv:productionForField [ npdv:name ?field ] ;
   npdv:producedOil            ?oil ;
   npdv:productionYear         ?year .
-  FILTER (?year < 2013)
+  FILTER (?year > 1999)
 } 
 GROUP BY ?field
 ORDER BY DESC(?avgOil)
