@@ -1,3 +1,9 @@
+NPD Benchmark v1.10.1
+-----
+
+- Bugfix: dateTime vs date.
+- Bugfix: Adding mappings for the missing property "npdv:productionForField"
+
 NPD Benchmark v1.10.0
 -----
 

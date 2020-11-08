@@ -1,11 +1,11 @@
-npd-benchmark (v1.10.0)
+npd-benchmark (v1.10.1)
 ====================
 
 Official Documentation: 
 
 * http://ontop.github.io/npd-benchmark/ (All versions)
 
-Components of the NPD Benchmark (v1.10.0)
+Components of the NPD Benchmark (v1.10.1)
 
 * **NPD Dataset** (mysql dump of the original dataset, postgres and mysql schemas)
 
