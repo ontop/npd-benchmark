@@ -4660,6 +4660,22 @@ mappingId	Mapping:NPD:Manual5:116
 target		npd:stratum/{wft_lsuNpdidLithoStrat} npdv:geochronologicEra isc:Triassic .
 source		SELECT wellbore_exploration_all.wlbNpdidWellbore wea_wlbNpdidWellbore,wellbore_formation_top.lsuNpdidLithoStrat wft_lsuNpdidLithoStrat FROM wellbore_formation_top, wellbore_exploration_all WHERE wellbore_formation_top.lsuName=wellbore_exploration_all.wlbFormationAtTd AND wellbore_exploration_all.wlbAgeWithHc3='TRIASSIC'
 
+mappingId	Mapping:NPD:Manual6:1
+target		npd:field/{prfNpdidInformationCarrier}/production/{prfYear} npdv:productionForField npd:field/{prfNpdidInformationCarrier} . 
+source		SELECT prfNpdidInformationCarrier,prfYear FROM field_production_yearly WHERE prfNpdidInformationCarrier <> '44576'
+
+mappingId	Mapping:NPD:Manual6:2
+target		npd:field/{prfNpdidInformationCarrier}/production/{prfYear} npdv:productionForDiscovery npd:discovery/{prfNpdidInformationCarrier} . 
+source		SELECT prfNpdidInformationCarrier,prfYear FROM field_production_yearly WHERE prfNpdidInformationCarrier ='44576'
+
+mappingId	Mapping:NPD:Manual6:3
+target		npd:field/{prfNpdidInformationCarrier}/production/{prfYear}/{prfMonth} npdv:productionForField npd:field/{prfNpdidInformationCarrier} . 
+source		SELECT prfNpdidInformationCarrier,prfYear,prfMonth FROM field_production_monthly WHERE prfNpdidInformationCarrier <> '44576'
+
+mappingId	Mapping:NPD:Manual6:4
+target		npd:field/{prfNpdidInformationCarrier}/production/{prfYear}/{prfMonth} npdv:productionForDiscovery npd:discovery/{prfNpdidInformationCarrier} . 
+source		SELECT prfNpdidInformationCarrier,prfYear,prfMonth FROM field_production_monthly WHERE prfNpdidInformationCarrier='44576'
+
 mappingId	Mapping:NPD:Manual8:1
 target		npd:licence/{prlNpdidLicence}/block/{blcName}/polyno/{prlAreaPolyPolyNo}/history/{prlAreaPolyDateValidFrom}/{prlAreaPolyDateValidTo} npdv:isActive "true" .
 source		SELECT prlNpdidLicence,blcName,prlAreaPolyPolyNo,prlAreaPolyDateValidFrom,prlAreaPolyDateValidTo FROM prlAreaSplitByBlock WHERE prlCurrentArea='ACTIVE'
