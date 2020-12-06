@@ -29,7 +29,7 @@ Credits & Disclaimer
 
 This benchmark is based on the NPD FactPages <a
 href="https://sws.ifi.uio.no/project/npd-v2/">Semantic Web Data</a>
-(March 2014) described in
+(March 2014) described in:
 
 Publishing the Norwegian Petroleum Directorate's FactPages as Semantic
 Web Data. Skjæveland, M. G.; Lian, E. H.; Horrocks I. In Proc. of the
